@@ -1,0 +1,235 @@
+{
+  "id": "mod-users-keycloak-1.1.0",
+  "name": "Users business logic (with Keycloak)",
+  "provides": [
+    {
+      "id": "users-keycloak",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods" : [ "GET" ],
+          "pathPattern" : "/users-keycloak/users/{id}",
+          "permissionsRequired" : [ "users.item.get" ],
+          "permissionsDesired" : [
+            "users.read.basic",
+            "users.read.restricted"
+          ]
+        },
+        {
+          "methods": [ "POST" ],
+          "pathPattern": "/users-keycloak/users",
+          "permissionsRequired": [ "users.item.post" ]
+        },
+        {
+          "methods" : [ "GET" ],
+          "pathPattern" : "/users-keycloak/users",
+          "permissionsRequired" : [ "users.collection.get" ],
+          "permissionsDesired" : [
+            "users.read.basic",
+            "users.read.restricted"
+          ]
+        },
+        {
+          "methods": [ "PUT" ],
+          "pathPattern": "/users-keycloak/users/{id}",
+          "permissionsRequired": [ "users.item.put" ]
+        },
+        {
+          "methods": [ "DELETE" ],
+          "pathPattern": "/users-keycloak/users/{id}",
+          "permissionsRequired": [ "users.item.delete" ]
+        },
+        {
+          "methods" : [ "GET" ],
+          "pathPattern" : "/users-keycloak/_self",
+          "permissionsRequired" : []
+        },
+        {
+          "methods": [ "POST" ],
+          "pathPattern": "/users-keycloak/migrations",
+          "permissionsRequired": [ "users.migrations.post" ],
+          "modulePermissions": [
+            "users.collection.get",
+            "perms.users"
+          ]
+        },
+        {
+          "methods": [ "GET" ],
+          "pathPattern": "/users-keycloak/migrations",
+          "permissionsRequired": [ "users.migrations.get" ]
+        },
+        {
+          "methods": [ "GET" ],
+          "pathPattern": "/users-keycloak/migrations/{id}",
+          "permissionsRequired": [ "users.migrations.get" ]
+        },
+        {
+          "methods": [ "DELETE" ],
+          "pathPattern": "/users-keycloak/migrations/{id}",
+          "permissionsRequired": [ "users.migrations.delete" ]
+        },
+        {
+          "methods": ["POST"],
+          "pathPattern": "/users-keycloak/forgotten/password",
+          "permissionsDesired": [],
+          "permissionsRequired": [],
+          "modulePermissions": [
+            "users.edit",
+            "users.item.put",
+            "perms.users.item.put",
+            "configuration.entries.collection.get",
+            "users.collection.get",
+            "users.item.get",
+            "login.password-reset-action.post",
+            "notify.item.post"
+          ]
+        },
+        {
+          "methods": ["POST"],
+          "pathPattern": "/users-keycloak/forgotten/username",
+          "permissionsDesired": [],
+          "permissionsRequired": [],
+          "modulePermissions": [
+            "users.edit",
+            "users.item.put",
+            "perms.users.item.put",
+            "configuration.entries.collection.get",
+            "users.collection.get",
+            "notify.item.post"
+          ]
+        },
+        {
+          "methods": ["POST"],
+          "pathPattern": "/users-keycloak/password-reset/link",
+          "permissionsRequired": ["users-bl.password-reset-link.generate"],
+          "permissionsDesired": [],
+          "modulePermissions": [
+            "users.item.get",
+            "configuration.entries.collection.get",
+            "login.password-reset-action.post",
+            "notify.item.post"
+          ]
+        },
+        {
+          "methods": ["POST"],
+          "pathPattern": "/users-keycloak/password-reset/reset",
+          "permissionsDesired": [],
+          "permissionsRequired": ["users-bl.password-reset-link.reset"],
+          "modulePermissions": [
+            "login.password-reset-action.get",
+            "users.item.get",
+            "login.password-reset.post",
+            "validation.validate.post",
+            "notify.item.post"
+          ]
+        },
+        {
+          "methods": ["POST"],
+          "pathPattern": "/users-keycloak/password-reset/validate",
+          "permissionsDesired": [],
+          "permissionsRequired": ["users-bl.password-reset-link.validate"],
+          "modulePermissions": [
+            "users.item.get",
+            "login.password-reset-action.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType" : "system",
+      "handlers" : [ {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/_/tenant"
+      }, {
+        "methods" : [ "GET", "DELETE" ],
+        "pathPattern" : "/_/tenant/{id}"
+      } ]
+    }
+  ],
+  "requires" : [
+    {
+      "id" : "users",
+      "version" : "16.0"
+    },
+    {
+      "id": "permissions",
+      "version": "5.6"
+    },
+    {
+      "id" : "login",
+      "version" : "7.1"
+    },
+    {
+      "id": "configuration",
+      "version": "2.0"
+    },
+    {
+      "id": "password-validator",
+      "version": "1.0"
+    },
+    {
+      "id": "permissions-users",
+      "version": "1.0"
+    }
+  ],
+  "optional" : [
+    {
+      "id": "notify",
+      "version": "2.0"
+    },
+    {
+      "id" : "service-points",
+      "version" : "3.3"
+    },
+    {
+      "id" : "service-points-users",
+      "version" : "1.0"
+    },
+    {
+      "id": "capabilities",
+      "version": "1.0"
+    },
+    {
+      "id": "user-capabilities",
+      "version": "1.0"
+    },
+    {
+      "id": "user-tenants",
+      "version": "1.0"
+    }
+  ],
+  "permissionSets": [
+    {
+      "description": "Create a new Users Migration",
+      "displayName": "Users - create new migration",
+      "permissionName": "users.migrations.post"
+    },
+    {
+      "description": "Get Users Migration",
+      "displayName": "Users - retrieve users migration",
+      "permissionName": "users.migrations.get"
+    },
+    {
+      "description": "Delete Users Migration",
+      "displayName": "Users - delete users migration",
+      "permissionName": "users.migrations.delete"
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "mod-users-keycloak:1.1.0",
+    "dockerPull": false,
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 536870912,
+        "PortBindings": { "8081/tcp": [ { "HostPort": "%p" } ] }
+      }
+    },
+    "env": [
+      { "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=66.0"
+      }
+    ]
+  }
+}

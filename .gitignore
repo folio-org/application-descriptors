@@ -1,0 +1,8 @@
+/yarn.lock
+/.idea/
+/yarn-error.log
+
+docker/.env.local
+**/.temp-descriptors/
+**/.temp/
+**/tmp/

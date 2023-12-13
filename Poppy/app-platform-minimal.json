@@ -1,0 +1,108 @@
+{
+  "id": "app-platform-minimal-0.0.6",
+  "name": "app-platform-minimal",
+  "version": "0.0.6",
+  "description": "Minimal FOLIO platform installation for Poppy BF",
+  "platform": "base",
+  "dependencies": [],
+  "modules": [
+    {
+      "id": "mod-configuration-5.9.2",
+      "name": "mod-configuration",
+      "version": "5.9.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-configuration-5.9.2"
+    },
+    {
+      "id": "mod-permissions-6.4.0",
+      "name": "mod-permissions",
+      "version": "6.4.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-permissions-6.4.0"
+    },
+    {
+      "id": "mod-tags-2.1.0",
+      "name": "mod-tags",
+      "version": "2.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-tags-2.1.0"
+    },
+    {
+      "id": "mod-users-19.2.1",
+      "name": "mod-users",
+      "version": "19.2.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-19.2.1"
+    },
+    {
+      "id": "mod-users-bl-7.6.0",
+      "name": "mod-users-bl",
+      "version": "7.6.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-users-bl-7.6.0"
+    },
+    {
+      "id": "mod-password-validator-3.1.0",
+      "name": "mod-password-validator",
+      "version": "3.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-password-validator-3.1.0"
+    },
+    {
+      "id": "mod-login-keycloak-1.0.0",
+      "name": "mod-login-keycloak",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-login-keycloak-1.0.0"
+    },
+    {
+      "id": "mod-users-keycloak-1.1.0",
+      "name": "mod-users-keycloak",
+      "version": "1.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-users-keycloak-1.1.0"
+    },
+    {
+      "id": "mod-roles-keycloak-1.0.0",
+      "name": "mod-roles-keycloak",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-roles-keycloak-1.0.0"
+    },
+    {
+      "id": "mod-notes-5.1.0",
+      "name": "mod-notes",
+      "version": "5.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-notes-5.1.0"
+    },
+    {
+      "id": "mod-settings-1.0.1",
+      "name": "mod-settings",
+      "version": "1.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-settings-1.0.1"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_developer-8.0.0",
+      "name": "folio_developer",
+      "version": "8.0.0",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_developer-8.0.0"
+    },
+    {
+      "id": "folio_tags-8.0.2",
+      "name": "folio_tags",
+      "version": "8.0.2",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_tags-8.0.2"
+    },
+    {
+      "id": "folio_stripes-core-10.0.4",
+      "name": "folio_stripes-core",
+      "version": "10.0.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_stripes-core-10.0.4"
+    },
+    {
+      "id": "folio_notes-9.0.0",
+      "name": "folio_notes",
+      "version": "9.0.0",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_notes-9.0.0"
+    },
+    {
+      "id": "folio_stripes-smart-components-9.0.1",
+      "name": "folio_stripes-smart-components",
+      "version": "9.0.1",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_stripes-smart-components-9.0.1"
+    }
+  ]
+}

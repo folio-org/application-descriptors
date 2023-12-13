@@ -1,0 +1,645 @@
+{
+  "id": "mod-search-3.0.3",
+  "name": "Search Module",
+  "requires": [
+    {
+      "id": "instance-storage",
+      "version": "10.0"
+    },
+    {
+      "id": "login",
+      "version": "7.0"
+    },
+    {
+      "id": "permissions",
+      "version": "5.3"
+    },
+    {
+      "id": "users",
+      "version": "15.3 16.0"
+    },
+    {
+      "id": "inventory-view",
+      "version": "2.0"
+    },
+    {
+      "id": "instance-reindex",
+      "version": "0.1"
+    },
+    {
+      "id": "authority-reindex",
+      "version": "0.1"
+    },
+    {
+      "id": "alternative-title-types",
+      "version": "1.0"
+    },
+    {
+      "id": "identifier-types",
+      "version": "1.0"
+    },
+    {
+      "id": "call-number-types",
+      "version": "1.0"
+    }
+  ],
+  "provides": [
+    {
+      "id": "indices",
+      "version": "0.6",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/search/index/indices",
+          "permissionsRequired": [
+            "search.index.indices.item.post"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/search/index/mappings",
+          "permissionsRequired": [
+            "search.index.mappings.item.post"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/search/index/records",
+          "permissionsRequired": [
+            "search.index.records.collection.post"
+          ],
+          "modulePermissions": [
+            "inventory-storage.inventory-view.instances.collection.get",
+            "inventory-storage.identifier-types.collection.get",
+            "inventory-storage.alternative-title-types.collection.get",
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/search/index/inventory/reindex",
+          "permissionsRequired": [
+            "search.index.inventory.reindex.post"
+          ],
+          "modulePermissions": [
+            "inventory-storage.instance.reindex.post",
+            "authority-storage.authority.reindex.post",
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/search/index/settings",
+          "permissionsRequired": [
+            "search.index.settings.item.put"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "version": "1.2",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/instances",
+          "permissionsRequired": [
+            "search.instances.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/authorities",
+          "permissionsRequired": [
+            "search.authorities.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/{recordType}/facets",
+          "permissionsRequired": [
+            "search.facets.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/instances/ids",
+          "permissionsRequired": [
+            "search.instances.ids.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/holdings/ids",
+          "permissionsRequired": [
+            "search.holdings.ids.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-ids-streaming",
+      "version": "0.3",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/resources/jobs/{jobId}/ids",
+          "permissionsRequired": [
+            "search.resources.ids.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/resources/jobs/{jobId}",
+          "permissionsRequired": [
+            "search.resources.ids.jobs.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/search/resources/jobs",
+          "permissionsRequired": [
+            "search.resources.ids.jobs.post"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "browse",
+      "version": "1.2",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/browse/call-numbers/instances",
+          "permissionsRequired": [
+            "browse.call-numbers.instances.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/browse/subjects/instances",
+          "permissionsRequired": [
+            "browse.subjects.instances.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/browse/contributors/instances",
+          "permissionsRequired": [
+            "browse.contributors.instances.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/browse/authorities",
+          "permissionsRequired": [
+            "browse.authorities.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search-config",
+      "version": "0.2",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/search/config/languages",
+          "permissionsRequired": [
+            "search.config.languages.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/config/languages",
+          "permissionsRequired": [
+            "search.config.languages.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/search/config/languages/{id}",
+          "permissionsRequired": [
+            "search.config.languages.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/search/config/languages/{id}",
+          "permissionsRequired": [
+            "search.config.languages.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/search/config/features",
+          "permissionsRequired": [
+            "search.config.features.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/search/config/features",
+          "permissionsRequired": [
+            "search.config.features.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/search/config/features/{id}",
+          "permissionsRequired": [
+            "search.config.features.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/search/config/features/{id}",
+          "permissionsRequired": [
+            "search.config.features.item.delete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/_/tenant",
+          "modulePermissions": [
+            "user-tenants.collection.get",
+            "users.collection.get",
+            "users.item.post",
+            "login.item.post",
+            "login.item.delete",
+            "perms.users.get",
+            "perms.users.item.post",
+            "perms.users.assign.immutable",
+            "perms.users.assign.mutable",
+            "inventory-storage.instance.reindex.post",
+            "authority-storage.authority.reindex.post",
+            "inventory-storage.inventory-view.instances.collection.get",
+            "inventory-storage.identifier-types.collection.get",
+            "inventory-storage.alternative-title-types.collection.get",
+            "instance-authority-links.authorities.bulk.post"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE",
+            "GET"
+          ],
+          "pathPattern": "/_/tenant/{id}"
+        }
+      ]
+    }
+  ],
+  "optional": [
+    {
+      "id": "user-tenants",
+      "version": "1.0"
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "search.index.indices.item.post",
+      "displayName": "Search - creates an index",
+      "description": "Creates an index"
+    },
+    {
+      "permissionName": "search.index.mappings.item.post",
+      "displayName": "Search - updates mappings for the index",
+      "description": "Updates mappings for the index"
+    },
+    {
+      "permissionName": "search.index.records.collection.post",
+      "displayName": "Search - saves resource to the search engine",
+      "description": "Saves resource to the search engine"
+    },
+    {
+      "permissionName": "search.index.settings.item.put",
+      "displayName": "Search - updates settings for the index",
+      "description": "Updates settings for the index"
+    },
+    {
+      "permissionName": "search.instances.collection.get",
+      "displayName": "Search - searches instances by given query",
+      "description": "Searches instances by given query"
+    },
+    {
+      "permissionName": "search.authorities.collection.get",
+      "displayName": "Search - searches authorities by given query",
+      "description": "Searches authorities by given query"
+    },
+    {
+      "permissionName": "browse.call-numbers.instances.collection.get",
+      "displayName": "Browse - provides collections of browse items for instance by call number",
+      "description": "Browse instances by given query"
+    },
+    {
+      "permissionName": "browse.subjects.instances.collection.get",
+      "displayName": "Browse - provides collections of browse items for instance by subjects",
+      "description": "Browse instances by given query"
+    },
+    {
+      "permissionName": "browse.contributors.instances.collection.get",
+      "displayName": "Browse - provides collections of browse items for instance by contributors",
+      "description": "Browse instances by given query"
+    },
+    {
+      "permissionName": "browse.authorities.collection.get",
+      "displayName": "Browse - provides collections of browse items for authorities",
+      "description": "Browse authorities by given query"
+    },
+    {
+      "permissionName": "search.config.languages.item.post",
+      "displayName": "Search - adds a language support for multi-lang indexes",
+      "description": "Adds a language support for multi-lang indexes"
+    },
+    {
+      "permissionName": "search.config.languages.collection.get",
+      "displayName": "Search - returns list of all supported languages for multi-lang indexes",
+      "description": "Returns list of all supported languages for multi-lang indexes"
+    },
+    {
+      "permissionName": "search.config.languages.item.put",
+      "displayName": "Search - updates a supported language by id",
+      "description": "Updates a supported language by id"
+    },
+    {
+      "permissionName": "search.config.languages.item.delete",
+      "displayName": "Search - removes a supported language by id",
+      "description": "Removes a supported language by id"
+    },
+    {
+      "permissionName": "search.index.inventory.reindex.post",
+      "displayName": "Search - starts inventory reindex operation",
+      "description": "Starts inventory reindex operation"
+    },
+    {
+      "permissionName": "search.facets.collection.get",
+      "replaces": [
+        "search.instances.facets.collection.get"
+      ],
+      "displayName": "Search - returns facets for a query for given filter options by record type",
+      "description": "Returns facets for a query for given filter options by record type"
+    },
+    {
+      "permissionName": "search.instances.ids.collection.get",
+      "displayName": "Search - returns list of resource ids for a cql query",
+      "description": "Returns list of resource ids for a cql query"
+    },
+    {
+      "permissionName": "search.holdings.ids.collection.get",
+      "displayName": "Search - returns a list of holding ids found for the CQL query by instances",
+      "description": "Returns list of resource ids for a cql query"
+    },
+    {
+      "permissionName": "search.resources.ids.collection.get",
+      "displayName": "Search - returns a list of authority ids found for the CQL query",
+      "description": "Returns list of resource ids for a cql query"
+    },
+    {
+      "permissionName": "search.resources.ids.jobs.get",
+      "displayName": "Job for streaming authority ids",
+      "description": "Returns a job for streaming authority ids by the the CQL query"
+    },
+    {
+      "permissionName": "search.resources.ids.jobs.post",
+      "displayName": "Creates a job for streaming authority ids",
+      "description": "Creates a job for streaming authority ids by the the CQL query"
+    },
+    {
+      "permissionName": "search.config.features.collection.get",
+      "displayName": "Search - returns list of tenant features configuration",
+      "description": "Returns list of all specified features"
+    },
+    {
+      "permissionName": "search.config.features.item.post",
+      "displayName": "Search - adds a feature configuration",
+      "description": "Adds feature configuration"
+    },
+    {
+      "permissionName": "search.config.features.item.put",
+      "displayName": "Search - updates a feature configuration",
+      "description": "Updates feature configuration"
+    },
+    {
+      "permissionName": "search.config.features.item.delete",
+      "displayName": "Search - removes feature configuration",
+      "description": "Removes feature configuration"
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "folioorg/mod-search:3.0.3",
+    "dockerPull": true,
+    "env": [
+      {
+        "name": "ENV",
+        "value": "folio"
+      },
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=85.0"
+      },
+      {
+        "name": "KAFKA_HOST",
+        "value": "kafka"
+      },
+      {
+        "name": "KAFKA_PORT",
+        "value": "9092"
+      },
+      {
+        "name": "KAFKA_SECURITY_PROTOCOL",
+        "value": "PLAINTEXT"
+      },
+      {
+        "name": "KAFKA_SSL_KEYSTORE_LOCATION",
+        "value": ""
+      },
+      {
+        "name": "KAFKA_SSL_KEYSTORE_PASSWORD",
+        "value": ""
+      },
+      {
+        "name": "KAFKA_SSL_TRUSTSTORE_LOCATION",
+        "value": ""
+      },
+      {
+        "name": "KAFKA_SSL_TRUSTSTORE_PASSWORD",
+        "value": ""
+      },
+      {
+        "name": "ELASTICSEARCH_URL",
+        "value": "http://elasticsearch:9200"
+      },
+      {
+        "name": "ELASTICSEARCH_USERNAME",
+        "value": "elastic"
+      },
+      {
+        "name": "ELASTICSEARCH_PASSWORD",
+        "value": "s3cret"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "postgres"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "5432"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "okapi_modules"
+      },
+      {
+        "name": "DB_QUERYTIMEOUT",
+        "value": "60000"
+      },
+      {
+        "name": "DB_CHARSET",
+        "value": "UTF-8"
+      },
+      {
+        "name": "DB_MAXPOOLSIZE",
+        "value": "5"
+      },
+      {
+        "name": "INITIAL_LANGUAGES",
+        "value": "eng"
+      }
+    ],
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 1073741824,
+        "PortBindings": {
+          "8081/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "user": {
+    "type": "module",
+    "permissions": [
+      "inventory-storage.inventory-view.instances.collection.get",
+      "inventory-storage.identifier-types.collection.get",
+      "inventory-storage.alternative-title-types.collection.get",
+      "inventory-storage.call-number-types.collection.get",
+      "users.collection.get",
+      "user-tenants.collection.get"
+    ]
+  }
+}

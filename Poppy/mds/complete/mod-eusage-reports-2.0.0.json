@@ -1,0 +1,364 @@
+{
+  "id": "mod-eusage-reports-2.0.0",
+  "name": "eusage reports",
+  "requires": [
+    {
+      "id": "erm",
+      "version": "6.0"
+    },
+    {
+      "id": "usage-data-providers",
+      "version": "2.6"
+    },
+    {
+      "id": "aggregator-settings",
+      "version": "1.2"
+    },
+    {
+      "id": "counter-reports",
+      "version": "3.1"
+    },
+    {
+      "id": "custom-reports",
+      "version": "1.1"
+    },
+    {
+      "id": "erm-usage-files",
+      "version": "1.0"
+    },
+    {
+      "id": "order-lines",
+      "version": "2.0 3.0"
+    },
+    {
+      "id": "invoice-storage.invoice-lines",
+      "version": "4.0"
+    },
+    {
+      "id": "invoice-storage.invoices",
+      "version": "5.0"
+    },
+    {
+      "id": "finance-storage.budgets",
+      "version": "3.0"
+    },
+    {
+      "id": "finance-storage.fiscal-years",
+      "version": "3.0"
+    },
+    {
+      "id": "finance-storage.transactions",
+      "version": "4.0"
+    }
+  ],
+  "provides": [
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/_/tenant"
+        },
+        {
+          "methods": [
+            "GET",
+            "DELETE"
+          ],
+          "pathPattern": "/_/tenant/{id}"
+        }
+      ]
+    },
+    {
+      "id": "eusage-reports",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/report-titles",
+          "permissionsRequired": [
+            "eusage-reports-report-titles.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/eusage-reports/report-titles",
+          "permissionsRequired": [
+            "eusage-reports-report-titles.collection.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/report-packages",
+          "permissionsRequired": [
+            "eusage-reports-report-packages.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/eusage-reports/report-titles/from-counter",
+          "permissionsRequired": [
+            "eusage-reports-report-titles-from-counter.post"
+          ],
+          "modulePermissions": [
+            "counterreports.collection.get",
+            "counterreports.item.get",
+            "erm.entitlements.collection.get",
+            "erm.entitlements.item.get",
+            "erm.packages.collection.get",
+            "erm.packages.item.get",
+            "erm.resources.collection.get",
+            "erm.resources.item.entitlement.get",
+            "erm.resources.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/title-data",
+          "permissionsRequired": [
+            "eusage-reports-title-data.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/report-data",
+          "permissionsRequired": [
+            "eusage-reports-report-data.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/eusage-reports/report-data/from-agreement",
+          "permissionsRequired": [
+            "eusage-reports-report-data-from-agreement.post"
+          ],
+          "modulePermissions": [
+            "erm.agreements.collection.get",
+            "erm.agreements.item.resources.get",
+            "erm.agreements.item.get",
+            "erm.entitlements.collection.get",
+            "erm.entitlements.item.get",
+            "erm.packages.collection.get",
+            "erm.packages.item.get",
+            "erm.resources.collection.get",
+            "erm.resources.item.entitlement.get",
+            "erm.resources.item.get",
+            "orders.item.get",
+            "orders.po-lines.item.get",
+            "invoice-storage.invoice-lines.collection.get",
+            "invoice-storage.invoice-lines.item.get",
+            "invoice-storage.invoices.item.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.budgets.collection.get",
+            "finance-storage.transactions.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/stored-reports/use-over-time",
+          "permissionsRequired": [
+            "eusage-reports-report-use-over-time.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/stored-reports/reqs-by-date-of-use",
+          "permissionsRequired": [
+            "eusage-reports-report-reqs-by-date-of-use.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/stored-reports/reqs-by-pub-year",
+          "permissionsRequired": [
+            "eusage-reports-report-reqs-by-pub-year.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/stored-reports/cost-per-use",
+          "permissionsRequired": [
+            "eusage-reports-report-cost-per-use.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/eusage-reports/report-data/status/{id}",
+          "permissionsRequired": [
+            "eusage-reports-report-status.get"
+          ]
+        }
+      ]
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "eusage-reports-report-titles.collection.get",
+      "displayName": "eUsage reports - titles get",
+      "description": "Get Counter report titles"
+    },
+    {
+      "permissionName": "eusage-reports-report-titles.collection.post",
+      "displayName": "eUsage reports - titles post",
+      "description": "Post Counter report titles"
+    },
+    {
+      "permissionName": "eusage-reports-report-packages.collection.get",
+      "displayName": "eUsage reports - packages get",
+      "description": "Get report packages"
+    },
+    {
+      "permissionName": "eusage-reports-report-titles-from-counter.post",
+      "displayName": "eUsage reports - Counter reports parse",
+      "description": "Parse counter reports and return them"
+    },
+    {
+      "permissionName": "eusage-reports-title-data.collection.get",
+      "displayName": "eUsage reports - title data get",
+      "description": "Get title data"
+    },
+    {
+      "permissionName": "eusage-reports-report-data.collection.get",
+      "displayName": "eUsage reports - data get",
+      "description": "Get report data"
+    },
+    {
+      "permissionName": "eusage-reports-report-data-from-agreement.post",
+      "displayName": "eUsage reports - Agreement lines parse",
+      "description": "Parse agreement lines and populate report data"
+    },
+    {
+      "permissionName": "eusage-reports-report-use-over-time.get",
+      "displayName": "eUsage reports - use over time",
+      "description": "Get eUsage report for use over time"
+    },
+    {
+      "permissionName": "eusage-reports-report-reqs-by-date-of-use.get",
+      "displayName": "eUsage reports - reqs by date of use",
+      "description": "Get eUsage report for requests by date of use"
+    },
+    {
+      "permissionName": "eusage-reports-report-reqs-by-pub-year.get",
+      "displayName": "eUsage reports - reqs by pub year",
+      "description": "Get eUsage report for requests by publication year"
+    },
+    {
+      "permissionName": "eusage-reports-report-cost-per-use.get",
+      "displayName": "eUsage reports - cost per use",
+      "description": "Get eUsage report for cost per use"
+    },
+    {
+      "permissionName": "eusage-reports-report-status.get",
+      "displayName": "eUsage reports - status",
+      "description": "Get eUsage report metadata (like lastUpdated)"
+    },
+    {
+      "permissionName": "eusage-reports.get-all",
+      "displayName": "eUsage reports - all read only permissions",
+      "description": "Entire set of permissions needed to use all eUsage report GET APIs",
+      "subPermissions": [
+        "eusage-reports-report-titles.collection.get",
+        "eusage-reports-report-packages.collection.get",
+        "eusage-reports-title-data.collection.get",
+        "eusage-reports-report-data.collection.get",
+        "eusage-reports-report-use-over-time.get",
+        "eusage-reports-report-reqs-by-date-of-use.get",
+        "eusage-reports-report-reqs-by-pub-year.get",
+        "eusage-reports-report-cost-per-use.get",
+        "eusage-reports-report-status.get"
+      ]
+    },
+    {
+      "permissionName": "eusage-reports.all",
+      "displayName": "eUsage reports - all permissions",
+      "description": "Entire set of permissions needed to use all eUsage report APIs",
+      "subPermissions": [
+        "eusage-reports.get-all",
+        "eusage-reports-report-titles.collection.post",
+        "eusage-reports-report-titles-from-counter.post",
+        "eusage-reports-report-data-from-agreement.post"
+      ]
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "folioorg/mod-eusage-reports:2.0.0",
+    "dockerPull": true,
+    "env": [
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=66.0"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "postgres"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "5432"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "okapi_modules"
+      },
+      {
+        "name": "DB_QUERYTIMEOUT",
+        "value": "60000"
+      },
+      {
+        "name": "DB_CHARSET",
+        "value": "UTF-8"
+      },
+      {
+        "name": "DB_MAXPOOLSIZE",
+        "value": "5"
+      }
+    ],
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 536870912,
+        "PortBindings": {
+          "8081/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

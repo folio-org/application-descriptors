@@ -1,0 +1,699 @@
+{
+  "id": "mod-consortia-keycloak-1.1.0",
+  "name": "Consortia integration business logic module",
+  "requires": [
+    {
+      "id": "login",
+      "version": "7.3"
+    },
+    {
+      "id": "users",
+      "version": "16.0"
+    },
+    {
+      "id": "users-keycloak",
+      "version": "1.0"
+    },
+    {
+      "id": "user-tenants",
+      "version": "1.0"
+    },
+    {
+      "id": "inventory",
+      "version": "13.0"
+    }
+  ],
+  "optional": [
+    {
+      "id": "capabilities",
+      "version": "1.0"
+    },
+    {
+      "id": "user-capabilities",
+      "version": "1.0"
+    }
+  ],
+  "provides": [
+    {
+      "id": "consortia",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia",
+          "permissionsRequired": [],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}",
+          "permissionsRequired": [
+            "consortia.consortium.item.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia",
+          "permissionsRequired": [
+            "consortia.consortium.item.post"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/consortia/{consortiumId}",
+          "permissionsRequired": [
+            "consortia.consortium.item.put"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/tenants",
+          "permissionsRequired": [],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/tenants",
+          "permissionsRequired": [
+            "consortia.tenants.item.post"
+          ],
+          "modulePermissions": [
+            "consortia.consortia-configuration.item.post",
+            "perms.users.item.put",
+            "perms.users.item.post",
+            "perms.users.assign.immutable",
+            "perms.users.assign.mutable",
+            "users.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/tenants/{tenantId}",
+          "permissionsRequired": [
+            "consortia.tenants.item.put"
+          ],
+          "modulePermissions": [
+            "users.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/tenants/{tenantId}",
+          "permissionsRequired": [
+            "consortia.tenants.item.delete"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/tenants/{tenantId}",
+          "permissionsRequired": [
+            "consortia.tenants.item.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/_self",
+          "permissionsRequired": [],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/tenants/{tenantId}/sync-primary-affiliations",
+          "permissionsRequired": [
+            "consortia.sync-primary-affiliations.item.post"
+          ],
+          "modulePermissions": [
+            "users.collection.get",
+            "consortia.create-primary-affiliations.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/tenants/{tenantId}/create-primary-affiliations",
+          "permissionsRequired": [
+            "consortia.create-primary-affiliations.item.post"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/publications",
+          "permissionsRequired": [
+            "consortia.publications.item.post"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/publications/{publicationId}",
+          "permissionsRequired": [
+            "consortia.publications.item.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/publications/{publicationId}/results",
+          "permissionsRequired": [
+            "consortia.publications-results.item.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/publications/{publicationId}",
+          "permissionsRequired": [
+            "consortia.publications.item.delete"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/user-tenants",
+          "permissionsRequired": [
+            "consortia.user-tenants.collection.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/user-tenants",
+          "permissionsRequired": [
+            "consortia.user-tenants.item.post"
+          ],
+          "modulePermissions": [
+            "users.item.get",
+            "users.item.put",
+            "users.item.post",
+            "perms.users.item.post",
+            "perms.users.get"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/user-tenants",
+          "permissionsRequired": [
+            "consortia.user-tenants.item.delete"
+          ],
+          "modulePermissions": [
+            "users.item.get",
+            "users.item.put",
+            "users.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/user-tenants/{associationId}",
+          "permissionsRequired": [
+            "consortia.user-tenants.item.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia-configuration",
+          "permissionsRequired": [],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia-configuration",
+          "permissionsRequired": [
+            "consortia.consortia-configuration.item.post"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/sharing/instances",
+          "permissionsRequired": [
+            "consortia.sharing-instances.item.post"
+          ],
+          "modulePermissions": [
+            "inventory.instances.item.get",
+            "inventory.instances.item.post",
+            "change-manager.jobexecutions.get",
+            "change-manager.jobexecutions.post",
+            "change-manager.jobexecutions.put",
+            "change-manager.records.post",
+            "instance-authority-links.instances.collection.get",
+            "instance-authority-links.instances.collection.put",
+            "instance-authority.linking-rules.collection.get",
+            "inventory-storage.authorities.collection.get",
+            "inventory-storage.instances.item.get",
+            "source-storage.records.delete",
+            "inventory-storage.instances.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/sharing/instances/{actionId}",
+          "permissionsRequired": [
+            "consortia.sharing-instances.item.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/sharing/instances",
+          "permissionsRequired": [
+            "consortia.sharing-instances.collection.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/sharing/settings",
+          "permissionsRequired": [
+            "consortia.sharing-settings.item.post"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/consortia/{consortiumId}/sharing/settings/{settingId}",
+          "permissionsRequired": [
+            "consortia.sharing-settings.item.delete"
+          ],
+          "modulePermissions": []
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": ["POST"],
+          "pathPattern": "/_/tenant",
+          "modulePermissions": [
+            "users.collection.get",
+            "users.item.post",
+            "login.item.post",
+            "login.item.delete",
+            "perms.users.get",
+            "perms.users.item.post",
+            "perms.users.assign.immutable",
+            "perms.users.assign.mutable"
+          ]
+        },
+        {
+          "methods": ["GET", "DELETE"],
+          "pathPattern": "/_/tenant/{id}"
+        }
+      ]
+    },
+    {
+      "id": "_timer",
+      "version": "1.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [ "POST" ],
+          "pathPattern": "/publications-cleanup",
+          "unit": "day",
+          "delay": "1"
+        }
+      ]
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "consortia.all",
+      "displayName": "Consortia API module - all permissions",
+      "description": "All permissions for consortia module",
+      "subPermissions": [
+        "consortia.tenants.item.post",
+        "consortia.tenants.item.put",
+        "consortia.tenants.item.delete",
+        "consortia.tenants.item.get",
+        "consortia.user-tenants.collection.get",
+        "consortia.user-tenants.item.get",
+        "consortia.consortium.item.post",
+        "consortia.consortium.item.put",
+        "consortia.consortium.item.get",
+        "consortia.user-tenants.item.post",
+        "consortia.user-tenants.item.delete",
+        "consortia.consortia-configuration.item.post",
+        "consortia.inventory.share.local.instance",
+        "consortia.sync-primary-affiliations.item.post",
+        "consortia.create-primary-affiliations.item.post",
+        "consortia.sharing-instances.item.post",
+        "consortia.sharing-instances.item.get",
+        "consortia.sharing-instances.collection.get",
+        "consortia.publications.item.post",
+        "consortia.publications.item.get",
+        "consortia.publications.item.delete",
+        "consortia.publications-results.item.get",
+        "consortia.sharing-settings.item.post",
+        "consortia.sharing-settings.item.delete"
+      ]
+    },
+    {
+      "permissionName": "consortia.user-tenants.item.post",
+      "displayName": "post user_tenant",
+      "description": "Create user_tenant"
+    },
+    {
+      "permissionName": "consortia.tenants.item.post",
+      "displayName": "create tenant",
+      "description": "Create tenant"
+    },
+    {
+      "permissionName": "consortia.tenants.item.put",
+      "displayName": "update tenant",
+      "description": "Update tenant"
+    },
+    {
+      "permissionName": "consortia.tenants.item.delete",
+      "displayName": "delete tenant",
+      "description": "Delete tenant"
+    },
+    {
+      "permissionName": "consortia.tenants.item.get",
+      "displayName": "get tenant details",
+      "description": "Get tenant details"
+    },
+    {
+      "permissionName": "consortia.sync-primary-affiliations.item.post",
+      "displayName": "synchronize consortia primary affiliations",
+      "description": "Synchronize consortia primary affiliations"
+    },
+    {
+      "permissionName": "consortia.create-primary-affiliations.item.post",
+      "displayName": "create consortia primary affiliation",
+      "description": "create consortia primary affiliation"
+    },
+    {
+      "permissionName": "consortia.publications.item.post",
+      "displayName": "publish coordinator post request",
+      "description": "publish coordinator post request"
+    },
+    {
+      "permissionName": "consortia.publications.item.get",
+      "displayName": "publish coordinator get publication details request",
+      "description": "publish coordinator get publication details request"
+    },
+    {
+      "permissionName": "consortia.publications-results.item.get",
+      "displayName": "publish coordinator results",
+      "description": "publish coordinator results"
+    },
+    {
+      "permissionName": "consortia.publications.item.delete",
+      "displayName": "delete publication",
+      "description": "Delete publication"
+    },
+    {
+      "permissionName": "consortia.user-tenants.collection.get",
+      "displayName": "get user tenants",
+      "description": "Get List of user tenants"
+    },
+    {
+      "permissionName": "consortia.user-tenants.item.delete",
+      "displayName": "delete user tenant",
+      "description": "Delete user tenant"
+    },
+    {
+      "permissionName": "consortia.user-tenants.item.get",
+      "displayName": "get user tenant",
+      "description": "Get user and tenant association"
+    },
+    {
+      "permissionName": "consortia.consortium.item.post",
+      "displayName": "create consortium",
+      "description": "Create consortium"
+    },
+    {
+      "permissionName": "consortia.consortium.item.get",
+      "displayName": "get consortium",
+      "description": "Get consortium"
+    },
+    {
+      "permissionName": "consortia.consortium.item.put",
+      "displayName": "update consortium",
+      "description": "Update consortium"
+    },
+    {
+      "permissionName": "consortia.consortia-configuration.item.post",
+      "displayName": "create consortia configuration",
+      "description": "Create consortia configuration"
+    },
+    {
+      "permissionName": "consortia.inventory.share.local.instance",
+      "displayName": "Inventory: Share local instance with consortium",
+      "description": "Inventory: Share local instance with consortium",
+      "subPermissions": [
+        "consortia.sharing-instances.item.post",
+        "consortia.sharing-instances.item.get",
+        "consortia.sharing-instances.collection.get",
+        "inventory-storage.authorities.collection.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "consortia.sharing-instances.item.post",
+      "displayName": "create sharing instance",
+      "description": "Create sharing instance"
+    },
+    {
+      "permissionName": "consortia.sharing-instances.item.get",
+      "displayName": "get sharing instance",
+      "description": "Get sharing instance"
+    },
+    {
+      "permissionName": "consortia.sharing-instances.collection.get",
+      "displayName": "get sharing instances",
+      "description": "Get List of sharing instances"
+    },
+    {
+      "permissionName": "consortia.sharing-settings.item.post",
+      "displayName": "post sharing setting",
+      "description": "Create sharing setting"
+    },
+    {
+      "permissionName": "consortia.sharing-settings.item.delete",
+      "displayName": "delete sharing setting",
+      "description": "Delete sharing setting"
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "mod-consortia-keycloak:1.1.0",
+    "dockerPull": false,
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 702293850,
+        "PortBindings": {
+          "8081/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    },
+    "env": [
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=66.0"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "postgres"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "5432"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "okapi_modules"
+      },
+      {
+        "name": "DB_QUERYTIMEOUT",
+        "value": "60000"
+      },
+      {
+        "name": "DB_CHARSET",
+        "value": "UTF-8"
+      },
+      {
+        "name": "DB_MAXPOOLSIZE",
+        "value": "5"
+      },
+      {
+        "name": "KAFKA_HOST",
+        "value": "10.0.2.15"
+      },
+      {
+        "name": "KAFKA_PORT",
+        "value": "9092"
+      },
+      {
+        "name": "OKAPI_URL",
+        "value": "http://okapi:9130"
+      },
+      {
+        "name": "ENV",
+        "value": "folio"
+      }
+    ]
+  },
+  "user": {
+    "type": "module",
+    "permissions": [
+      "consortia.consortia-configuration.item.post",
+      "users.collection.get",
+      "users.item.get",
+      "users.item.post",
+      "users.item.put",
+      "users.item.delete",
+      "perms.users.item.put",
+      "perms.users.item.post",
+      "perms.users.item.delete",
+      "perms.users.assign.immutable",
+      "perms.users.assign.mutable",
+      "perms.users.get",
+      "user-tenants.item.post",
+      "consortia.sync-primary-affiliations.item.post",
+      "consortia.create-primary-affiliations.item.post",
+      "departments.item.post",
+      "departments.item.put",
+      "departments.item.delete",
+      "usergroups.item.post",
+      "usergroups.item.put",
+      "usergroups.item.delete",
+      "inventory-storage.material-types.item.post",
+      "inventory-storage.material-types.item.put",
+      "inventory-storage.material-types.item.delete",
+      "inventory-storage.loan-types.item.post",
+      "inventory-storage.loan-types.item.put",
+      "inventory-storage.loan-types.item.delete",
+      "inventory-storage.item-note-types.item.post",
+      "inventory-storage.item-note-types.item.put",
+      "inventory-storage.item-note-types.item.delete",
+      "inventory-storage.call-number-types.item.post",
+      "inventory-storage.call-number-types.item.put",
+      "inventory-storage.call-number-types.item.delete",
+      "inventory-storage.classification-types.item.post",
+      "inventory-storage.classification-types.item.put",
+      "inventory-storage.classification-types.item.delete",
+      "inventory-storage.electronic-access-relationships.item.post",
+      "inventory-storage.electronic-access-relationships.item.put",
+      "inventory-storage.electronic-access-relationships.item.delete",
+      "inventory-storage.holdings-note-types.item.post",
+      "inventory-storage.holdings-note-types.item.put",
+      "inventory-storage.holdings-note-types.item.delete",
+      "inventory-storage.holdings-types.item.post",
+      "inventory-storage.holdings-types.item.put",
+      "inventory-storage.holdings-types.item.delete",
+      "inventory-storage.statistical-codes.item.post",
+      "inventory-storage.statistical-codes.item.put",
+      "inventory-storage.statistical-codes.item.delete",
+      "inventory-storage.statistical-code-types.item.post",
+      "inventory-storage.statistical-code-types.item.put",
+      "inventory-storage.statistical-code-types.item.delete",
+      "inventory-storage.identifier-types.item.post",
+      "inventory-storage.identifier-types.item.put",
+      "inventory-storage.identifier-types.item.delete",
+      "inventory-storage.nature-of-content-terms.item.post",
+      "inventory-storage.nature-of-content-terms.item.put",
+      "inventory-storage.nature-of-content-terms.item.delete",
+      "inventory-storage.modes-of-issuance.item.post",
+      "inventory-storage.modes-of-issuance.item.put",
+      "inventory-storage.modes-of-issuance.item.delete",
+      "inventory-storage.instance-statuses.item.post",
+      "inventory-storage.instance-statuses.item.put",
+      "inventory-storage.instance-statuses.item.delete",
+      "inventory-storage.instance-types.item.post",
+      "inventory-storage.instance-types.item.put",
+      "inventory-storage.instance-types.item.delete",
+      "inventory-storage.instance-note-types.item.post",
+      "inventory-storage.instance-note-types.item.put",
+      "inventory-storage.instance-note-types.item.delete",
+      "inventory-storage.instance-formats.item.post",
+      "inventory-storage.instance-formats.item.put",
+      "inventory-storage.instance-formats.item.delete",
+      "inventory-storage.contributor-types.item.post",
+      "inventory-storage.contributor-types.item.put",
+      "inventory-storage.contributor-types.item.delete",
+      "inventory-storage.alternative-title-types.item.post",
+      "inventory-storage.alternative-title-types.item.put",
+      "inventory-storage.alternative-title-types.item.delete",
+      "circulation-storage.cancellation-reasons.item.post",
+      "circulation-storage.cancellation-reasons.item.put",
+      "circulation-storage.cancellation-reasons.item.delete",
+      "user-settings.custom-fields.item.post",
+      "user-settings.custom-fields.collection.get",
+      "ui-users.editperms"
+    ]
+  }
+}
