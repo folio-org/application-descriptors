@@ -1,0 +1,28 @@
+{
+  "id": "app-core-storage-0.0.1",
+  "name": "app-core-storage",
+  "version": "0.0.1",
+  "description": "Circulation and Inventory storages application for Folio Orchid release",
+  "dependencies": [
+    {
+      "id": "app-service-communication-0.0.1",
+      "name": "app-service-communication",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-inventory-storage-26.0.0",
+      "name": "mod-inventory-storage",
+      "version": "26.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-inventory-storage-26.0.0"
+    },
+    {
+      "id": "mod-circulation-storage-16.0.1",
+      "name": "mod-circulation-storage",
+      "version": "16.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-circulation-storage-16.0.1"
+    }
+  ],
+  "uiModules": []
+}

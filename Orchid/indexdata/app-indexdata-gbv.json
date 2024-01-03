@@ -1,0 +1,29 @@
+{
+  "id": "app-indexdata-gbv-0.0.1",
+  "name": "app-indexdata-gbv",
+  "version": "0.0.1",
+  "description": "Folio gbv application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-platform-minimal-0.0.4",
+      "name": "app-platform-minimal",
+      "version": "0.0.4"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-harvester-admin-1.0.0",
+      "name": "mod-harvester-admin",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-harvester-admin-1.0.0"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "indexdata_harvester-admin-1.0.3",
+      "name": "indexdata_harvester-admin",
+      "version": "1.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/indexdata_harvester-admin-1.0.3"
+    }
+  ]
+}

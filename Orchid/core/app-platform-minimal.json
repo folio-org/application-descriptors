@@ -1,0 +1,108 @@
+{
+  "id": "app-platform-minimal-0.0.4",
+  "name": "app-platform-minimal",
+  "version": "0.0.4",
+  "description": "Minimal FOLIO platform installation for Orchid",
+  "platform": "base",
+  "dependencies": [],
+  "modules": [
+    {
+      "id": "mod-configuration-5.9.1",
+      "name": "mod-configuration",
+      "version": "5.9.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-configuration-5.9.1"
+    },
+    {
+      "id": "mod-permissions-6.3.2",
+      "name": "mod-permissions",
+      "version": "6.3.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-permissions-6.3.2"
+    },
+    {
+      "id": "mod-tags-2.0.1",
+      "name": "mod-tags",
+      "version": "2.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-tags-2.0.1"
+    },
+    {
+      "id": "mod-users-19.1.1",
+      "name": "mod-users",
+      "version": "19.1.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-users-19.1.1"
+    },
+    {
+      "id": "mod-users-bl-7.5.0",
+      "name": "mod-users-bl",
+      "version": "7.5.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-users-bl-7.5.0"
+    },
+    {
+      "id": "mod-password-validator-3.0.0",
+      "name": "mod-password-validator",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-password-validator-3.0.0"
+    },
+    {
+      "id": "mod-login-keycloak-1.0.0",
+      "name": "mod-login-keycloak",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-login-keycloak-1.0.0"
+    },
+    {
+      "id": "mod-users-keycloak-1.1.0",
+      "name": "mod-users-keycloak",
+      "version": "1.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-users-keycloak-1.1.0"
+    },
+    {
+      "id": "mod-roles-keycloak-1.0.0",
+      "name": "mod-roles-keycloak",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-roles-keycloak-1.0.0"
+    },
+    {
+      "id": "mod-notes-5.0.1",
+      "name": "mod-notes",
+      "version": "5.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-notes-5.0.1"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_developer-7.0.0",
+      "name": "folio_developer",
+      "version": "7.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_developer-7.0.0"
+    },
+    {
+      "id": "folio_tags-7.0.0",
+      "name": "folio_tags",
+      "version": "7.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_tags-7.0.0"
+    },
+    {
+      "id": "folio_stripes-core-9.0.8",
+      "name": "folio_stripes-core",
+      "version": "9.0.8",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_stripes-core-9.0.8"
+    },
+    {
+      "id": "folio_users-9.0.3",
+      "name": "folio_users",
+      "version": "9.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_users-9.0.3"
+    },
+    {
+      "id": "folio_notes-8.0.0",
+      "name": "folio_notes",
+      "version": "8.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_notes-8.0.0"
+    },
+    {
+      "id": "folio_stripes-smart-components-8.0.3",
+      "name": "folio_stripes-smart-components",
+      "version": "8.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_stripes-smart-components-8.0.3"
+    }
+  ]
+}

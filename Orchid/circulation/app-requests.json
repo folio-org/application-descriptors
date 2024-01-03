@@ -1,0 +1,23 @@
+{
+  "id": "app-requests-0.0.1",
+  "name": "app-requests",
+  "version": "0.0.1",
+  "description": "Folio request's application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [],
+  "uiModules": [
+    {
+      "id": "folio_requests-8.0.2",
+      "name": "folio_requests",
+      "version": "8.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_requests-8.0.2"
+    }
+  ]
+}

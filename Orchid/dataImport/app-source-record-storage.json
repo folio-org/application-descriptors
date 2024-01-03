@@ -1,0 +1,23 @@
+{
+  "id": "app-source-record-storage-0.0.1",
+  "name": "app-source-record-storage",
+  "version": "0.0.1",
+  "description": "Folio SRS Application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-platform-minimal-0.0.4",
+      "name": "app-platform-minimal",
+      "version": "0.0.4"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-source-record-storage-5.6.11",
+      "name": "mod-source-record-storage",
+      "version": "5.6.11",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-source-record-storage-5.6.11"
+    }
+  ],
+  "uiModules": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "app-invoicing-0.0.1",
+  "name": "app-invoicing",
+  "version": "0.0.1",
+  "description": "Folio invoicing application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-orders-core-0.0.1",
+      "name": "app-orders-core",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-organization-core-0.0.1",
+      "name": "app-organization-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-invoice-5.6.5",
+      "name": "mod-invoice",
+      "version": "5.6.5",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-invoice-5.6.5"
+    },
+    {
+      "id": "mod-invoice-storage-5.6.0",
+      "name": "mod-invoice-storage",
+      "version": "5.6.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-invoice-storage-5.6.0"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_invoice-4.0.1",
+      "name": "folio_invoice",
+      "version": "4.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_invoice-4.0.1"
+    }
+  ]
+}

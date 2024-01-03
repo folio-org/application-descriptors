@@ -1,0 +1,22 @@
+{
+  "id": "app-tenant-settings-0.0.1",
+  "name": "app-tenant-settings",
+  "version": "0.0.1",
+  "platform": "tenant",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [],
+  "uiModules": [
+    {
+      "id": "folio_tenant-settings-7.4.0",
+      "name": "folio_tenant-settings",
+      "version": "7.4.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_tenant-settings-7.4.0"
+    }
+  ]
+}

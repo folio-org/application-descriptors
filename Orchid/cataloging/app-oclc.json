@@ -1,0 +1,29 @@
+{
+  "id": "app-oclc-0.0.1",
+  "name": "app-oclc",
+  "version": "0.0.1",
+  "description": "Folio OCLC Application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-data-import-0.0.1",
+      "name": "app-data-import",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-copycat-1.4.0",
+      "name": "mod-copycat",
+      "version": "1.4.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-copycat-1.4.0"
+    },
+    {
+      "id": "edge-connexion-1.0.6",
+      "name": "edge-connexion",
+      "version": "1.0.6",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-connexion-1.0.6"
+    }
+  ],
+  "uiModules": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "app-ebsconet-0.0.1",
+  "name": "app-ebsconet",
+  "version": "0.0.1",
+  "description": "Folio EBSCONet application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-orders-core-0.0.1",
+      "name": "app-orders-core",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-organization-core-0.0.1",
+      "name": "app-organization-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-ebsconet-2.0.0",
+      "name": "mod-ebsconet",
+      "version": "2.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-ebsconet-2.0.0"
+    }
+  ],
+  "uiModules": []
+}

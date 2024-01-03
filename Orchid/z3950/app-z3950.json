@@ -1,0 +1,22 @@
+{
+  "id": "app-z3950-0.0.1",
+  "name": "app-z3950",
+  "version": "0.0.1",
+  "platform": "z3950",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "Net-Z3950-FOLIO-3.3.2",
+      "name": "Net-Z3950-FOLIO",
+      "version": "3.3.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/Net-Z3950-FOLIO-3.3.2"
+    }
+  ],
+  "uiModules": []
+}

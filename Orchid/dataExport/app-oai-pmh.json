@@ -1,0 +1,41 @@
+{
+  "id": "app-oai-pmh-0.0.1",
+  "name": "app-oai-pmh",
+  "version": "0.0.1",
+  "description": "FOLIO OAI-PMH Application for Orchid release",
+  "platform": "base",
+  "dependencies": [
+    {
+      "id": "app-core-storage-0.0.1",
+      "name": "app-core-storage",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-source-record-storage-0.0.1",
+      "name": "app-source-record-storage",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-oai-pmh-3.11.3",
+      "name": "mod-oai-pmh",
+      "version": "3.11.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-oai-pmh-3.11.3"
+    },
+    {
+      "id": "edge-oai-pmh-2.6.1",
+      "name": "edge-oai-pmh",
+      "version": "2.6.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-oai-pmh-2.6.1"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_oai-pmh-4.0.1",
+      "name": "folio_oai-pmh",
+      "version": "4.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_oai-pmh-4.0.1"
+    }
+  ]
+}

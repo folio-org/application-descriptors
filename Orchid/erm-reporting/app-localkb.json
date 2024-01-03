@@ -1,0 +1,28 @@
+{
+  "id": "app-localkb-0.0.1",
+  "name": "app-localkb",
+  "version": "0.0.1",
+  "description": "Folio local KB application for orchid release",
+  "dependencies": [
+    {
+      "id": "app-agreements-0.0.1",
+      "name": "app-agreements",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [],
+  "uiModules": [
+    {
+      "id": "folio_local-kb-admin-6.0.0",
+      "name": "folio_local-kb-admin",
+      "version": "6.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_local-kb-admin-6.0.0"
+    },
+    {
+      "id": "folio_plugin-find-eresource-5.0.2",
+      "name": "folio_plugin-find-eresource",
+      "version": "5.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-eresource-5.0.2"
+    }
+  ]
+}

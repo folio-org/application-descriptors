@@ -1,0 +1,30 @@
+{
+  "id": "app-quick-marc-0.0.1",
+  "name": "app-quick-marc",
+  "version": "0.0.1",
+  "description": "Folio quick Marc application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-data-import-0.0.1",
+      "name": "app-data-import",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-quick-marc-3.0.0",
+      "name": "mod-quick-marc",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-quick-marc-3.0.0"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_quick-marc-6.0.2",
+      "name": "folio_quick-marc",
+      "version": "6.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_quick-marc-6.0.2"
+    }
+  ]
+}

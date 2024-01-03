@@ -1,0 +1,41 @@
+{
+  "id": "app-service-communication-0.0.1",
+  "name": "app-service-communication",
+  "version": "0.0.1",
+  "platform": "system",
+  "dependencies": [
+    {
+      "id": "app-platform-minimal-0.0.4",
+      "name": "app-platform-minimal",
+      "version": "0.0.4"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-graphql-1.11.0",
+      "name": "mod-graphql",
+      "version": "1.11.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-graphql-1.11.0"
+    },
+    {
+      "id": "mod-pubsub-2.9.1",
+      "name": "mod-pubsub",
+      "version": "2.9.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-pubsub-2.9.1"
+    },
+    {
+      "id": "mod-service-interaction-2.2.2",
+      "name": "mod-service-interaction",
+      "version": "2.2.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-service-interaction-2.2.2"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_dashboard-4.0.1",
+      "name": "folio_dashboard",
+      "version": "4.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_dashboard-4.0.1"
+    }
+  ]
+}

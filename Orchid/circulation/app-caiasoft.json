@@ -1,0 +1,23 @@
+{
+  "id": "app-caiasoft-0.0.1",
+  "name": "app-caiasoft",
+  "version": "0.0.1",
+  "description": "Folio caiasoft application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-remote-storage-0.0.1",
+      "name": "app-remote-storage",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "edge-caiasoft-2.0.0",
+      "name": "edge-caiasoft",
+      "version": "2.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-caiasoft-2.0.0"
+    }
+  ],
+  "uiModules": []
+}

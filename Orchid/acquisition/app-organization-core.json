@@ -1,0 +1,28 @@
+{
+  "id": "app-organization-core-0.0.1",
+  "name": "app-organization-core",
+  "version": "0.0.1",
+  "description": "Folio organization core application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-orders-core-0.0.1",
+      "name": "app-orders-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-organizations-1.7.0",
+      "name": "mod-organizations",
+      "version": "1.7.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-organizations-1.7.0"
+    },
+    {
+      "id": "mod-organizations-storage-4.5.2",
+      "name": "mod-organizations-storage",
+      "version": "4.5.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-organizations-storage-4.5.2"
+    }
+  ],
+  "uiModules": []
+}

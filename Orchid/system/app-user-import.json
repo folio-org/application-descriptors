@@ -1,0 +1,21 @@
+{
+  "id": "app-user-import-0.0.1",
+  "name": "app-user-import",
+  "version": "0.0.1",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-user-import-3.7.2",
+      "name": "mod-user-import",
+      "version": "3.7.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-user-import-3.7.2"
+    }
+  ],
+  "uiModules": []
+}

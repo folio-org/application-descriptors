@@ -1,0 +1,33 @@
+{
+  "id": "app-orders-core-0.0.1",
+  "name": "app-orders-core",
+  "version": "0.0.1",
+  "description": "Folio orders core application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-finance-core-0.0.1",
+      "name": "app-finance-core",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-orders-12.6.9",
+      "name": "mod-orders",
+      "version": "12.6.9",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-orders-12.6.9"
+    },
+    {
+      "id": "mod-orders-storage-13.5.0",
+      "name": "mod-orders-storage",
+      "version": "13.5.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-orders-storage-13.5.0"
+    }
+  ],
+  "uiModules": []
+}

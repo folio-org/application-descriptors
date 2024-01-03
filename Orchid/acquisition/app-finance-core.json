@@ -1,0 +1,28 @@
+{
+  "id": "app-finance-core-0.0.1",
+  "name": "app-finance-core",
+  "version": "0.0.1",
+  "description": "Folio finance core application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-platform-minimal-0.0.4",
+      "name": "app-platform-minimal",
+      "version": "0.0.4"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-finance-storage-8.4.2",
+      "name": "mod-finance-storage",
+      "version": "8.4.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-finance-storage-8.4.2"
+    },
+    {
+      "id": "mod-finance-4.7.1",
+      "name": "mod-finance",
+      "version": "4.7.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-finance-4.7.1"
+    }
+  ],
+  "uiModules": []
+}

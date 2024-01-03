@@ -1,0 +1,45 @@
+{
+  "id": "app-organizations-0.0.1",
+  "name": "app-organizations",
+  "version": "0.0.1",
+  "description": "Folio organizations application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-data-export-0.0.1",
+      "name": "app-data-export",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-organization-core-0.0.1",
+      "name": "app-organization-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [],
+  "uiModules": [
+    {
+      "id": "folio_organizations-4.0.0",
+      "name": "folio_organizations",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_organizations-4.0.0"
+    },
+    {
+      "id": "folio_plugin-find-organization-4.0.0",
+      "name": "folio_plugin-find-organization",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-organization-4.0.0"
+    },
+    {
+      "id": "folio_plugin-find-contact-4.0.0",
+      "name": "folio_plugin-find-contact",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-contact-4.0.0"
+    },
+    {
+      "id": "folio_plugin-find-interface-4.0.0",
+      "name": "folio_plugin-find-interface",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-interface-4.0.0"
+    }
+  ]
+}
