@@ -1,0 +1,47 @@
+{
+  "id": "app-notification-0.0.1",
+  "name": "app-notification",
+  "version": "0.0.1",
+  "description": "Folio notification application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-core-storage-0.0.1",
+      "name": "app-core-storage",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-email-1.15.3",
+      "name": "mod-email",
+      "version": "1.15.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-email-1.15.3"
+    },
+    {
+      "id": "mod-event-config-2.5.0",
+      "name": "mod-event-config",
+      "version": "2.5.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-event-config-2.5.0"
+    },
+    {
+      "id": "mod-notify-3.0.0",
+      "name": "mod-notify",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-notify-3.0.0"
+    },
+    {
+      "id": "mod-sender-1.10.0",
+      "name": "mod-sender",
+      "version": "1.10.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-sender-1.10.0"
+    },
+    {
+      "id": "mod-template-engine-1.18.0",
+      "name": "mod-template-engine",
+      "version": "1.18.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-template-engine-1.18.0"
+    }
+  ],
+  "uiModules": []
+}

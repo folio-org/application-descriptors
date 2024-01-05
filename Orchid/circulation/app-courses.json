@@ -1,0 +1,30 @@
+{
+  "id": "app-courses-0.0.1",
+  "name": "app-courses",
+  "version": "0.0.1",
+  "description": "Folio courses application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-core-storage-0.0.1",
+      "name": "app-core-storage",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-courses-1.4.7",
+      "name": "mod-courses",
+      "version": "1.4.7",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-courses-1.4.7"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_courses-5.4.0",
+      "name": "folio_courses",
+      "version": "5.4.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_courses-5.4.0"
+    }
+  ]
+}

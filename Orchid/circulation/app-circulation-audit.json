@@ -1,0 +1,30 @@
+{
+  "id": "app-circulation-audit-0.0.1",
+  "name": "app-circulation-audit",
+  "version": "0.0.1",
+  "description": "Folio circulation audit application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-audit-2.7.0",
+      "name": "mod-audit",
+      "version": "2.7.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-audit-2.7.0"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_circulation-log-3.0.0",
+      "name": "folio_circulation-log",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_circulation-log-3.0.0"
+    }
+  ]
+}

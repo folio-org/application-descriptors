@@ -1,0 +1,36 @@
+{
+  "id": "app-data-import-0.0.1",
+  "name": "app-data-import",
+  "version": "0.0.1",
+  "description": "FOLIO Data Import Application for Orchid release",
+  "platform": "base",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-data-import-2.7.1",
+      "name": "mod-data-import",
+      "version": "2.7.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-import-2.7.1"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_data-import-6.0.8",
+      "name": "folio_data-import",
+      "version": "6.0.8",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_data-import-6.0.8"
+    },
+    {
+      "id": "folio_plugin-find-import-profile-6.0.1",
+      "name": "folio_plugin-find-import-profile",
+      "version": "6.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-import-profile-6.0.1"
+    }
+  ]
+}

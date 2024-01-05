@@ -1,0 +1,36 @@
+{
+  "id": "app-inn-reach-0.0.1",
+  "name": "app-inn-reach",
+  "version": "0.0.1",
+  "description": "Folio inn-reach application for orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-inn-reach-3.1.0",
+      "name": "mod-inn-reach",
+      "version": "3.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-inn-reach-3.1.0"
+    },
+    {
+      "id": "edge-inn-reach-3.0.2",
+      "name": "edge-inn-reach",
+      "version": "3.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-inn-reach-3.0.2"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_inn-reach-3.0.0",
+      "name": "folio_inn-reach",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_inn-reach-3.0.0"
+    }
+  ]
+}

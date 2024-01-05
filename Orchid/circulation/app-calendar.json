@@ -1,0 +1,30 @@
+{
+  "id": "app-calendar-0.0.1",
+  "name": "app-calendar",
+  "version": "0.0.1",
+  "description": "FOLIO calendar application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-core-storage-0.0.1",
+      "name": "app-core-storage",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-calendar-2.4.2",
+      "name": "mod-calendar",
+      "version": "2.4.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-calendar-2.4.2"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_calendar-9.2.1",
+      "name": "folio_calendar",
+      "version": "9.2.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_calendar-9.2.1"
+    }
+  ]
+}

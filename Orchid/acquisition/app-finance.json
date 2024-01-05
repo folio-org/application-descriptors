@@ -1,0 +1,28 @@
+{
+  "id": "app-finance-0.0.1",
+  "name": "app-finance",
+  "version": "0.0.1",
+  "description": "Folio finance application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-invoicing-0.0.1",
+      "name": "app-invoicing",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [],
+  "uiModules": [
+    {
+      "id": "folio_finance-4.0.4",
+      "name": "folio_finance",
+      "version": "4.0.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_finance-4.0.4"
+    },
+    {
+      "id": "folio_plugin-find-fund-2.0.0",
+      "name": "folio_plugin-find-fund",
+      "version": "2.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-fund-2.0.0"
+    }
+  ]
+}

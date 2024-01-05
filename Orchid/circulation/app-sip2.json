@@ -1,0 +1,23 @@
+{
+  "id": "app-sip2-0.0.1",
+  "name": "app-sip2",
+  "version": "0.0.1",
+  "description": "Folio SIP2 application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "edge-sip2-3.0.0",
+      "name": "edge-sip2",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-sip2-3.0.0"
+    }
+  ],
+  "uiModules": []
+}

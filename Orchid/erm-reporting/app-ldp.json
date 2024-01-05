@@ -1,0 +1,35 @@
+{
+  "id": "app-ldp-0.0.1",
+  "name": "app-ldp",
+  "version": "0.0.1",
+  "description": "Folio LDP application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-platform-minimal-0.0.4",
+      "name": "app-platform-minimal",
+      "version": "0.0.4"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-ldp-1.0.8",
+      "name": "mod-ldp",
+      "version": "1.0.8",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-ldp-1.0.8"
+    },
+    {
+      "id": "mod-settings-1.0.0",
+      "name": "mod-settings",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-settings-1.0.0"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_ldp-1.10.0",
+      "name": "folio_ldp",
+      "version": "1.10.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_ldp-1.10.0"
+    }
+  ]
+}

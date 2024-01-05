@@ -1,0 +1,27 @@
+{
+  "id": "app-edge-orders-0.0.1",
+  "name": "app-edge-orders",
+  "version": "0.0.1",
+  "description": "Folio Edge orders application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-gobi-0.0.1",
+      "name": "app-gobi",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-ebsconet-0.0.1",
+      "name": "app-ebsconet",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "edge-orders-2.8.1",
+      "name": "edge-orders",
+      "version": "2.8.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-orders-2.8.1"
+    }
+  ],
+  "uiModules": []
+}

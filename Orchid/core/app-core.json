@@ -1,0 +1,141 @@
+{
+  "id": "app-core-0.0.1",
+  "name": "app-core",
+  "version": "0.0.1",
+  "description": "Folio Circulation and Inventory application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-source-record-storage-0.0.1",
+      "name": "app-source-record-storage",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-calendar-0.0.1",
+      "name": "app-calendar",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-notification-0.0.1",
+      "name": "app-notification",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-search-2.0.1",
+      "name": "mod-search",
+      "version": "2.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-search-2.0.1"
+    },
+    {
+      "id": "mod-inventory-20.0.7",
+      "name": "mod-inventory",
+      "version": "20.0.7",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-inventory-20.0.7"
+    },
+    {
+      "id": "mod-circulation-23.5.7",
+      "name": "mod-circulation",
+      "version": "23.5.7",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-circulation-23.5.7"
+    },
+    {
+      "id": "mod-feesfines-18.2.1",
+      "name": "mod-feesfines",
+      "version": "18.2.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-feesfines-18.2.1"
+    },
+    {
+      "id": "mod-patron-blocks-1.8.0",
+      "name": "mod-patron-blocks",
+      "version": "1.8.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-patron-blocks-1.8.0"
+    },
+    {
+      "id": "mod-entities-links-1.0.2",
+      "name": "mod-entities-links",
+      "version": "1.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-entities-links-1.0.2"
+    },
+    {
+      "id": "mod-source-record-manager-3.6.4",
+      "name": "mod-source-record-manager",
+      "version": "3.6.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-source-record-manager-3.6.4"
+    },
+    {
+      "id": "mod-di-converter-storage-2.0.5",
+      "name": "mod-di-converter-storage",
+      "version": "2.0.5",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-di-converter-storage-2.0.5"
+    },
+    {
+      "id": "mod-patron-5.5.2",
+      "name": "mod-patron",
+      "version": "5.5.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-patron-5.5.2"
+    },
+    {
+      "id": "mod-data-export-4.7.1",
+      "name": "mod-data-export",
+      "version": "4.7.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-4.7.1"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_inventory-9.4.5",
+      "name": "folio_inventory",
+      "version": "9.4.5",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_inventory-9.4.5"
+    },
+    {
+      "id": "folio_servicepoints-6.3.0",
+      "name": "folio_servicepoints",
+      "version": "6.3.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_servicepoints-6.3.0"
+    },
+    {
+      "id": "folio_plugin-create-inventory-records-3.3.0",
+      "name": "folio_plugin-create-inventory-records",
+      "version": "3.3.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-create-inventory-records-3.3.0"
+    },
+    {
+      "id": "folio_plugin-find-instance-6.5.0",
+      "name": "folio_plugin-find-instance",
+      "version": "6.5.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-instance-6.5.0"
+    },
+    {
+      "id": "folio_plugin-find-package-title-5.0.0",
+      "name": "folio_plugin-find-package-title",
+      "version": "5.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-package-title-5.0.0"
+    },
+    {
+      "id": "folio_checkin-8.0.1",
+      "name": "folio_checkin",
+      "version": "8.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_checkin-8.0.1"
+    },
+    {
+      "id": "folio_checkout-9.0.1",
+      "name": "folio_checkout",
+      "version": "9.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_checkout-9.0.1"
+    },
+    {
+      "id": "folio_circulation-8.0.1",
+      "name": "folio_circulation",
+      "version": "8.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_circulation-8.0.1"
+    },
+    {
+      "id": "folio_plugin-find-user-6.4.0",
+      "name": "folio_plugin-find-user",
+      "version": "6.4.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-user-6.4.0"
+    }
+  ]
+}

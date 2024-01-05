@@ -1,0 +1,22 @@
+{
+  "id": "app-comparisons-0.0.1",
+  "name": "app-comparisons",
+  "version": "0.0.1",
+  "description": "Folio comparisons application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-agreements-0.0.1",
+      "name": "app-agreements",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [],
+  "uiModules": [
+    {
+      "id": "folio_erm-comparisons-5.0.0",
+      "name": "folio_erm-comparisons",
+      "version": "5.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_erm-comparisons-5.0.0"
+    }
+  ]
+}

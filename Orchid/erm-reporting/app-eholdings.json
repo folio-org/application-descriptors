@@ -1,0 +1,29 @@
+{
+  "id": "app-eholdings-0.0.1",
+  "name": "app-eholdings",
+  "version": "0.0.1",
+  "description": "Folio Eholdings application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-agreements-0.0.1",
+      "name": "app-agreements",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-kb-ebsco-java-3.13.0",
+      "name": "mod-kb-ebsco-java",
+      "version": "3.13.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-kb-ebsco-java-3.13.0"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_eholdings-8.0.3",
+      "name": "folio_eholdings",
+      "version": "8.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_eholdings-8.0.3"
+    }
+  ]
+}

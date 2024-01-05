@@ -1,0 +1,23 @@
+{
+  "id": "app-dematic-0.0.1",
+  "name": "app-dematic",
+  "version": "0.0.1",
+  "description": "Folio dematic application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-remote-storage-0.0.1",
+      "name": "app-remote-storage",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "edge-dematic-2.0.1",
+      "name": "edge-dematic",
+      "version": "2.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-dematic-2.0.1"
+    }
+  ],
+  "uiModules": []
+}

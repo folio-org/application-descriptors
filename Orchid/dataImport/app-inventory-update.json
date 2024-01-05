@@ -1,0 +1,22 @@
+{
+  "id": "app-inventory-update-0.0.1",
+  "name": "app-inventory-update",
+  "version": "0.0.1",
+  "platform": "data-import",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-inventory-update-3.0.1",
+      "name": "mod-inventory-update",
+      "version": "3.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-inventory-update-3.0.1"
+    }
+  ],
+  "uiModules": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "app-bulk-edit-0.0.1",
+  "name": "app-bulk-edit",
+  "version": "0.0.1",
+  "description": "FOLIO Bulk Edit Application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-data-export-0.0.1",
+      "name": "app-data-export",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-bulk-operations-1.0.6",
+      "name": "mod-bulk-operations",
+      "version": "1.0.6",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-bulk-operations-1.0.6"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_bulk-edit-3.0.5",
+      "name": "folio_bulk-edit",
+      "version": "3.0.5",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_bulk-edit-3.0.5"
+    }
+  ]
+}

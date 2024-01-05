@@ -1,0 +1,34 @@
+{
+  "id": "app-gobi-0.0.1",
+  "name": "app-gobi",
+  "version": "0.0.1",
+  "description": "Folio GOBI application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-orders-core-0.0.1",
+      "name": "app-orders-core",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-organization-core-0.0.1",
+      "name": "app-organization-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-gobi-2.6.0",
+      "name": "mod-gobi",
+      "version": "2.6.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-gobi-2.6.0"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_gobi-settings-2.0.0",
+      "name": "folio_gobi-settings",
+      "version": "2.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_gobi-settings-2.0.0"
+    }
+  ]
+}

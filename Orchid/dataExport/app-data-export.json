@@ -1,0 +1,58 @@
+{
+  "id": "app-data-export-0.0.1",
+  "name": "app-data-export",
+  "version": "0.0.1",
+  "description": "FOLIO Data Export Application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-circulation-audit-0.0.1",
+      "name": "app-circulation-audit",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-organization-core-0.0.1",
+      "name": "app-organization-core",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-eholdings-0.0.1",
+      "name": "app-eholdings",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-data-export-spring-2.0.2",
+      "name": "mod-data-export-spring",
+      "version": "2.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-spring-2.0.2"
+    },
+    {
+      "id": "mod-data-export-worker-3.0.13",
+      "name": "mod-data-export-worker",
+      "version": "3.0.13",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-worker-3.0.13"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_data-export-5.4.1",
+      "name": "folio_data-export",
+      "version": "5.4.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_data-export-5.4.1"
+    },
+    {
+      "id": "folio_export-manager-2.4.3",
+      "name": "folio_export-manager",
+      "version": "2.4.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_export-manager-2.4.3"
+    },
+    {
+      "id": "folio_plugin-bursar-export-2.4.0",
+      "name": "folio_plugin-bursar-export",
+      "version": "2.4.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-bursar-export-2.4.0"
+    }
+  ]
+}

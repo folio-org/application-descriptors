@@ -1,0 +1,34 @@
+{
+  "id": "app-marc-authorities-0.0.1",
+  "name": "app-marc-authorities",
+  "version": "0.0.1",
+  "description": "Folio Marc authorities application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-quick-marc-0.0.1",
+      "name": "app-quick-marc",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [],
+  "uiModules": [
+    {
+      "id": "folio_marc-authorities-3.0.2",
+      "name": "folio_marc-authorities",
+      "version": "3.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_marc-authorities-3.0.2"
+    },
+    {
+      "id": "folio_stripes-authority-components-2.0.2",
+      "name": "folio_stripes-authority-components",
+      "version": "2.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_stripes-authority-components-2.0.2"
+    }
+  ]
+}

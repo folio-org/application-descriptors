@@ -1,0 +1,22 @@
+{
+  "id": "app-edge-srs-0.0.1",
+  "name": "app-edge-srs",
+  "version": "0.0.1",
+  "platform": "search",
+  "dependencies": [
+    {
+      "id": "app-platform-minimal-0.0.4",
+      "name": "app-platform-minimal",
+      "version": "0.0.4"
+    }
+  ],
+  "modules": [
+    {
+      "id": "edge-search-srs-1.0.0",
+      "name": "edge-search-srs",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-search-srs-1.0.0"
+    }
+  ],
+  "uiModules": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "app-agreements-0.0.1",
+  "name": "app-agreements",
+  "version": "0.0.1",
+  "description": "Folio agreements application for Orchid release",
+  "dependencies": [
+    {
+      "id": "app-licenses-0.0.1",
+      "name": "app-licenses",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-agreements-5.5.2",
+      "name": "mod-agreements",
+      "version": "5.5.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-agreements-5.5.2"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_agreements-9.0.2",
+      "name": "folio_agreements",
+      "version": "9.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_agreements-9.0.2"
+    },
+    {
+      "id": "folio_plugin-find-agreement-9.0.2",
+      "name": "folio_plugin-find-agreement",
+      "version": "9.0.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-agreement-9.0.2"
+    }
+  ]
+}

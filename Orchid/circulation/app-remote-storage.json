@@ -1,0 +1,30 @@
+{
+  "id": "app-remote-storage-0.0.1",
+  "name": "app-remote-storage",
+  "version": "0.0.1",
+  "description": "Folio remote storage application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-remote-storage-2.0.3",
+      "name": "mod-remote-storage",
+      "version": "2.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-remote-storage-2.0.3"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_remote-storage-4.0.0",
+      "name": "folio_remote-storage",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_remote-storage-4.0.0"
+    }
+  ]
+}

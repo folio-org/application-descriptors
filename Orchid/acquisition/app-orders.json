@@ -1,0 +1,51 @@
+{
+  "id": "app-orders-0.0.1",
+  "name": "app-orders",
+  "version": "0.0.1",
+  "description": "Folio Orders application for Orchid release",
+  "platform": "",
+  "dependencies": [
+    {
+      "id": "app-invoicing-0.0.1",
+      "name": "app-invoicing",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-circulation-audit-0.0.1",
+      "name": "app-circulation-audit",
+      "version": "0.0.1"
+    },
+    {
+      "id": "app-agreements-0.0.1",
+      "name": "app-agreements",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [],
+  "uiModules": [
+    {
+      "id": "folio_orders-4.0.3",
+      "name": "folio_orders",
+      "version": "4.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_orders-4.0.3"
+    },
+    {
+      "id": "folio_receiving-3.0.0",
+      "name": "folio_receiving",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_receiving-3.0.0"
+    },
+    {
+      "id": "folio_acquisition-units-4.0.0",
+      "name": "folio_acquisition-units",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_acquisition-units-4.0.0"
+    },
+    {
+      "id": "folio_plugin-find-po-line-4.0.0",
+      "name": "folio_plugin-find-po-line",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_plugin-find-po-line-4.0.0"
+    }
+  ]
+}

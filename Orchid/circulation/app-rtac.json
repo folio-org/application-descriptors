@@ -1,0 +1,28 @@
+{
+  "id": "app-rtac-0.0.1",
+  "name": "app-rtac",
+  "version": "0.0.1",
+  "platform": "circulation",
+  "dependencies": [
+    {
+      "id": "app-core-0.0.1",
+      "name": "app-core",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-rtac-3.5.0",
+      "name": "mod-rtac",
+      "version": "3.5.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-rtac-3.5.0"
+    },
+    {
+      "id": "edge-rtac-2.6.0",
+      "name": "edge-rtac",
+      "version": "2.6.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-rtac-2.6.0"
+    }
+  ],
+  "uiModules": []
+}

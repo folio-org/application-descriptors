@@ -1,0 +1,63 @@
+{
+  "id": "app-edge-complete-0.0.1",
+  "name": "app-edge-complete",
+  "version": "0.0.1",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "id": "app-platform-complete-0.0.1",
+      "name": "app-platform-complete",
+      "version": "0.0.1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "edge-orders-2.8.1",
+      "name": "edge-orders",
+      "version": "2.8.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-orders-2.8.1"
+    },
+    {
+      "id": "edge-connexion-1.0.6",
+      "name": "edge-connexion",
+      "version": "1.0.6",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-connexion-1.0.6"
+    },
+    {
+      "id": "edge-oai-pmh-2.6.1",
+      "name": "edge-oai-pmh",
+      "version": "2.6.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-oai-pmh-2.6.1"
+    },
+    {
+      "id": "edge-dematic-2.0.1",
+      "name": "edge-dematic",
+      "version": "2.0.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-dematic-2.0.1"
+    },
+    {
+      "id": "edge-caiasoft-2.0.0",
+      "name": "edge-caiasoft",
+      "version": "2.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-caiasoft-2.0.0"
+    },
+    {
+      "id": "edge-rtac-2.6.0",
+      "name": "edge-rtac",
+      "version": "2.6.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-rtac-2.6.0"
+    },
+    {
+      "id": "edge-sip2-3.0.0",
+      "name": "edge-sip2",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-sip2-3.0.0"
+    },
+    {
+      "id": "edge-ncip-1.8.1",
+      "name": "edge-ncip",
+      "version": "1.8.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/edge-ncip-1.8.1"
+    }
+  ]
+}
