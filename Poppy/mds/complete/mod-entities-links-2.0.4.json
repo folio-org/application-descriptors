@@ -1,5 +1,5 @@
 {
-  "id": "mod-entities-links-2.0.3",
+  "id": "mod-entities-links-2.0.4",
   "name": "Entities Links",
   "requires": [
     {
@@ -586,7 +586,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-entities-links:2.0.3",
+    "dockerImage": "folioorg/mod-entities-links:2.0.4",
     "dockerPull": true,
     "env": [
       {
