@@ -2,12 +2,12 @@
   "id": "app-platform-complete-0.0.3",
   "name": "app-platform-complete",
   "version": "0.0.3",
-  "description": "Complete application with all modules for Poppy BF",
+  "description": "Complete application with all modules for Poppy-GA",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "0.0.6"
+      "version": "0.0.7"
     }
   ],
   "modules": [
