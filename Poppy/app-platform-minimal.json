@@ -2,7 +2,7 @@
   "id": "app-platform-minimal-0.0.7",
   "name": "app-platform-minimal",
   "version": "0.0.7",
-  "description": "Minimal FOLIO platform installation for Poppy BF",
+  "description": "Minimal FOLIO platform installation for Poppy-GA",
   "platform": "base",
   "dependencies": [],
   "modules": [
