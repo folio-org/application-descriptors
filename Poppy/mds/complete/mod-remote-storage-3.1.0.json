@@ -1,5 +1,5 @@
 {
-  "id": "mod-remote-storage-3.0.1",
+  "id": "mod-remote-storage-3.1.0",
   "name": "Remote storage API module",
   "requires": [
     {
@@ -592,7 +592,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-remote-storage:3.0.1",
+    "dockerImage": "folioorg/mod-remote-storage:3.1.0",
     "dockerPull": true,
     "env": [
       {

@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-complete-0.0.3",
+  "id": "app-platform-complete-0.0.4",
   "name": "app-platform-complete",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Complete application with all modules for Poppy-GA",
   "platform": "complete",
   "dependencies": [
@@ -84,10 +84,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-circulation-storage-17.1.7"
     },
     {
-      "id": "mod-search-3.0.5",
+      "id": "mod-search-3.1.0",
       "name": "mod-search",
-      "version": "3.0.5",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-search-3.0.5"
+      "version": "3.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-search-3.1.0"
     },
     {
       "id": "mod-inventory-20.1.6",
@@ -114,10 +114,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-patron-blocks-1.9.0"
     },
     {
-      "id": "mod-entities-links-2.0.4",
+      "id": "mod-entities-links-2.1.0",
       "name": "mod-entities-links",
-      "version": "2.0.4",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-entities-links-2.0.4"
+      "version": "2.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-entities-links-2.1.0"
     },
     {
       "id": "mod-source-record-manager-3.7.7",
@@ -144,10 +144,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-data-export-4.8.7"
     },
     {
-      "id": "mod-data-export-spring-3.0.2",
+      "id": "mod-data-export-spring-3.1.0",
       "name": "mod-data-export-spring",
-      "version": "3.0.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-spring-3.0.2"
+      "version": "3.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-spring-3.1.0"
     },
     {
       "id": "mod-data-export-worker-3.1.2",
@@ -174,10 +174,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-rtac-3.5.0"
     },
     {
-      "id": "mod-remote-storage-3.0.1",
+      "id": "mod-remote-storage-3.1.0",
       "name": "mod-remote-storage",
-      "version": "3.0.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-remote-storage-3.0.1"
+      "version": "3.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-remote-storage-3.1.0"
     },
     {
       "id": "mod-calendar-2.5.0",
@@ -252,10 +252,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-template-engine-1.19.1"
     },
     {
-      "id": "mod-pubsub-2.11.3",
+      "id": "mod-pubsub-2.12.0",
       "name": "mod-pubsub",
-      "version": "2.11.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-pubsub-2.11.3"
+      "version": "2.12.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-pubsub-2.12.0"
     },
     {
       "id": "mod-gobi-2.7.1",
