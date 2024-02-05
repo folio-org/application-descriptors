@@ -7,10 +7,6 @@
     {
       "name": "app-platform-complete",
       "version": "0.0.4"
-    },
-    {	
-      "name": "app-platform-minimal",
-      "version": "0.0.7"	
     }
   ],
   "modules": [
