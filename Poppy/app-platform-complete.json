@@ -1,13 +1,13 @@
 {
-  "id": "app-platform-complete-0.0.4",
+  "id": "app-platform-complete-0.0.5",
   "name": "app-platform-complete",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Complete application with all modules for Poppy-GA",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "0.0.7"
+      "version": "0.0.8"
     }
   ],
   "modules": [
