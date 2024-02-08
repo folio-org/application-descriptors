@@ -1,5 +1,5 @@
 {
-  "id": "mod-users-keycloak-1.0.0",
+  "id": "mod-users-keycloak-1.0.1",
   "name": "Users business logic (with Keycloak)",
   "provides": [
     {
@@ -218,7 +218,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "mod-users-keycloak:1.0.0",
+    "dockerImage": "mod-users-keycloak:1.0.1",
     "dockerPull": false,
     "dockerArgs": {
       "HostConfig": {

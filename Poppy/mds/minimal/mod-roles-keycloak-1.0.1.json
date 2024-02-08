@@ -1,5 +1,5 @@
 {
-  "id": "mod-roles-keycloak-1.0.0",
+  "id": "mod-roles-keycloak-1.0.1",
   "name": "roles-keycloak",
   "provides": [
     {
@@ -673,7 +673,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "mod-roles-keycloak:1.0.0",
+    "dockerImage": "mod-roles-keycloak:1.0.1",
     "dockerPull": false,
     "dockerArgs": {
       "HostConfig": {
