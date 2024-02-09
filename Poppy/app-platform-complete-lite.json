@@ -310,6 +310,12 @@
       "name": "mod-lists",
       "version": "1.0.5",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-lists-1.0.5"
+    },
+    {
+      "id": "mod-kb-ebsco-java-4.0.0",
+      "name": "mod-kb-ebsco-java",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-kb-ebsco-java-4.0.0"
     }
   ],
   "uiModules": [
@@ -534,6 +540,12 @@
       "name": "folio_plugin-find-agreement",
       "version": "10.0.0",
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-agreement-10.0.0"
+    },
+    {
+      "id": "folio_eholdings-9.0.2",
+      "name": "folio_eholdings",
+      "version": "9.0.2",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_eholdings-9.0.2"
     },
     {
       "id": "folio_licenses-10.0.0",
