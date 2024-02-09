@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-complete-0.0.5",
+  "id": "app-platform-complete-0.0.6",
   "name": "app-platform-complete",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Complete application with all modules for Poppy-GA",
   "platform": "complete",
   "dependencies": [
@@ -270,28 +270,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-copycat-1.5.0"
     },
     {
-      "id": "mod-kb-ebsco-java-4.0.0",
-      "name": "mod-kb-ebsco-java",
-      "version": "4.0.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-kb-ebsco-java-4.0.0"
-    },
-    {
       "id": "mod-ncip-1.14.4",
       "name": "mod-ncip",
       "version": "1.14.4",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-ncip-1.14.4"
-    },
-    {
-      "id": "mod-erm-usage-4.6.0",
-      "name": "mod-erm-usage",
-      "version": "4.6.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-erm-usage-4.6.0"
-    },
-    {
-      "id": "mod-erm-usage-harvester-4.4.1",
-      "name": "mod-erm-usage-harvester",
-      "version": "4.4.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-erm-usage-harvester-4.4.1"
     },
     {
       "id": "mod-inventory-update-3.2.1",
@@ -312,12 +294,6 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-service-interaction-3.0.2"
     },
     {
-      "id": "mod-eusage-reports-2.0.0",
-      "name": "mod-eusage-reports",
-      "version": "2.0.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-eusage-reports-2.0.0"
-    },
-    {
       "id": "mod-ebsconet-2.1.1",
       "name": "mod-ebsconet",
       "version": "2.1.1",
@@ -334,6 +310,12 @@
       "name": "mod-lists",
       "version": "1.0.5",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-lists-1.0.5"
+    },
+    {
+      "id": "mod-kb-ebsco-java-4.0.0",
+      "name": "mod-kb-ebsco-java",
+      "version": "4.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-kb-ebsco-java-4.0.0"
     }
   ],
   "uiModules": [
@@ -560,12 +542,6 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-agreement-10.0.0"
     },
     {
-      "id": "folio_plugin-eusage-reports-3.0.0",
-      "name": "folio_plugin-eusage-reports",
-      "version": "3.0.0",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-eusage-reports-3.0.0"
-    },
-    {
       "id": "folio_eholdings-9.0.2",
       "name": "folio_eholdings",
       "version": "9.0.2",
@@ -612,24 +588,6 @@
       "name": "folio_gobi-settings",
       "version": "3.0.0",
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_gobi-settings-3.0.0"
-    },
-    {
-      "id": "folio_erm-usage-8.0.1",
-      "name": "folio_erm-usage",
-      "version": "8.0.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_erm-usage-8.0.1"
-    },
-    {
-      "id": "folio_erm-comparisons-6.0.0",
-      "name": "folio_erm-comparisons",
-      "version": "6.0.0",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_erm-comparisons-6.0.0"
-    },
-    {
-      "id": "folio_plugin-find-erm-usage-data-provider-6.0.0",
-      "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "6.0.0",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-erm-usage-data-provider-6.0.0"
     },
     {
       "id": "folio_handler-stripes-registry-2.0.1",

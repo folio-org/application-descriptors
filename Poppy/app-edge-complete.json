@@ -6,7 +6,7 @@
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "0.0.5"
+      "version": "0.0.6"
     }
   ],
   "modules": [
