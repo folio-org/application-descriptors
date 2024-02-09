@@ -536,12 +536,6 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-agreement-10.0.0"
     },
     {
-      "id": "folio_plugin-eusage-reports-3.0.0",
-      "name": "folio_plugin-eusage-reports",
-      "version": "3.0.0",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-eusage-reports-3.0.0"
-    },
-    {
       "id": "folio_eholdings-9.0.2",
       "name": "folio_eholdings",
       "version": "9.0.2",
@@ -588,24 +582,6 @@
       "name": "folio_gobi-settings",
       "version": "3.0.0",
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_gobi-settings-3.0.0"
-    },
-    {
-      "id": "folio_erm-usage-8.0.1",
-      "name": "folio_erm-usage",
-      "version": "8.0.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_erm-usage-8.0.1"
-    },
-    {
-      "id": "folio_erm-comparisons-6.0.0",
-      "name": "folio_erm-comparisons",
-      "version": "6.0.0",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_erm-comparisons-6.0.0"
-    },
-    {
-      "id": "folio_plugin-find-erm-usage-data-provider-6.0.0",
-      "name": "folio_plugin-find-erm-usage-data-provider",
-      "version": "6.0.0",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-erm-usage-data-provider-6.0.0"
     },
     {
       "id": "folio_handler-stripes-registry-2.0.1",
