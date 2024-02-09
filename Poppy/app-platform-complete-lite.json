@@ -536,12 +536,6 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-agreement-10.0.0"
     },
     {
-      "id": "folio_eholdings-9.0.2",
-      "name": "folio_eholdings",
-      "version": "9.0.2",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_eholdings-9.0.2"
-    },
-    {
       "id": "folio_licenses-10.0.0",
       "name": "folio_licenses",
       "version": "10.0.0",
