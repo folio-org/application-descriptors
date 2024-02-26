@@ -345,6 +345,10 @@
     {
       "id": "notify",
       "version": "2.2"
+    },
+    {
+      "id": "request-storage",
+      "version": "6.0"
     }
   ],
   "permissionSets": [
