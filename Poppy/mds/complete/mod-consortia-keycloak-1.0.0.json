@@ -620,6 +620,11 @@
       "users.item.post",
       "users.item.put",
       "users.item.delete",
+      "users-keycloak.collection.get",
+      "users-keycloak.item.get",
+      "users-keycloak.item.post",
+      "users-keycloak.item.put",
+      "users-keycloak.item.delete",
       "perms.users.item.put",
       "perms.users.item.post",
       "perms.users.item.delete",
@@ -697,7 +702,8 @@
       "circulation-storage.cancellation-reasons.item.delete",
       "user-settings.custom-fields.item.post",
       "user-settings.custom-fields.collection.get",
-      "ui-users.editperms"
+      "ui-users.editperms",
+      "capabilities.collection.get"
     ]
   }
 }

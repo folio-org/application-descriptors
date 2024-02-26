@@ -9,35 +9,46 @@
         {
           "methods" : [ "GET" ],
           "pathPattern" : "/users-keycloak/users/{id}",
-          "permissionsRequired" : [ "users.item.get" ],
+          "permissionsRequired" : [ "users-keycloak.item.get" ],
           "permissionsDesired" : [
-            "users.read.basic",
-            "users.read.restricted"
+            "users-keycloak.read.basic",
+            "users-keycloak.read.restricted"
           ]
         },
         {
           "methods": [ "POST" ],
           "pathPattern": "/users-keycloak/users",
-          "permissionsRequired": [ "users.item.post" ]
+          "permissionsRequired": [ "users-keycloak.item.post" ]
         },
         {
           "methods" : [ "GET" ],
           "pathPattern" : "/users-keycloak/users",
-          "permissionsRequired" : [ "users.collection.get" ],
+          "permissionsRequired" : [ "users-keycloak.collection.get" ],
           "permissionsDesired" : [
-            "users.read.basic",
-            "users.read.restricted"
+            "users-keycloak.read.basic",
+            "users-keycloak.read.restricted"
           ]
         },
         {
           "methods": [ "PUT" ],
           "pathPattern": "/users-keycloak/users/{id}",
-          "permissionsRequired": [ "users.item.put" ]
+          "permissionsRequired": [ "users-keycloak.item.put" ]
         },
         {
           "methods": [ "DELETE" ],
           "pathPattern": "/users-keycloak/users/{id}",
-          "permissionsRequired": [ "users.item.delete" ]
+          "permissionsRequired": [ "users-keycloak.item.delete" ],
+          "modulePermissions" : [
+            "policies.item.delete",
+            "policies.item.put",
+            "policies.collection.get",
+            "roles.users.item.get",
+            "roles.users.item.delete",
+            "user-capabilities.collection.delete",
+            "user.capabilities.collection.get",
+            "user.capability-sets.collection.get",
+            "user-capability-sets.collection.delete"
+          ]
         },
         {
           "methods" : [ "GET" ],
@@ -47,7 +58,7 @@
         {
           "methods": [ "POST" ],
           "pathPattern": "/users-keycloak/migrations",
-          "permissionsRequired": [ "users.migrations.post" ],
+          "permissionsRequired": [ "users-keycloak.migrations.post" ],
           "modulePermissions": [
             "users.collection.get",
             "perms.users"
@@ -56,17 +67,17 @@
         {
           "methods": [ "GET" ],
           "pathPattern": "/users-keycloak/migrations",
-          "permissionsRequired": [ "users.migrations.get" ]
+          "permissionsRequired": [ "users-keycloak.migrations.get" ]
         },
         {
           "methods": [ "GET" ],
           "pathPattern": "/users-keycloak/migrations/{id}",
-          "permissionsRequired": [ "users.migrations.get" ]
+          "permissionsRequired": [ "users-keycloak.migrations.get" ]
         },
         {
           "methods": [ "DELETE" ],
           "pathPattern": "/users-keycloak/migrations/{id}",
-          "permissionsRequired": [ "users.migrations.delete" ]
+          "permissionsRequired": [ "users-keycloak.migrations.delete" ]
         },
         {
           "methods": ["POST"],
@@ -101,7 +112,7 @@
         {
           "methods": ["POST"],
           "pathPattern": "/users-keycloak/password-reset/link",
-          "permissionsRequired": ["users-bl.password-reset-link.generate"],
+          "permissionsRequired": ["users-keycloak.password-reset-link.generate"],
           "permissionsDesired": [],
           "modulePermissions": [
             "users.item.get",
@@ -114,7 +125,7 @@
           "methods": ["POST"],
           "pathPattern": "/users-keycloak/password-reset/reset",
           "permissionsDesired": [],
-          "permissionsRequired": ["users-bl.password-reset-link.reset"],
+          "permissionsRequired": ["users-keycloak.password-reset-link.reset"],
           "modulePermissions": [
             "login.password-reset-action.get",
             "users.item.get",
@@ -127,7 +138,7 @@
           "methods": ["POST"],
           "pathPattern": "/users-keycloak/password-reset/validate",
           "permissionsDesired": [],
-          "permissionsRequired": ["users-bl.password-reset-link.validate"],
+          "permissionsRequired": ["users-keycloak.password-reset-link.validate"],
           "modulePermissions": [
             "users.item.get",
             "login.password-reset-action.get"
@@ -172,6 +183,26 @@
     {
       "id": "permissions-users",
       "version": "1.0"
+    },
+    {
+      "id": "capabilities",
+      "version": "1.0"
+    },
+    {
+      "id": "policies",
+      "version": "1.1"
+    },
+    {
+      "id": "roles-user",
+      "version": "1.0"
+    },
+    {
+      "id": "user-capability-sets",
+      "version": "1.0"
+    },
+    {
+      "id": "user-capabilities",
+      "version": "1.0"
     }
   ],
   "optional" : [
@@ -186,14 +217,6 @@
     {
       "id" : "service-points-users",
       "version" : "1.0"
-    },
-    {
-      "id": "capabilities",
-      "version": "1.0"
-    },
-    {
-      "id": "user-capabilities",
-      "version": "1.0"
     },
     {
       "id": "user-tenants",
