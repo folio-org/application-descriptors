@@ -1,0 +1,1851 @@
+{
+  "id": "mod-agreements-6.0.2",
+  "name": "mod-agreements",
+  "provides": [
+    {
+      "id": "erm",
+      "version": "6.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas",
+          "permissionsRequired": [
+            "erm.agreements.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/publicLookup",
+          "permissionsRequired": [],
+          "modulePermissions": [
+            "licenses.licenses.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}",
+          "permissionsRequired": [
+            "erm.agreements.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}/export",
+          "permissionsRequired": [
+            "erm.agreements.export"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}/export/*",
+          "permissionsRequired": [
+            "erm.agreements.export"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/linkedLicenses",
+          "permissionsRequired": [
+            "erm.agreements.linkedLicenses.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}/linkedLicenses",
+          "permissionsRequired": [
+            "erm.agreements.linkedLicenses.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/usageDataProviders",
+          "permissionsRequired": [
+            "erm.agreements.usageDataProviders.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}/usageDataProviders",
+          "permissionsRequired": [
+            "erm.agreements.usageDataProviders.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}/resources",
+          "permissionsRequired": [
+            "erm.agreements.item.resources.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}/resources/*",
+          "permissionsRequired": [
+            "erm.agreements.item.resources.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}/resources/export",
+          "permissionsRequired": [
+            "erm.agreements.export"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sas/{id}/resources/export/*",
+          "permissionsRequired": [
+            "erm.agreements.export"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/sas",
+          "permissionsRequired": [
+            "erm.agreements.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/sas/{id}",
+          "permissionsRequired": [
+            "erm.agreements.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/sas/{id}/clone",
+          "permissionsRequired": [
+            "erm.agreements.item.clone"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/sas/{id}",
+          "permissionsRequired": [
+            "erm.agreements.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/export",
+          "permissionsRequired": [
+            "erm.agreements.export"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/export/*",
+          "permissionsRequired": [
+            "erm.agreements.export"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/entitlements",
+          "permissionsRequired": [
+            "erm.entitlements.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/entitlements/{id}",
+          "permissionsRequired": [
+            "erm.entitlements.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/entitlements/{id}",
+          "permissionsRequired": [
+            "erm.entitlements.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/entitlements",
+          "permissionsRequired": [
+            "erm.entitlements.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/entitlements/{id}",
+          "permissionsRequired": [
+            "erm.entitlements.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/files",
+          "permissionsRequired": [
+            "erm.files.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/files/{id}",
+          "permissionsRequired": [
+            "erm.files.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/files/{id}/raw",
+          "permissionsRequired": [
+            "erm.files.item.download"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/files",
+          "permissionsRequired": [
+            "erm.files.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/files/{id}",
+          "permissionsRequired": [
+            "erm.files.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/files/{id}",
+          "permissionsRequired": [
+            "erm.files.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/contacts",
+          "permissionsRequired": [
+            "erm.contacts.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/contacts/{id}",
+          "permissionsRequired": [
+            "erm.contacts.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/org",
+          "permissionsRequired": [
+            "erm.orgs.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/org/{id}",
+          "permissionsRequired": [
+            "erm.orgs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/packages",
+          "permissionsRequired": [
+            "erm.packages.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/packages/{id}",
+          "permissionsRequired": [
+            "erm.packages.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/packages/{id}/content",
+          "permissionsRequired": [
+            "erm.packages.item.content.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/packages/{id}/content/*",
+          "permissionsRequired": [
+            "erm.packages.item.content.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/packages/sources",
+          "permissionsRequired": [
+            "erm.packages.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs",
+          "permissionsRequired": [
+            "erm.jobs.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/{id}",
+          "permissionsRequired": [
+            "erm.jobs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/{id}/fullLog",
+          "permissionsRequired": [
+            "erm.jobs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/{id}/errorLog",
+          "permissionsRequired": [
+            "erm.jobs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/{id}/infoLog",
+          "permissionsRequired": [
+            "erm.jobs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/{id}/fullLogStream",
+          "permissionsRequired": [
+            "erm.jobs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/{id}/errorLogStream",
+          "permissionsRequired": [
+            "erm.jobs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/{id}/infoLogStream",
+          "permissionsRequired": [
+            "erm.jobs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/{id}/downloadFileObject",
+          "permissionsRequired": [
+            "erm.jobs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/jobs/{type}",
+          "permissionsRequired": [
+            "erm.jobs.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/jobs/{id}",
+          "permissionsRequired": [
+            "erm.jobs.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/jobs/type/{type}",
+          "permissionsRequired": [
+            "erm.jobs.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/refdata",
+          "permissionsRequired": [
+            "erm.refdata.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/refdata/{domain}/{property}",
+          "permissionsRequired": [
+            "erm.refdata.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/refdata/{id}",
+          "permissionsRequired": [
+            "erm.refdata.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/refdata",
+          "permissionsRequired": [
+            "erm.refdata.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/refdata/{id}",
+          "permissionsRequired": [
+            "erm.refdata.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/refdata/{id}",
+          "permissionsRequired": [
+            "erm.refdata.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/kbs",
+          "permissionsRequired": [
+            "erm.kbs.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/kbs/{id}",
+          "permissionsRequired": [
+            "erm.kbs.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/kbs",
+          "permissionsRequired": [
+            "erm.kbs.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/kbs/{id}",
+          "permissionsRequired": [
+            "erm.kbs.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/kbs/{id}",
+          "permissionsRequired": [
+            "erm.kbs.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/resource",
+          "permissionsRequired": [
+            "erm.resources.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/resource/electronic",
+          "permissionsRequired": [
+            "erm.resources.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/resource/{id}",
+          "permissionsRequired": [
+            "erm.resources.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/resource/{id}/entitlements",
+          "permissionsRequired": [
+            "erm.resources.item.entitlement.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/resource/{id}/entitlements/related",
+          "permissionsRequired": [
+            "erm.resources.item.entitlement.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/resource/{id}/entitlementOptions",
+          "permissionsRequired": [
+            "erm.resources.item.entitlementOptions.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/titles",
+          "permissionsRequired": [
+            "erm.titles.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/titles/electronic",
+          "permissionsRequired": [
+            "erm.titles.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/titles/entitled",
+          "permissionsRequired": [
+            "erm.titles.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/titles/{id}",
+          "permissionsRequired": [
+            "erm.titles.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/titles/{id}",
+          "permissionsRequired": [
+            "erm.titles.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/pci",
+          "permissionsRequired": [
+            "erm.pci.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/pci/{id}",
+          "permissionsRequired": [
+            "erm.pci.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/pci/{id}",
+          "permissionsRequired": [
+            "erm.pci.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/platforms",
+          "permissionsRequired": [
+            "erm.platforms.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/platforms/{id}",
+          "permissionsRequired": [
+            "erm.platforms.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/platforms/{id}",
+          "permissionsRequired": [
+            "erm.platforms.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/pti",
+          "permissionsRequired": [
+            "erm.pti.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/pti/{id}",
+          "permissionsRequired": [
+            "erm.pti.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/pti/{id}",
+          "permissionsRequired": [
+            "erm.pti.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/custprops",
+          "permissionsRequired": [
+            "erm.custprops.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/custprops/{id}",
+          "permissionsRequired": [
+            "erm.custprops.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/custprops",
+          "permissionsRequired": [
+            "erm.custprops.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/custprops/{id}",
+          "permissionsRequired": [
+            "erm.custprops.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/custprops/{id}",
+          "permissionsRequired": [
+            "erm.custprops.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/custprops/contexts",
+          "permissionsRequired": [
+            "erm.custprops.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/packages/import",
+          "permissionsRequired": [
+            "erm.packages.collection.import"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/validate/subscriptionAgreement",
+          "permissionsRequired": [
+            "erm.agreements.item.post",
+            "erm.agreements.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/validate/subscriptionAgreement/*",
+          "permissionsRequired": [
+            "erm.agreements.item.post",
+            "erm.agreements.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/validate/remoteKB",
+          "permissionsRequired": [
+            "erm.kbs.item.post",
+            "erm.kbs.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/validate/remoteKB/*",
+          "permissionsRequired": [
+            "erm.kbs.item.post",
+            "erm.kbs.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sts",
+          "permissionsRequired": [
+            "erm.sts.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sts/{id}",
+          "permissionsRequired": [
+            "erm.sts.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/sts",
+          "permissionsRequired": [
+            "erm.sts.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/sts/{id}",
+          "permissionsRequired": [
+            "erm.sts.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/sts/{id}",
+          "permissionsRequired": [
+            "erm.sts.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sts/template",
+          "permissionsRequired": [
+            "erm.sts.template"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/sts/template/{id}",
+          "permissionsRequired": [
+            "erm.sts.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/entitlementLogEntry",
+          "permissionsRequired": [
+            "erm.entitlements.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/admin/*",
+          "permissionsRequired": [
+            "erm.admin.action"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/settings*",
+          "permissionsRequired": [
+            "erm.settings.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/settings*",
+          "permissionsRequired": [
+            "erm.settings.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/erm/settings*",
+          "permissionsRequired": [
+            "erm.settings.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/erm/settings*",
+          "permissionsRequired": [
+            "erm.settings.delete"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/erm/pushKB*",
+          "permissionsRequired": [
+            "erm.pushkb.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/pushKB*",
+          "permissionsRequired": [
+            "erm.pushkb.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dashboard",
+      "version": "1.0",
+      "interfaceType": "multiple",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/dashboard/definitions",
+          "permissionsRequired": []
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "1.2",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [
+            "POST",
+            "DELETE"
+          ],
+          "pathPattern": "/_/tenant"
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/_/tenant/disable"
+        }
+      ]
+    },
+    {
+      "id": "codex",
+      "version": "3.0",
+      "interfaceType": "multiple",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/codex-instances",
+          "permissionsRequired": [
+            "codex.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/codex-instances/{id}",
+          "permissionsRequired": [
+            "codex.item.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_timer",
+      "version": "1.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/admin/triggerHousekeeping",
+          "unit": "hour",
+          "delay": "24",
+          "permissionsRequired": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/erm/admin/triggerRematch",
+          "unit": "minute",
+          "delay": "5",
+          "permissionsRequired": []
+        }
+      ]
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "codex.item.get",
+      "displayName": "Codex item get",
+      "description": "Get a codex record"
+    },
+    {
+      "permissionName": "codex.collection.get",
+      "displayName": "Codex collection get",
+      "description": "Get a collection of codex records"
+    },
+    {
+      "permissionName": "erm.agreements.collection.get",
+      "displayName": "Agreements collection get",
+      "description": "Get a collection of agreement records"
+    },
+    {
+      "permissionName": "erm.agreements.item.get",
+      "displayName": "Agreements item get",
+      "description": "Get an agreement record"
+    },
+    {
+      "permissionName": "erm.agreements.item.resources.get",
+      "displayName": "Agreements item resources get",
+      "description": "Get an agreement record's resources"
+    },
+    {
+      "permissionName": "erm.agreements.export",
+      "displayName": "Agreements export",
+      "description": "Export an agreement or its resources"
+    },
+    {
+      "permissionName": "erm.agreements.linkedLicenses.get",
+      "displayName": "Agreements linked licenses get",
+      "description": "Get the linked licenses for an agreement"
+    },
+    {
+      "permissionName": "erm.agreements.usageDataProviders.get",
+      "displayName": "Agreements usage data providers get",
+      "description": "Get the usage data providers for an agreement"
+    },
+    {
+      "permissionName": "erm.agreements.view",
+      "subPermissions": [
+        "erm.agreements.collection.get",
+        "erm.agreements.item.get",
+        "erm.agreements.item.resources.get",
+        "erm.agreements.export",
+        "erm.agreements.linkedLicenses.get",
+        "erm.agreements.usageDataProviders.get",
+        "erm.resources.view"
+      ]
+    },
+    {
+      "permissionName": "erm.agreements.item.post",
+      "displayName": "Agreements item post",
+      "description": "Post an agreement"
+    },
+    {
+      "permissionName": "erm.agreements.item.put",
+      "displayName": "Agreements item put",
+      "description": "Put an agreement"
+    },
+    {
+      "permissionName": "erm.agreements.item.clone",
+      "displayName": "Agreements item clone",
+      "description": "Clone an agreement"
+    },
+    {
+      "permissionName": "erm.agreements.edit",
+      "subPermissions": [
+        "erm.agreements.view",
+        "erm.agreements.item.post",
+        "erm.agreements.item.put",
+        "erm.agreements.item.clone"
+      ]
+    },
+    {
+      "permissionName": "erm.agreements.item.delete",
+      "displayName": "Agreements item delete",
+      "description": "Delete an agreement"
+    },
+    {
+      "permissionName": "erm.agreements.manage",
+      "subPermissions": [
+        "erm.agreements.edit",
+        "erm.agreements.item.delete"
+      ]
+    },
+    {
+      "permissionName": "erm.files.collection.get",
+      "displayName": "Files collection get",
+      "description": "Get a collection of files records"
+    },
+    {
+      "permissionName": "erm.files.item.get",
+      "displayName": "Files item get",
+      "description": "Get a file record"
+    },
+    {
+      "permissionName": "erm.files.view",
+      "subPermissions": [
+        "erm.files.collection.get",
+        "erm.files.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.files.item.download",
+      "displayName": "Files item download",
+      "description": "Download a raw files record",
+      "subPermissions": [
+        "erm.files.view"
+      ]
+    },
+    {
+      "permissionName": "erm.files.item.post",
+      "displayName": "Files item post",
+      "description": "Post a file record"
+    },
+    {
+      "permissionName": "erm.files.item.put",
+      "displayName": "Files item put",
+      "description": "Put a file record"
+    },
+    {
+      "permissionName": "erm.files.edit",
+      "subPermissions": [
+        "erm.files.view",
+        "erm.files.item.post",
+        "erm.files.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.files.item.delete",
+      "displayName": "Files item delete",
+      "description": "Delete a file record"
+    },
+    {
+      "permissionName": "erm.files.manage",
+      "subPermissions": [
+        "erm.files.edit",
+        "erm.files.item.delete"
+      ]
+    },
+    {
+      "permissionName": "erm.contacts.collection.get",
+      "displayName": "Contacts collection get",
+      "description": "Get a collection of contacts records"
+    },
+    {
+      "permissionName": "erm.contacts.item.get",
+      "displayName": "Contacts item get",
+      "description": "Get contact record"
+    },
+    {
+      "permissionName": "erm.contacts.view",
+      "subPermissions": [
+        "erm.contacts.collection.get",
+        "erm.contacts.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.orgs.collection.get",
+      "displayName": "Orgs collection get",
+      "description": "Get a collection of orgs records"
+    },
+    {
+      "permissionName": "erm.orgs.item.get",
+      "displayName": "Orgs item get",
+      "description": "Get org record"
+    },
+    {
+      "permissionName": "erm.orgs.view",
+      "subPermissions": [
+        "erm.orgs.collection.get",
+        "erm.orgs.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.packages.collection.get",
+      "displayName": "Packages collection get",
+      "description": "Get a collection of package records"
+    },
+    {
+      "permissionName": "erm.packages.item.get",
+      "displayName": "Package item get",
+      "description": "Get package record"
+    },
+    {
+      "permissionName": "erm.packages.item.content.get",
+      "displayName": "Package item content get",
+      "description": "Get package record's contents"
+    },
+    {
+      "permissionName": "erm.packages.view",
+      "subPermissions": [
+        "erm.packages.collection.get",
+        "erm.packages.item.get",
+        "erm.packages.item.content.get"
+      ]
+    },
+    {
+      "permissionName": "erm.jobs.collection.get",
+      "displayName": "Jobs collection get",
+      "description": "Get a collection of job records"
+    },
+    {
+      "permissionName": "erm.jobs.item.get",
+      "displayName": "Job item get",
+      "description": "Get job record"
+    },
+    {
+      "permissionName": "erm.jobs.view",
+      "subPermissions": [
+        "erm.jobs.collection.get",
+        "erm.jobs.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.jobs.item.post",
+      "displayName": "Job item post",
+      "description": "Post job record"
+    },
+    {
+      "permissionName": "erm.jobs.edit",
+      "subPermissions": [
+        "erm.jobs.item.post"
+      ]
+    },
+    {
+      "permissionName": "erm.jobs.item.delete",
+      "displayName": "Job item delete",
+      "description": "Delete job record"
+    },
+    {
+      "permissionName": "erm.jobs.manage",
+      "subPermissions": [
+        "erm.jobs.edit",
+        "erm.jobs.item.delete"
+      ]
+    },
+    {
+      "permissionName": "erm.refdata.collection.get",
+      "displayName": "Refdata collection get",
+      "description": "Get a collection of refdata records"
+    },
+    {
+      "permissionName": "erm.refdata.item.get",
+      "displayName": "Refdata item get",
+      "description": "Get refdata record"
+    },
+    {
+      "permissionName": "erm.refdata.view",
+      "subPermissions": [
+        "erm.refdata.collection.get",
+        "erm.refdata.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.refdata.item.post",
+      "displayName": "Refdata item post",
+      "description": "Post refdata record"
+    },
+    {
+      "permissionName": "erm.refdata.item.put",
+      "displayName": "Refdata item put",
+      "description": "Put refdata record"
+    },
+    {
+      "permissionName": "erm.refdata.edit",
+      "subPermissions": [
+        "erm.refdata.view",
+        "erm.refdata.item.post",
+        "erm.refdata.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.refdata.item.delete",
+      "displayName": "Refdata item delete",
+      "description": "Delete refdata record"
+    },
+    {
+      "permissionName": "erm.refdata.manage",
+      "subPermissions": [
+        "erm.refdata.edit",
+        "erm.refdata.item.delete"
+      ]
+    },
+    {
+      "permissionName": "erm.kbs.collection.get",
+      "displayName": "Knowledge bases collection get",
+      "description": "Get a collection of knowledge base records"
+    },
+    {
+      "permissionName": "erm.kbs.item.get",
+      "displayName": "Knowledge base item get",
+      "description": "Get knowledge base record"
+    },
+    {
+      "permissionName": "erm.kbs.view",
+      "subPermissions": [
+        "erm.kbs.collection.get",
+        "erm.kbs.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.kbs.item.post",
+      "displayName": "Knowledge base item post",
+      "description": "Post knowledge base record"
+    },
+    {
+      "permissionName": "erm.kbs.item.put",
+      "displayName": "Knowledge base item put",
+      "description": "Put knowledge base record"
+    },
+    {
+      "permissionName": "erm.kbs.edit",
+      "subPermissions": [
+        "erm.kbs.view",
+        "erm.kbs.item.post",
+        "erm.kbs.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.kbs.item.delete",
+      "displayName": "Knowledge base item delete",
+      "description": "Delete knowledge base record"
+    },
+    {
+      "permissionName": "erm.kbs.manage",
+      "subPermissions": [
+        "erm.kbs.edit",
+        "erm.kbs.item.delete"
+      ]
+    },
+    {
+      "permissionName": "erm.pci.collection.get",
+      "displayName": "Package content item collection get",
+      "description": "Get a collection of package content item records"
+    },
+    {
+      "permissionName": "erm.pci.item.get",
+      "displayName": "Package content item item get",
+      "description": "Get package content item record"
+    },
+    {
+      "permissionName": "erm.pci.view",
+      "subPermissions": [
+        "erm.pci.collection.get",
+        "erm.pci.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.pci.item.put",
+      "displayName": "Package content item item put",
+      "description": "Put package content item record"
+    },
+    {
+      "permissionName": "erm.pci.edit",
+      "subPermissions": [
+        "erm.pci.view",
+        "erm.pci.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.pti.collection.get",
+      "displayName": "Platform title instance collection get",
+      "description": "Get a collection of platform title instance records"
+    },
+    {
+      "permissionName": "erm.pti.item.get",
+      "displayName": "Platform title instance item get",
+      "description": "Get platform title instance record"
+    },
+    {
+      "permissionName": "erm.pti.view",
+      "subPermissions": [
+        "erm.pti.collection.get",
+        "erm.pti.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.pti.item.put",
+      "displayName": "Platform title instance item put",
+      "description": "Put platform title instance record"
+    },
+    {
+      "permissionName": "erm.pti.edit",
+      "subPermissions": [
+        "erm.pti.view",
+        "erm.pti.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.platforms.collection.get",
+      "displayName": "Platform collection get",
+      "description": "Get a collection of platform records"
+    },
+    {
+      "permissionName": "erm.platforms.item.get",
+      "displayName": "Platform item get",
+      "description": "Get platform record"
+    },
+    {
+      "permissionName": "erm.platforms.view",
+      "subPermissions": [
+        "erm.platforms.collection.get",
+        "erm.platforms.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.platforms.item.put",
+      "displayName": "Platform item put",
+      "description": "Put platform record"
+    },
+    {
+      "permissionName": "erm.platforms.edit",
+      "subPermissions": [
+        "erm.platforms.view",
+        "erm.platforms.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.resources.collection.get",
+      "displayName": "Resources collection get",
+      "description": "Get a collection of resource records"
+    },
+    {
+      "permissionName": "erm.resources.item.get",
+      "displayName": "Resources item get",
+      "description": "Get resource record"
+    },
+    {
+      "permissionName": "erm.resources.item.entitlement.get",
+      "displayName": "Resources item entitlement get",
+      "description": "Get resource's entitlement records"
+    },
+    {
+      "permissionName": "erm.resources.item.entitlementOptions.get",
+      "displayName": "Resources item entitlement options get",
+      "description": "Get resource's entitlement options records"
+    },
+    {
+      "permissionName": "erm.resources.view",
+      "subPermissions": [
+        "erm.resources.collection.get",
+        "erm.resources.item.get",
+        "erm.resources.item.entitlement.get",
+        "erm.resources.item.entitlementOptions.get",
+        "erm.entitlements.view",
+        "erm.kbs.collection.get"
+      ]
+    },
+    {
+      "permissionName": "erm.entitlements.collection.get",
+      "displayName": "Entitlements collection get",
+      "description": "Get a collection of entitlement records"
+    },
+    {
+      "permissionName": "erm.entitlements.item.get",
+      "displayName": "Entitlements item get",
+      "description": "Get entitlement record"
+    },
+    {
+      "permissionName": "erm.entitlements.view",
+      "subPermissions": [
+        "erm.entitlements.collection.get",
+        "erm.entitlements.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.entitlements.item.post",
+      "displayName": "Entitlements item post",
+      "description": "Post entitlement record"
+    },
+    {
+      "permissionName": "erm.entitlements.item.put",
+      "displayName": "Entitlements item put",
+      "description": "Put entitlement record"
+    },
+    {
+      "permissionName": "erm.entitlements.edit",
+      "subPermissions": [
+        "erm.entitlements.view",
+        "erm.entitlements.item.post",
+        "erm.entitlements.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.entitlements.item.delete",
+      "displayName": "Entitlements item delete",
+      "description": "Delete entitlement record"
+    },
+    {
+      "permissionName": "erm.entitlements.delete",
+      "subPermissions": [
+        "erm.entitlements.view",
+        "erm.entitlements.edit",
+        "erm.entitlements.item.delete"
+      ]
+    },
+    {
+      "permissionName": "erm.titles.collection.get",
+      "displayName": "Title collection get",
+      "description": "Get a collection of title records"
+    },
+    {
+      "permissionName": "erm.titles.item.get",
+      "displayName": "Title item get",
+      "description": "Get title record"
+    },
+    {
+      "permissionName": "erm.titles.view",
+      "subPermissions": [
+        "erm.titles.collection.get",
+        "erm.titles.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.titles.item.put",
+      "displayName": "Title item put",
+      "description": "Put title record"
+    },
+    {
+      "permissionName": "erm.titles.edit",
+      "subPermissions": [
+        "erm.titles.view",
+        "erm.titles.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.custprops.collection.get",
+      "displayName": "Custom properties collection get",
+      "description": "Get a collection of custom properties records"
+    },
+    {
+      "permissionName": "erm.custprops.item.get",
+      "displayName": "Custom property item get",
+      "description": "Get custom property record"
+    },
+    {
+      "permissionName": "erm.custprops.view",
+      "subPermissions": [
+        "erm.custprops.collection.get",
+        "erm.custprops.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.custprops.item.post",
+      "displayName": "Custom property item post",
+      "description": "Post custom property record"
+    },
+    {
+      "permissionName": "erm.custprops.item.put",
+      "displayName": "Custom property item put",
+      "description": "Put custom property record"
+    },
+    {
+      "permissionName": "erm.custprops.edit",
+      "subPermissions": [
+        "erm.custprops.view",
+        "erm.custprops.item.post",
+        "erm.custprops.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.custprops.item.delete",
+      "displayName": "Custom property item delete",
+      "description": "Delete custom property record"
+    },
+    {
+      "permissionName": "erm.custprops.manage",
+      "subPermissions": [
+        "erm.custprops.edit",
+        "erm.custprops.item.delete"
+      ]
+    },
+    {
+      "permissionName": "erm.packages.collection.import",
+      "displayName": "Packages collection import",
+      "description": "Import a collection of package records"
+    },
+    {
+      "permissionName": "erm.sts.collection.get",
+      "displayName": "String templates collection get",
+      "description": "Get a collection of string templates"
+    },
+    {
+      "permissionName": "erm.sts.item.get",
+      "displayName": "String templates item get",
+      "description": "Get a string template record"
+    },
+    {
+      "permissionName": "erm.sts.view",
+      "subPermissions": [
+        "erm.sts.collection.get",
+        "erm.sts.item.get"
+      ]
+    },
+    {
+      "permissionName": "erm.sts.item.post",
+      "displayName": "String templates item post",
+      "description": "Post a string template record"
+    },
+    {
+      "permissionName": "erm.sts.item.put",
+      "displayName": "String templates item put",
+      "description": "Put a string template record"
+    },
+    {
+      "permissionName": "erm.sts.edit",
+      "subPermissions": [
+        "erm.sts.view",
+        "erm.sts.item.post",
+        "erm.sts.item.put"
+      ]
+    },
+    {
+      "permissionName": "erm.sts.item.delete",
+      "displayName": "String templates item delete",
+      "description": "Delete a string template record"
+    },
+    {
+      "permissionName": "erm.sts.manage",
+      "subPermissions": [
+        "erm.sts.edit",
+        "erm.sts.item.delete"
+      ]
+    },
+    {
+      "permissionName": "erm.sts.template",
+      "displayName": "String templates perform template",
+      "description": "Performs string templating"
+    },
+    {
+      "permissionName": "erm.admin.action",
+      "displayName": "Admin endpoint perform action",
+      "description": "Performs action from admin endpoint"
+    },
+    {
+      "permissionName": "erm.settings.get",
+      "displayName": "settings get",
+      "description": "get settings",
+      "visible": false
+    },
+    {
+      "permissionName": "erm.settings.collection.get",
+      "displayName": "settings collection get",
+      "description": "get collection of settings",
+      "visible": false
+    },
+    {
+      "permissionName": "erm.settings.post",
+      "displayName": "settings post",
+      "description": "post settings",
+      "visible": false
+    },
+    {
+      "permissionName": "erm.settings.put",
+      "displayName": "settings put",
+      "description": "put settings",
+      "visible": false
+    },
+    {
+      "permissionName": "erm.settings.delete",
+      "displayName": "settings delete",
+      "description": "delete settings",
+      "visible": false
+    },
+    {
+      "permissionName": "erm.settings.read",
+      "displayName": "settings read",
+      "description": "read settings",
+      "subPermissions": [
+        "erm.settings.get",
+        "erm.settings.collection.get"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "erm.settings.write",
+      "displayName": "settings write",
+      "description": "write settings",
+      "subPermissions": [
+        "erm.settings.read",
+        "erm.settings.post",
+        "erm.settings.put"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "erm.settings.manage",
+      "displayName": "settings manage",
+      "description": "manage settings",
+      "subPermissions": [
+        "erm.settings.write",
+        "erm.settings.delete"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "erm.pushkb.get",
+      "displayName": "pushKB get",
+      "description": "GET from pushKB endpoints",
+      "visible": false
+    },
+    {
+      "permissionName": "erm.pushkb.post",
+      "displayName": "pushKB post",
+      "description": "POST to pushKB endpoints",
+      "visible": false
+    },
+    {
+      "permissionName": "erm.pushkb.view",
+      "displayName": "PushKB view",
+      "description": "View pushKB objects and configurations",
+      "subPermissions": [
+        "erm.pushkb.get"
+      ],
+      "visible": true
+    },
+    {
+      "permissionName": "erm.pushkb.manage",
+      "displayName": "PushKB manage",
+      "description": "Post to pushKB endpoints, and view pushKB objects and configurations",
+      "subPermissions": [
+        "erm.pushkb.view",
+        "erm.pushkb.post"
+      ],
+      "visible": true
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "folioorg/mod-agreements:6.0.2",
+    "dockerPull": true,
+    "env": [
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-server -XX:+UseContainerSupport -XX:MaxRAMPercentage=67.0 -XX:+PrintFlagsFinal"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "postgres"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "5432"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "okapi_modules"
+      },
+      {
+        "name": "DB_MAXPOOLSIZE",
+        "value": "50"
+      }
+    ],
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 1610612736,
+        "PortBindings": {
+          "8080/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

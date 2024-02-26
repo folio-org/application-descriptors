@@ -203,18 +203,88 @@
   "permissionSets": [
     {
       "description": "Create a new Users Migration",
-      "displayName": "Users - create new migration",
-      "permissionName": "users.migrations.post"
+      "displayName": "Users (keycloak) - create new migration",
+      "permissionName": "users-keycloak.migrations.post"
     },
     {
       "description": "Get Users Migration",
-      "displayName": "Users - retrieve users migration",
-      "permissionName": "users.migrations.get"
+      "displayName": "Users (keycloak) - retrieve users migration",
+      "permissionName": "users-keycloak.migrations.get"
     },
     {
       "description": "Delete Users Migration",
-      "displayName": "Users - delete users migration",
-      "permissionName": "users.migrations.delete"
+      "displayName": "Users (keycloak) - delete users migration",
+      "permissionName": "users-keycloak.migrations.delete"
+    },
+    {
+      "description": "Get user by ID",
+      "displayName": "Users (keycloak) - get user keycloak",
+      "permissionName": "users-keycloak.item.get"
+    },
+    {
+      "description": "Create user",
+      "displayName": "Users (keycloak) - create a new user keycloak",
+      "permissionName": "users-keycloak.item.post"
+    },
+    {
+      "description": "Get users collection",
+      "displayName": "Users (keycloak) - get users collection keycloak",
+      "permissionName": "users-keycloak.collection.get"
+    },
+    {
+      "description": "Update user",
+      "displayName": "Users (keycloak) - update user keycloak",
+      "permissionName": "users-keycloak.item.put"
+    },
+    {
+      "description": "Delete user",
+      "displayName": "Users (keycloak) - delete user keycloak",
+      "permissionName": "users-keycloak.item.delete"
+    },
+    {
+      "description": "Generate password reset link for user",
+      "displayName": "Users (keycloak) - generate password reset link ",
+      "permissionName": "users-keycloak.password-reset-link.generate"
+    },
+    {
+      "description": "Reset password by generated link",
+      "displayName": "Users (keycloak) - reset password",
+      "permissionName": "users-keycloak.password-reset-link.reset"
+    },
+    {
+      "description": "Validate password",
+      "displayName": "Users (keycloak) - validate password",
+      "permissionName": "users-keycloak.password-reset-link.validate"
+    },
+    {
+      "description": "Read basic",
+      "displayName": "Users (keycloak) - read basic",
+      "permissionName": "users-keycloak.read.basic"
+    },
+    {
+      "description": "Read restricted",
+      "displayName": "Users (keycloak) - read restricted",
+      "permissionName": "users-keycloak.read.restricted"
+    },
+    {
+      "description": "All permissions for user operations",
+      "displayName": "Users (keycloak) - all users permissions",
+      "permissionName": "users-keycloak.all",
+      "subPermissions": [
+        "users-keycloak.migrations.post",
+        "users-keycloak.migrations.get",
+        "users-keycloak.migrations.delete",
+        "users-keycloak.item.get",
+        "users-keycloak.item.post",
+        "users-keycloak.collection.get",
+        "users-keycloak.item.put",
+        "users-keycloak.item.delete",
+        "users-keycloak.password-reset-link.generate",
+        "users-keycloak.password-reset-link.reset",
+        "users-keycloak.password-reset-link.validate",
+        "users-keycloak.read.restricted",
+        "users-keycloak.read.basic"
+      ]
     }
   ],
   "launchDescriptor": {

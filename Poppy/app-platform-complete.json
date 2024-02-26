@@ -63,7 +63,7 @@
       "id": "mod-finance-4.8.0",
       "name": "mod-finance",
       "version": "4.8.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-finance-4.8.0"
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-finance-4.8.0"
     },
     {
       "id": "mod-quick-marc-5.0.1",
@@ -213,7 +213,7 @@
       "id": "mod-agreements-6.0.2",
       "name": "mod-agreements",
       "version": "6.0.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-agreements-6.0.2"
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-agreements-6.0.2"
     },
     {
       "id": "mod-licenses-5.0.2",

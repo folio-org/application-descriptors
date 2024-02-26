@@ -664,6 +664,11 @@
         "user-capability-sets.collection.delete",
         "user.capability-sets.collection.get"
       ]
+    },
+    {
+      "permissionName": "permissions.users.item.get",
+      "displayName": "Permissions - get user permissions",
+      "description": "Get user permissions based on assigned roles and capabilities"
     }
   ],
   "requires": [

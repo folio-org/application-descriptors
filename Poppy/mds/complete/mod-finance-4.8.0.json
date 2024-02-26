@@ -1,0 +1,1832 @@
+{
+  "id": "mod-finance-4.8.0",
+  "name": "Finance business logic module",
+  "requires": [
+    {
+      "id": "finance-storage.budgets",
+      "version": "3.0"
+    },
+    {
+      "id": "finance-storage.expense-classes",
+      "version": "3.0"
+    },
+    {
+      "id": "finance-storage.budget-expense-classes",
+      "version": "2.0"
+    },
+    {
+      "id": "finance-storage.fund-types",
+      "version": "2.0"
+    },
+    {
+      "id": "finance-storage.funds",
+      "version": "4.0"
+    },
+    {
+      "id": "finance-storage.fiscal-years",
+      "version": "3.0"
+    },
+    {
+      "id": "finance-storage.groups",
+      "version": "2.0"
+    },
+    {
+      "id": "finance-storage.ledgers",
+      "version": "4.0"
+    },
+    {
+      "id": "finance-storage.transactions",
+      "version": "4.0"
+    },
+    {
+      "id": "configuration",
+      "version": "2.0"
+    },
+    {
+      "id": "finance-storage.order-transaction-summaries",
+      "version": "1.1"
+    },
+    {
+      "id": "finance-storage.invoice-transaction-summaries",
+      "version": "2.1"
+    }
+  ],
+  "provides": [
+    {
+      "id": "finance.budgets",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/budgets",
+          "permissionsRequired": [
+            "finance.budgets.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.budgets.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/budgets",
+          "permissionsRequired": [
+            "finance.budgets.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.budgets.item.post",
+            "finance-storage.budgets.collection.get",
+            "finance-storage.group-fund-fiscal-years.collection.get",
+            "finance-storage.group-fund-fiscal-years.item.put",
+            "finance-storage.transactions.item.post",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.fiscal-years.collection.get",
+            "finance-storage.budget-expense-classes.collection.get",
+            "finance-storage.budget-expense-classes.item.post",
+            "finance-storage.funds.item.get",
+            "finance-storage.ledgers.item.get",
+            "configuration.entries.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/budgets/{id}",
+          "permissionsRequired": [
+            "finance.budgets.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.budgets.item.get",
+            "finance-storage.budget-expense-classes.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/fund-codes-expense-classes",
+          "permissionsRequired": [
+            "finance.fund-codes-expense-classes.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledgers.collection.get",
+            "finance-storage.fiscal-years.collection.get",
+            "finance-storage.funds.collection.get",
+            "finance-storage.budgets.collection.get",
+            "finance-storage.budget-expense-classes.collection.get",
+            "finance-storage.expense-classes.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/budgets/{id}",
+          "permissionsRequired": [
+            "finance.budgets.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.budgets.item.put",
+            "finance-storage.budgets.item.get",
+            "finance-storage.budget-expense-classes.collection.get",
+            "finance-storage.budget-expense-classes.item.post",
+            "finance-storage.budget-expense-classes.item.put",
+            "finance-storage.budget-expense-classes.item.delete",
+            "finance-storage.transactions.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/budgets/{id}",
+          "permissionsRequired": [
+            "finance.budgets.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.budgets.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/budgets/{id}/expense-classes-totals",
+          "permissionsRequired": [
+            "finance.budgets-expense-classes-totals.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.budgets.item.get",
+            "finance-storage.expense-classes.collection.get",
+            "finance-storage.transactions.collection.get",
+            "finance-storage.budget-expense-classes.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.fund-types",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/fund-types",
+          "permissionsRequired": [
+            "finance.fund-types.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.fund-types.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/fund-types",
+          "permissionsRequired": [
+            "finance.fund-types.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.fund-types.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/fund-types/{id}",
+          "permissionsRequired": [
+            "finance.fund-types.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.fund-types.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/fund-types/{id}",
+          "permissionsRequired": [
+            "finance.fund-types.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.fund-types.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/fund-types/{id}",
+          "permissionsRequired": [
+            "finance.fund-types.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.fund-types.item.delete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.funds",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/funds",
+          "permissionsRequired": [
+            "finance.funds.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.funds.collection.get",
+            "acquisitions-units-storage.units.collection.get",
+            "acquisitions-units-storage.memberships.collection.get",
+            "configuration.entries.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/funds",
+          "permissionsRequired": [
+            "finance.funds.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.funds.item.post",
+            "finance-storage.ledgers.item.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.fiscal-years.collection.get",
+            "finance-storage.group-fund-fiscal-years.item.post",
+            "configuration.entries.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/funds/{id}",
+          "permissionsRequired": [
+            "finance.funds.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.funds.item.get",
+            "finance-storage.ledgers.item.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.fiscal-years.collection.get",
+            "finance-storage.group-fund-fiscal-years.collection.get",
+            "acquisitions-units-storage.units.collection.get",
+            "acquisitions-units-storage.memberships.collection.get",
+            "configuration.entries.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/funds/{id}",
+          "permissionsRequired": [
+            "finance.funds.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.funds.item.put",
+            "finance-storage.funds.item.get",
+            "finance-storage.ledgers.item.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.fiscal-years.collection.get",
+            "finance-storage.groups.collection.get",
+            "finance-storage.budgets.collection.get",
+            "finance-storage.group-fund-fiscal-years.collection.get",
+            "finance-storage.group-fund-fiscal-years.item.post",
+            "finance-storage.group-fund-fiscal-years.item.delete",
+            "configuration.entries.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/funds/{id}",
+          "permissionsRequired": [
+            "finance.funds.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.funds.item.delete",
+            "finance-storage.group-fund-fiscal-years.collection.get",
+            "finance-storage.group-fund-fiscal-years.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/funds/{id}/expense-classes",
+          "permissionsRequired": [
+            "finance.funds.expense-classes.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.funds.item.get",
+            "finance-storage.ledgers.item.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.fiscal-years.collection.get",
+            "finance-storage.budgets.collection.get",
+            "finance-storage.expense-classes.collection.get",
+            "finance-storage.budget-expense-classes.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/funds/{id}/budget",
+          "permissionsRequired": [
+            "finance.funds.budget.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.funds.item.get",
+            "finance-storage.ledgers.item.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.fiscal-years.collection.get",
+            "finance-storage.budgets.collection.get",
+            "configuration.entries.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.fiscal-years",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/fiscal-years",
+          "permissionsRequired": [
+            "finance.fiscal-years.collection.get"
+          ],
+          "modulePermissions": [
+            "acquisitions-units-storage.units.collection.get",
+            "acquisitions-units-storage.memberships.collection.get",
+            "finance-storage.fiscal-years.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/fiscal-years",
+          "permissionsRequired": [
+            "finance.fiscal-years.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.fiscal-years.item.post",
+            "configuration.entries.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/fiscal-years/{id}",
+          "permissionsRequired": [
+            "finance.fiscal-years.item.get"
+          ],
+          "modulePermissions": [
+            "acquisitions-units-storage.units.collection.get",
+            "acquisitions-units-storage.memberships.collection.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.budgets.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/fiscal-years/{id}",
+          "permissionsRequired": [
+            "finance.fiscal-years.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.fiscal-years.item.put",
+            "configuration.entries.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/fiscal-years/{id}",
+          "permissionsRequired": [
+            "finance.fiscal-years.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.fiscal-years.item.delete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.group-fund-fiscal-years",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/group-fund-fiscal-years",
+          "permissionsRequired": [
+            "finance.group-fund-fiscal-years.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.group-fund-fiscal-years.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/group-fund-fiscal-years",
+          "permissionsRequired": [
+            "finance.group-fund-fiscal-years.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.group-fund-fiscal-years.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/group-fund-fiscal-years/{id}",
+          "permissionsRequired": [
+            "finance.group-fund-fiscal-years.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.group-fund-fiscal-years.item.delete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.ledgers",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledgers",
+          "permissionsRequired": [
+            "finance.ledgers.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledgers.collection.get",
+            "finance-storage.budgets.collection.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.transactions.collection.get",
+            "acquisitions-units-storage.units.collection.get",
+            "acquisitions-units-storage.memberships.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/ledgers",
+          "permissionsRequired": [
+            "finance.ledgers.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledgers.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledgers/{id}",
+          "permissionsRequired": [
+            "finance.ledgers.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledgers.item.get",
+            "finance-storage.budgets.collection.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.transactions.collection.get",
+            "acquisitions-units-storage.units.collection.get",
+            "acquisitions-units-storage.memberships.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/ledgers/{id}",
+          "permissionsRequired": [
+            "finance.ledgers.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledgers.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/ledgers/{id}",
+          "permissionsRequired": [
+            "finance.ledgers.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledgers.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledgers/{id}/current-fiscal-year",
+          "permissionsRequired": [
+            "finance.ledgers.current-fiscal-year.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledgers.item.get",
+            "finance-storage.fiscal-years.item.get",
+            "finance-storage.fiscal-years.collection.get",
+            "configuration.entries.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.ledger-rollovers",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers",
+          "permissionsRequired": [
+            "finance.ledger-rollovers.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/ledger-rollovers",
+          "permissionsRequired": [
+            "finance.ledger-rollovers.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers/{id}",
+          "permissionsRequired": [
+            "finance.ledger-rollovers.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers.item.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.ledger-rollovers-logs",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-logs",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-logs.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-logs.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-logs/{id}",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-logs.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-logs.item.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.ledger-rollovers-budgets",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-budgets",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-budgets.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-budgets.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-budgets/{id}",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-budgets.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-budgets.item.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.ledger-rollovers-errors",
+      "version": "1.1",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-errors",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-errors.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-errors.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-errors",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-errors.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-errors.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-errors/{id}",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-errors.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-errors.item.delete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.ledger-rollovers-progress",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-progress",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-progress.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-progress.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-progress",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-progress.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-progress.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-progress/{id}",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-progress.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-progress.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/ledger-rollovers-progress/{id}",
+          "permissionsRequired": [
+            "finance.ledger-rollovers-progress.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.ledger-rollovers-progress.item.put"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.groups",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/groups",
+          "permissionsRequired": [
+            "finance.groups.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.groups.collection.get",
+            "acquisitions-units-storage.units.collection.get",
+            "acquisitions-units-storage.memberships.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/groups",
+          "permissionsRequired": [
+            "finance.groups.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.groups.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/groups/{id}",
+          "permissionsRequired": [
+            "finance.groups.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.groups.item.get",
+            "acquisitions-units-storage.units.collection.get",
+            "acquisitions-units-storage.memberships.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/groups/{id}",
+          "permissionsRequired": [
+            "finance.groups.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.groups.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/groups/{id}",
+          "permissionsRequired": [
+            "finance.groups.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.groups.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/groups/{id}/expense-classes-totals",
+          "permissionsRequired": [
+            "finance.groups-expense-classes-totals.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.group-fund-fiscal-years.collection.get",
+            "finance-storage.expense-classes.collection.get",
+            "finance-storage.transactions.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.transactions",
+      "version": "5.0",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/allocations",
+          "permissionsRequired": [
+            "finance.allocations.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.post",
+            "finance-storage.funds.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/encumbrances",
+          "permissionsRequired": [
+            "finance.encumbrances.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/encumbrances/{id}",
+          "permissionsRequired": [
+            "finance.encumbrances.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/encumbrances/{id}",
+          "permissionsRequired": [
+            "finance.encumbrances.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.get",
+            "finance-storage.transactions.item.put",
+            "finance-storage.transactions.item.delete",
+            "finance-storage.transactions.collection.get",
+            "finance-storage.order-transaction-summaries.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/transfers",
+          "permissionsRequired": [
+            "finance.transfers.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.post",
+            "finance-storage.funds.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/payments",
+          "permissionsRequired": [
+            "finance.payments.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/payments/{id}",
+          "permissionsRequired": [
+            "finance.payments.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.put",
+            "finance-storage.transactions.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/pending-payments",
+          "permissionsRequired": [
+            "finance.pending-payments.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/pending-payments/{id}",
+          "permissionsRequired": [
+            "finance.pending-payments.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/credits",
+          "permissionsRequired": [
+            "finance.credits.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/credits/{id}",
+          "permissionsRequired": [
+            "finance.credits.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.put",
+            "finance-storage.transactions.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/transactions",
+          "permissionsRequired": [
+            "finance.transactions.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/transactions/{id}",
+          "permissionsRequired": [
+            "finance.transactions.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/release-encumbrance/{id}",
+          "permissionsRequired": [
+            "finance.release-encumbrance.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.transactions.item.get",
+            "finance-storage.transactions.item.put",
+            "finance-storage.order-transaction-summaries.item.put"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.order-transaction-summaries",
+      "version": "1.2",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/order-transaction-summaries",
+          "permissionsRequired": [
+            "finance.order-transaction-summaries.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.order-transaction-summaries.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/order-transaction-summaries/{id}",
+          "permissionsRequired": [
+            "finance.order-transaction-summaries.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.order-transaction-summaries.item.put"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.group-fiscal-year-summaries",
+      "version": "1.3",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/group-fiscal-year-summaries",
+          "permissionsRequired": [
+            "finance.group-fiscal-year-summaries.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.budgets.collection.get",
+            "finance-storage.group-fund-fiscal-years.collection.get",
+            "finance-storage.transactions.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.invoice-transaction-summaries",
+      "version": "2.1",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/invoice-transaction-summaries",
+          "permissionsRequired": [
+            "finance.invoice-transaction-summaries.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.invoice-transaction-summaries.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/invoice-transaction-summaries/{id}",
+          "permissionsRequired": [
+            "finance.invoice-transaction-summaries.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.invoice-transaction-summaries.item.put"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.exchange-rate",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/exchange-rate",
+          "permissionsRequired": [
+            "finance.exchange-rate.item.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance.expense-classes",
+      "version": "3.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/expense-classes",
+          "permissionsRequired": [
+            "finance.expense-classes.collection.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.expense-classes.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/finance/expense-classes",
+          "permissionsRequired": [
+            "finance.expense-classes.item.post"
+          ],
+          "modulePermissions": [
+            "finance-storage.expense-classes.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/finance/expense-classes/{id}",
+          "permissionsRequired": [
+            "finance.expense-classes.item.get"
+          ],
+          "modulePermissions": [
+            "finance-storage.expense-classes.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/finance/expense-classes/{id}",
+          "permissionsRequired": [
+            "finance.expense-classes.item.put"
+          ],
+          "modulePermissions": [
+            "finance-storage.expense-classes.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/finance/expense-classes/{id}",
+          "permissionsRequired": [
+            "finance.expense-classes.item.delete"
+          ],
+          "modulePermissions": [
+            "finance-storage.expense-classes.item.delete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_jsonSchemas",
+      "version": "1.0",
+      "interfaceType": "multiple",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/_/jsonSchemas",
+          "permissionsRequired": []
+        }
+      ]
+    }
+  ],
+  "optional": [
+    {
+      "id": "acquisitions-units-storage.units",
+      "version": "1.1"
+    },
+    {
+      "id": "acquisitions-units-storage.memberships",
+      "version": "1.0"
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "finance.ledger-rollovers-logs.item.get",
+      "displayName": "ledger-rollovers-logs item get",
+      "description": "Get a ledger rollover log"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-budgets.item.get",
+      "displayName": "ledger-rollovers-budgets item get",
+      "description": "Get a ledger rollover budget"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-errors.item.post",
+      "displayName": "ledger-rollovers-errors item post",
+      "description": "Create a ledger rollover error"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-errors.item.delete",
+      "displayName": "ledger-rollovers-errors item delete",
+      "description": "Delete a ledger rollover error"
+    },
+    {
+      "permissionName": "finance.budgets-expense-classes-totals.collection.get",
+      "displayName": "expense-classes-totals collection get",
+      "description": "Get expense class totals within a budget"
+    },
+    {
+      "permissionName": "finance.budgets.collection.get",
+      "displayName": "Budgets - get the collection of budgets",
+      "description": "Get collection of budgets"
+    },
+    {
+      "permissionName": "finance.budgets.item.post",
+      "displayName": "Budgets - create a new budget",
+      "description": "Create a new fund type"
+    },
+    {
+      "permissionName": "finance.budgets.item.get",
+      "displayName": "Budgets - get an existing budget",
+      "description": "Fetch a fund type"
+    },
+    {
+      "permissionName": "finance.budgets.item.put",
+      "displayName": "Budgets - modify an existing budget",
+      "description": "Update a fund type"
+    },
+    {
+      "permissionName": "finance.budgets.item.delete",
+      "displayName": "Budgets - delete an existing budget",
+      "description": "Delete a fund type"
+    },
+    {
+      "permissionName": "finance.budgets.all",
+      "displayName": "All budget permissions",
+      "description": "All permissions for the budget APIs",
+      "subPermissions": [
+        "finance.budgets.collection.get",
+        "finance.budgets.item.post",
+        "finance.budgets.item.get",
+        "finance.budgets.item.put",
+        "finance.budgets.item.delete",
+        "finance.budgets-expense-classes-totals.collection.get"
+      ]
+    },
+    {
+      "permissionName": "finance.fund-types.collection.get",
+      "displayName": "Fund types - get the collection of fund types",
+      "description": "Get collection of fund types"
+    },
+    {
+      "permissionName": "finance.fund-types.item.post",
+      "displayName": "Fund types - create a new fund type",
+      "description": "Create a new fund type"
+    },
+    {
+      "permissionName": "finance.fund-types.item.get",
+      "displayName": "Fund types - get an existing fund type",
+      "description": "Fetch a fund type"
+    },
+    {
+      "permissionName": "finance.fund-types.item.put",
+      "displayName": "Fund types - modify an existing fund type",
+      "description": "Update a fund type"
+    },
+    {
+      "permissionName": "finance.fund-types.item.delete",
+      "displayName": "Fund types - delete an existing fund type",
+      "description": "Delete a fund type"
+    },
+    {
+      "permissionName": "finance.fund-types.all",
+      "displayName": "All fund type permissions",
+      "description": "All permissions for the fund type APIs",
+      "subPermissions": [
+        "finance.fund-types.collection.get",
+        "finance.fund-types.item.post",
+        "finance.fund-types.item.get",
+        "finance.fund-types.item.put",
+        "finance.fund-types.item.delete"
+      ]
+    },
+    {
+      "permissionName": "finance.funds.collection.get",
+      "displayName": "Finances - get finance funds collection",
+      "description": "Get finance funds collection"
+    },
+    {
+      "permissionName": "finance.funds.item.get",
+      "displayName": "Finances - get individual finance funds from storage",
+      "description": "Get individual finance funds"
+    },
+    {
+      "permissionName": "finance.funds.item.post",
+      "displayName": "Finances - create finance funds",
+      "description": "Create finance funds"
+    },
+    {
+      "permissionName": "finance.funds.item.put",
+      "displayName": "Finances - modify finance funds",
+      "description": "Modify finance funds"
+    },
+    {
+      "permissionName": "finance.funds.item.delete",
+      "displayName": "Finances - delete finance funds",
+      "description": "Delete finance funds"
+    },
+    {
+      "permissionName": "finance.funds.expense-classes.collection.get",
+      "displayName": "Finances - get expense classes for fund from current budget",
+      "description": "Get expense classes for fund from current budget"
+    },
+    {
+      "permissionName": "finance.funds.all",
+      "displayName": "Finance Funds - all permissions",
+      "description": "Entire set of permissions needed to use the Finance funds interface",
+      "subPermissions": [
+        "finance.funds.collection.get",
+        "finance.funds.item.get",
+        "finance.funds.item.post",
+        "finance.funds.item.put",
+        "finance.funds.item.delete",
+        "finance.funds.budget.item.get",
+        "finance.funds.expense-classes.collection.get"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "finance.fiscal-years.collection.get",
+      "displayName": "Finances - get finance fiscal-years collection",
+      "description": "Get finance fiscal years collection"
+    },
+    {
+      "permissionName": "finance.fiscal-years.item.get",
+      "displayName": "Finances - get individual finance fiscal year from storage",
+      "description": "Get individual finance fiscal year"
+    },
+    {
+      "permissionName": "finance.fiscal-years.item.post",
+      "displayName": "Finances - create finance fiscal-years",
+      "description": "Create finance fiscal year"
+    },
+    {
+      "permissionName": "finance.fiscal-years.item.put",
+      "displayName": "Finances - modify finance fiscal year",
+      "description": "Modify finance fiscal year"
+    },
+    {
+      "permissionName": "finance.fiscal-years.item.delete",
+      "displayName": "Finances - delete finance fiscal year",
+      "description": "Delete finance fiscal year"
+    },
+    {
+      "permissionName": "finance.fiscal-years.all",
+      "displayName": "Finance fiscal years - all permissions",
+      "description": "Entire set of permissions needed to use the Finance fiscal years interface",
+      "subPermissions": [
+        "finance.fiscal-years.collection.get",
+        "finance.fiscal-years.item.get",
+        "finance.fiscal-years.item.post",
+        "finance.fiscal-years.item.put",
+        "finance.fiscal-years.item.delete"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "finance.ledgers.collection.get",
+      "displayName": "Ledgers - get the collection of ledgers",
+      "description": "Get collection of ledgers"
+    },
+    {
+      "permissionName": "finance.ledgers.item.post",
+      "displayName": "Ledgers - create a new ledger",
+      "description": "Create a new ledger"
+    },
+    {
+      "permissionName": "finance.ledgers.item.get",
+      "displayName": "Ledgers - get an existing ledger",
+      "description": "Fetch a ledger"
+    },
+    {
+      "permissionName": "finance.ledgers.item.put",
+      "displayName": "Ledgers - modify an existing ledger",
+      "description": "Update a ledger"
+    },
+    {
+      "permissionName": "finance.ledgers.item.delete",
+      "displayName": "Ledgers - delete an existing ledger",
+      "description": "Delete a ledger"
+    },
+    {
+      "permissionName": "finance.ledgers.current-fiscal-year.item.get",
+      "displayName": "Ledgers - get a current fiscal year for a specific ledger",
+      "description": "Get a current fiscal year"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers.collection.get",
+      "displayName": "Ledger rollover - get the collection of ledger rollovers",
+      "description": "Get collection of ledger rollovers"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers.item.post",
+      "displayName": "Ledger rollover - create a new ledger rollover",
+      "description": "Create a new ledger rollover"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers.item.get",
+      "displayName": "Ledger rollover - get an existing ledger",
+      "description": "Fetch a ledger rollover"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-logs.collection.get",
+      "displayName": "Ledger rollover - get the collection of ledger rollover logs",
+      "description": "Get collection of ledger rollover logs"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-logs.collection.item.get",
+      "displayName": "ledger rollover logs item get",
+      "description": "Fetch a ledger rollover log"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-budgets.collection.get",
+      "displayName": "Ledger rollover - get the collection of ledger rollover budgets",
+      "description": "Get collection of ledger rollover budgets"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-budgets.collection.item.get",
+      "displayName": "ledger rollover budgets item get",
+      "description": "Fetch a ledger rollover budget"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-errors.collection.get",
+      "displayName": "ledger rollover errors collection get",
+      "description": "Get collection of ledgers rollover errors"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-progress.collection.get",
+      "displayName": "ledger rollover progress collection get",
+      "description": "Get collection of ledgers rollover progress"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-progress.item.post",
+      "displayName": "ledger rollover progress item post",
+      "description": "Create a new ledger rollover progress"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-progress.item.get",
+      "displayName": "ledger rollover progress item get",
+      "description": "Fetch a ledger rollover progress"
+    },
+    {
+      "permissionName": "finance.ledger-rollovers-progress.item.put",
+      "displayName": "ledger rollover progress item put",
+      "description": "Update a ledger rollover progress"
+    },
+    {
+      "permissionName": "finance.ledgers.all",
+      "displayName": "All ledger permissions",
+      "description": "All permissions for the ledger APIs",
+      "subPermissions": [
+        "finance.ledgers.collection.get",
+        "finance.ledgers.item.post",
+        "finance.ledgers.item.get",
+        "finance.ledgers.item.put",
+        "finance.ledgers.item.delete",
+        "finance.ledger-rollovers.collection.get",
+        "finance.ledger-rollovers.item.get",
+        "finance.ledger-rollovers.item.post",
+        "finance.ledger-rollovers-logs.collection.get",
+        "finance.ledger-rollovers-logs.item.get",
+        "finance.ledger-rollovers-budgets.collection.get",
+        "finance.ledger-rollovers-budgets.item.get",
+        "finance.ledgers.current-fiscal-year.item.get",
+        "finance.ledger-rollovers-errors.collection.get",
+        "finance.ledger-rollovers-progress.collection.get",
+        "finance.ledger-rollovers-progress.item.post",
+        "finance.ledger-rollovers-progress.item.get",
+        "finance.ledger-rollovers-progress.item.put"
+      ]
+    },
+    {
+      "permissionName": "finance.groups.collection.get",
+      "displayName": "Groups - get the collection of groups",
+      "description": "Get collection of groups"
+    },
+    {
+      "permissionName": "finance.groups.item.post",
+      "displayName": "Groups - create a new group",
+      "description": "Create a new group"
+    },
+    {
+      "permissionName": "finance.groups.item.get",
+      "displayName": "Groups - get an existing group",
+      "description": "Fetch a group"
+    },
+    {
+      "permissionName": "finance.groups.item.put",
+      "displayName": "Groups - modify an existing group",
+      "description": "Update a group"
+    },
+    {
+      "permissionName": "finance.groups.item.delete",
+      "displayName": "Groups - delete an existing group",
+      "description": "Delete a group"
+    },
+    {
+      "permissionName": "finance.groups-expense-classes-totals.collection.get",
+      "displayName": "expense-classes-totals collection get",
+      "description": "Get expense class totals within a budget"
+    },
+    {
+      "permissionName": "finance.groups.all",
+      "displayName": "All group permissions",
+      "description": "All permissions for the group APIs",
+      "subPermissions": [
+        "finance.groups.collection.get",
+        "finance.groups.item.post",
+        "finance.groups.item.get",
+        "finance.groups.item.put",
+        "finance.groups.item.delete",
+        "finance.groups-expense-classes-totals.collection.get"
+      ]
+    },
+    {
+      "permissionName": "finance.group-fund-fiscal-years.collection.get",
+      "displayName": "Finances - get finance group fund fiscal years collection",
+      "description": "Get finance group fund fiscal years collection"
+    },
+    {
+      "permissionName": "finance.group-fund-fiscal-years.item.post",
+      "displayName": "Finances - create finance group fund fiscal year",
+      "description": "Create finance group fund fiscal years"
+    },
+    {
+      "permissionName": "finance.group-fund-fiscal-years.item.delete",
+      "displayName": "Finances - delete finance group fund fiscal years",
+      "description": "Delete finance group fund fiscal year"
+    },
+    {
+      "permissionName": "finance.group-fund-fiscal-years.all",
+      "displayName": "Finance group fund fiscal years - all permissions",
+      "description": "Entire set of permissions needed to use the Finance - group fund fiscal years interface",
+      "subPermissions": [
+        "finance.group-fund-fiscal-years.collection.get",
+        "finance.group-fund-fiscal-years.item.post",
+        "finance.group-fund-fiscal-years.item.delete"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "finance.allocations.item.post",
+      "displayName": "Allocations - create a new transaction of type allocation",
+      "description": "Create a new allocation"
+    },
+    {
+      "permissionName": "finance.encumbrances.item.post",
+      "displayName": "Encumbrances - create a new transaction of type encumbrance",
+      "description": "Create a new encumbrance"
+    },
+    {
+      "permissionName": "finance.encumbrances.item.put",
+      "displayName": "Encumbrances - update transaction of type encumbrance",
+      "description": "Update an encumbrance"
+    },
+    {
+      "permissionName": "finance.encumbrances.item.delete",
+      "displayName": "Encumbrances - delete transaction of type encumbrance",
+      "description": "Delete an encumbrance"
+    },
+    {
+      "permissionName": "finance.transfers.item.post",
+      "displayName": "Transfers - create a new transaction of type transfer",
+      "description": "Create a new transfer"
+    },
+    {
+      "permissionName": "finance.payments.item.post",
+      "displayName": "Payments - create a new transaction of type payment",
+      "description": "Create a new payment"
+    },
+    {
+      "permissionName": "finance.payments.item.put",
+      "displayName": "Payments - update a transaction of type payment",
+      "description": "Update a payment"
+    },
+    {
+      "permissionName": "finance.pending-payments.item.post",
+      "displayName": "Pending payments - create a new transaction of type pending payment",
+      "description": "Create a new pending payment"
+    },
+    {
+      "permissionName": "finance.pending-payments.item.put",
+      "displayName": "Pending payments - update a transaction of type pending payment",
+      "description": "Update a pending payment"
+    },
+    {
+      "permissionName": "finance.credits.item.post",
+      "displayName": "Credits - create a new transaction of type credit",
+      "description": "Create a new credit"
+    },
+    {
+      "permissionName": "finance.credits.item.put",
+      "displayName": "Credits - update a transaction of type credit",
+      "description": "Update a credit"
+    },
+    {
+      "permissionName": "finance.transactions.collection.get",
+      "displayName": "Finances - Get finance transaction collection",
+      "description": "Get finance transaction collection"
+    },
+    {
+      "permissionName": "finance.transactions.item.get",
+      "displayName": "Finances - get an existing transaction",
+      "description": "Get an existing transaction"
+    },
+    {
+      "permissionName": "finance.transactions.all",
+      "displayName": "All transactions permissions",
+      "description": "All permissions for the transaction APIs",
+      "subPermissions": [
+        "finance.allocations.item.post",
+        "finance.encumbrances.item.post",
+        "finance.encumbrances.item.put",
+        "finance.encumbrances.item.delete",
+        "finance.transfers.item.post",
+        "finance.payments.item.post",
+        "finance.payments.item.put",
+        "finance.pending-payments.item.post",
+        "finance.pending-payments.item.put",
+        "finance.credits.item.post",
+        "finance.credits.item.put",
+        "finance.transactions.collection.get",
+        "finance.transactions.item.get",
+        "finance.release-encumbrance.item.post"
+      ]
+    },
+    {
+      "permissionName": "finance.release-encumbrance.item.post",
+      "displayName": "Release encumbrance",
+      "description": "Release any remaining money encumbered back to the budget's available pool"
+    },
+    {
+      "permissionName": "finance.group-fiscal-year-summaries.collection.get",
+      "displayName": "Finances - get group fiscal year summaries",
+      "description": "Get group fiscal year summaries collection"
+    },
+    {
+      "permissionName": "finance.order-transaction-summaries.item.post",
+      "displayName": "Finances - Post Order transaction Summaries",
+      "description": "Post Order Transaction Summary"
+    },
+    {
+      "permissionName": "finance.order-transaction-summaries.item.put",
+      "displayName": "Finances - Put Order transaction Summaries",
+      "description": "Put Order Transaction Summary"
+    },
+    {
+      "permissionName": "finance.order-transaction-summaries.item.get",
+      "displayName": "Finances - Get Order transaction Summaries",
+      "description": "Get Order Transaction Summary"
+    },
+    {
+      "permissionName": "finance.invoice-transaction-summaries.item.post",
+      "displayName": "Finances - Post Invoice transaction Summaries",
+      "description": "Post Invoice Transaction Summary"
+    },
+    {
+      "permissionName": "finance.invoice-transaction-summaries.item.put",
+      "displayName": "Finances - Put Invoice transaction Summaries",
+      "description": "Put Invoice Transaction Summary"
+    },
+    {
+      "permissionName": "finance.exchange-rate.item.get",
+      "displayName": "Finances - Exchange Rate",
+      "description": "Get Exchange Rate"
+    },
+    {
+      "permissionName": "finance.fund-codes-expense-classes.collection.get",
+      "displayName": "Pairs fund code - expense class code",
+      "description": "Return collection of the pairs  <fund code, expense classes>"
+    },
+    {
+      "permissionName": "finance.all",
+      "displayName": "Finance module - all permissions",
+      "description": "Entire set of permissions needed to use the finance module",
+      "subPermissions": [
+        "finance.budgets.all",
+        "finance.fund-types.all",
+        "finance.funds.all",
+        "finance.group-fund-fiscal-years.all",
+        "finance.ledgers.all",
+        "finance.fiscal-years.all",
+        "finance.groups.all",
+        "finance.transactions.all",
+        "finance.fund-codes-expense-classes.collection.get",
+        "finance.group-fiscal-year-summaries.collection.get",
+        "finance.order-transaction-summaries.item.post",
+        "finance.order-transaction-summaries.item.put",
+        "finance.invoice-transaction-summaries.item.post",
+        "finance.invoice-transaction-summaries.item.put",
+        "finance.exchange-rate.item.get",
+        "finance.expense-classes.all",
+        "finance.acquisitions-units-assignments.all"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "finance.expense-classes.collection.get",
+      "displayName": "expense-class-collection get",
+      "description": "Get a collection of expense-classes"
+    },
+    {
+      "permissionName": "finance.expense-classes.item.post",
+      "displayName": "expense-class-item post",
+      "description": "Create a new expense class"
+    },
+    {
+      "permissionName": "finance.expense-classes.item.get",
+      "displayName": "expense-class-item get",
+      "description": "Fetch an expense class"
+    },
+    {
+      "permissionName": "finance.expense-classes.item.put",
+      "displayName": "expense-class-item put",
+      "description": "Update an expense class"
+    },
+    {
+      "permissionName": "finance.expense-classes.item.delete",
+      "displayName": "expense-class-item delete",
+      "description": "Delete an expense class"
+    },
+    {
+      "permissionName": "finance.expense-classes.all",
+      "displayName": "All expense class perms",
+      "description": "All permissions for the expense class",
+      "subPermissions": [
+        "finance.expense-classes.collection.get",
+        "finance.expense-classes.item.post",
+        "finance.expense-classes.item.get",
+        "finance.expense-classes.item.put",
+        "finance.expense-classes.item.delete"
+      ],
+      "visible": false
+    },
+    {
+      "permissionName": "finance.funds.budget.item.get",
+      "displayName": "budget-item get",
+      "description": "Fetch an budget for fund"
+    },
+    {
+      "permissionName": "finance.acquisitions-units-assignments.assign",
+      "displayName": "Acquisitions unit assignments - create unit assignments",
+      "description": "Assign acquisition units"
+    },
+    {
+      "permissionName": "finance.acquisitions-units-assignments.manage",
+      "displayName": "Acquisitions unit assignments - manage unit assignments",
+      "description": "Manage acquisition unit assignments"
+    },
+    {
+      "permissionName": "finance.acquisitions-units-assignments.all",
+      "displayName": "Acquisitions unit assignments - all permissions",
+      "description": "All acquisition unit assignments permissions",
+      "subPermissions": [
+        "finance.acquisitions-units-assignments.assign",
+        "finance.acquisitions-units-assignments.manage"
+      ]
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "folioorg/mod-finance:4.8.0",
+    "dockerPull": true,
+    "env": [
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=66.0"
+      }
+    ],
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 536870912,
+        "PortBindings": {
+          "8081/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
