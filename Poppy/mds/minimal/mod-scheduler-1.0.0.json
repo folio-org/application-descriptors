@@ -1,0 +1,146 @@
+{
+  "id": "mod-scheduler-1.0.0",
+  "name": "Scheduler",
+  "provides": [
+    {
+      "id": "scheduler",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [ "GET" ],
+          "pathPattern": "/scheduler/timers",
+          "permissionsRequired": [ "scheduler.collection.get" ]
+        },
+        {
+          "methods": [ "POST" ],
+          "pathPattern": "/scheduler/timers",
+          "permissionsRequired": [ "scheduler.item.post" ]
+        },
+        {
+          "methods": [ "GET" ],
+          "pathPattern": "/scheduler/timers/{id}",
+          "permissionsRequired": [ "scheduler.item.get" ]
+        },
+        {
+          "methods": [ "PUT" ],
+          "pathPattern": "/scheduler/timers/{id}",
+          "permissionsRequired": [ "scheduler.item.put" ]
+        },
+        {
+          "methods": [ "DELETE" ],
+          "pathPattern": "/scheduler/timers/{id}",
+          "permissionsRequired": [ "scheduler.item.delete" ]
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [ "POST" ],
+          "pathPattern": "/_/tenant"
+        },
+        {
+          "methods": [ "GET", "DELETE" ],
+          "pathPattern": "/_/tenant/{id}"
+        }
+      ]
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "scheduler.collection.get",
+      "displayName": "Scheduler - get scheduler collection",
+      "description": "Get scheduler collection"
+    },
+    {
+      "permissionName": "scheduler.item.get",
+      "displayName": "Scheduler - get individual scheduler from storage",
+      "description": "Get individual scheduler"
+    },
+    {
+      "permissionName": "scheduler.item.post",
+      "displayName": "Scheduler - create scheduler",
+      "description": "Create scheduler"
+    },
+    {
+      "permissionName": "scheduler.item.put",
+      "displayName": "Scheduler - modify scheduler",
+      "description": "Modify scheduler"
+    },
+    {
+      "permissionName": "scheduler.item.delete",
+      "displayName": "scheduler - delete scheduler",
+      "description": "Delete scheduler"
+    },
+    {
+      "permissionName": "scheduler.all",
+      "displayName": "Scheduler module - all permissions and all domains",
+      "description": "Entire set of permissions needed to use the scheduler modules on any domain",
+      "subPermissions": [
+        "scheduler.item.get",
+        "scheduler.collection.get",
+        "scheduler.item.post",
+        "scheduler.item.put",
+        "scheduler.item.delete"
+      ],
+      "visible": false
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "mod-scheduler-1.0.0",
+    "dockerPull": false,
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 542293850,
+        "PortBindings": {
+          "8081/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    },
+    "env": [
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=85.0"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "postgres"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "5432"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "okapi_modules"
+      },
+      {
+        "name": "DB_QUERYTIMEOUT",
+        "value": "60000"
+      },
+      {
+        "name": "DB_CHARSET",
+        "value": "UTF-8"
+      },
+      {
+        "name": "DB_MAXPOOLSIZE",
+        "value": "5"
+      }
+    ]
+  }
+}
