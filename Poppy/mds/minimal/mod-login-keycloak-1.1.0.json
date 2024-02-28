@@ -1,5 +1,5 @@
 {
-  "id": "mod-login-keycloak-1.0.0",
+  "id": "mod-login-keycloak-1.1.0",
   "name": "keycloak-login",
   "provides": [
     {
@@ -235,7 +235,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "mod-login-keycloak:1.0.0",
+    "dockerImage": "mod-login-keycloak:1.1.0",
     "dockerPull": false,
     "dockerCMD": [ "verify.user=true" ],
     "dockerArgs": {
