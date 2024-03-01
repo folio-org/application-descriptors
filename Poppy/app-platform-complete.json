@@ -18,10 +18,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-organizations-1.8.0"
     },
     {
-      "id": "mod-graphql-1.12.0",
+      "id": "mod-graphql-1.12.1",
       "name": "mod-graphql",
-      "version": "1.12.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-graphql-1.12.0"
+      "version": "1.12.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-graphql-1.12.1"
     },
     {
       "id": "mod-consortia-keycloak-1.1.0",
