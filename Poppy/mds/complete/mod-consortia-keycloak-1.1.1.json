@@ -1,5 +1,5 @@
 {
-  "id": "mod-consortia-keycloak-1.1.0",
+  "id": "mod-consortia-keycloak-1.1.1",
   "name": "Consortia integration business logic module",
   "requires": [
     {
@@ -543,7 +543,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "mod-consortia-keycloak:1.1.0",
+    "dockerImage": "mod-consortia-keycloak:1.1.1",
     "dockerPull": false,
     "dockerArgs": {
       "HostConfig": {

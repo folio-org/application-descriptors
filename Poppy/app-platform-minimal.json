@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-minimal-0.0.10",
+  "id": "app-platform-minimal-0.0.11",
   "name": "app-platform-minimal",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "description": "Minimal FOLIO platform installation for Poppy-SP1",
   "platform": "base",
   "dependencies": [],
@@ -55,10 +55,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-users-keycloak-1.2.0"
     },
     {
-      "id": "mod-roles-keycloak-1.1.0",
+      "id": "mod-roles-keycloak-1.1.1",
       "name": "mod-roles-keycloak",
-      "version": "1.1.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-roles-keycloak-1.1.0"
+      "version": "1.1.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-roles-keycloak-1.1.1"
     },
     {
       "id": "mod-notes-5.1.0",

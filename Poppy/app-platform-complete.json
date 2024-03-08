@@ -1,13 +1,13 @@
 {
-  "id": "app-platform-complete-0.0.7",
+  "id": "app-platform-complete-0.0.8",
   "name": "app-platform-complete",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Complete application with all modules for Poppy-SP1",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "0.0.10"
+      "version": "0.0.11"
     }
   ],
   "modules": [
@@ -24,10 +24,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-graphql-1.12.0"
     },
     {
-      "id": "mod-consortia-keycloak-1.1.0",
+      "id": "mod-consortia-keycloak-1.1.1",
       "name": "mod-consortia-keycloak",
-      "version": "1.1.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-consortia-keycloak-1.1.0"
+      "version": "1.1.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-consortia-keycloak-1.1.1"
     },
     {
       "id": "mod-organizations-storage-4.6.0",
@@ -102,10 +102,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-inventory-20.1.8"
     },
     {
-      "id": "mod-circulation-24.0.11",
+      "id": "mod-circulation-24.1.0",
       "name": "mod-circulation",
-      "version": "24.0.11",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-circulation-24.0.11"
+      "version": "24.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-circulation-24.1.0"
     },
     {
       "id": "mod-feesfines-19.0.0",

@@ -1,5 +1,5 @@
 {
-  "id": "mod-roles-keycloak-1.1.0",
+  "id": "mod-roles-keycloak-1.1.1",
   "name": "roles-keycloak",
   "provides": [
     {
@@ -305,6 +305,17 @@
           "methods": [ "GET" ],
           "pathPattern": "/permissions/users/{id}",
           "permissionsRequired": [ "permissions.users.item.get" ]
+        }
+      ]
+    },
+    {
+      "id": "loadable-roles",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [ "GET" ],
+          "pathPattern": "/loadable-roles",
+          "permissionsRequired": [ "loadable-roles.collection.get" ]
         }
       ]
     },
@@ -669,6 +680,11 @@
       "permissionName": "permissions.users.item.get",
       "displayName": "Permissions - get user permissions",
       "description": "Get user permissions based on assigned roles and capabilities"
+    },
+    {
+      "permissionName": "loadable-roles.collection.get",
+      "displayName": "Loadable roles collection get",
+      "description": "Searching loadable roles"
     }
   ],
   "requires": [
@@ -678,7 +694,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "mod-roles-keycloak:1.1.0",
+    "dockerImage": "mod-roles-keycloak:1.1.1",
     "dockerPull": false,
     "dockerArgs": {
       "HostConfig": {
