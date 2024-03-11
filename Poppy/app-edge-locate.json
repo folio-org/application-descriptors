@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-locate-0.0.3",
+  "id": "app-edge-locate-0.0.4",
   "name": "app-edge-locate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "platform": "complete",
   "dependencies": [
     {
