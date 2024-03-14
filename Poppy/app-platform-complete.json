@@ -636,6 +636,12 @@
       "name": "folio_lists",
       "version": "2.0.6",
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_lists-2.0.6"
+    },
+    {
+      "id": "folio_consortia-settings-1.0.2",
+      "name": "folio_consortia-settings",
+      "version": "1.0.2",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_consortia-settings-1.0.2"
     }
   ]
 }
