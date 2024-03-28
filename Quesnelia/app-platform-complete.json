@@ -144,10 +144,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-patron-6.1.0"
     },
     {
-      "id": "mod-data-export-worker-3.2.1",
+      "id": "mod-data-export-5.0.0",
       "name": "mod-data-export",
-      "version": "worker-3.2.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-data-export-worker-3.2.1"
+      "version": "5.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-data-export-5.0.0"
     },
     {
       "id": "mod-data-export-spring-3.2.0",
