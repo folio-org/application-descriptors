@@ -1,0 +1,74 @@
+{
+  "id": "app-edge-complete-0.0.6",
+  "name": "app-edge-complete",
+  "version": "0.0.6",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "name": "app-platform-complete",
+      "version": "0.0.9"
+    }
+  ],
+  "modules": [
+    {
+      "id": "edge-orders-3.0.0",
+      "name": "edge-orders",
+      "version": "3.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-orders-3.0.0"
+    },
+    {
+      "id": "edge-connexion-1.2.0",
+      "name": "edge-connexion",
+      "version": "1.2.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-connexion-1.2.0"
+    },
+    {
+      "id": "edge-oai-pmh-2.9.0",
+      "name": "edge-oai-pmh",
+      "version": "2.9.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-oai-pmh-2.9.0"
+    },
+    {
+      "id": "edge-dematic-2.2.0",
+      "name": "edge-dematic",
+      "version": "2.2.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-dematic-2.2.0"
+    },
+    {
+      "id": "edge-caiasoft-2.2.0",
+      "name": "edge-caiasoft",
+      "version": "2.2.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-caiasoft-2.2.0"
+    },
+    {
+      "id": "edge-rtac-2.7.1",
+      "name": "edge-rtac",
+      "version": "2.7.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-rtac-2.7.1"
+    },
+    {
+      "id": "edge-sip2-3.2.0",
+      "name": "edge-sip2",
+      "version": "3.2.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-sip2-3.2.0"
+    },
+    {
+      "id": "edge-fqm-2.0.0",
+      "name": "edge-fqm",
+      "version": "2.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-fqm-2.0.0"
+    },
+    {
+      "id": "edge-patron-5.1.0",
+      "name": "edge-patron",
+      "version": "5.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-patron-5.1.0"
+    },
+    {
+      "id": "edge-courses-1.4.0",
+      "name": "edge-courses",
+      "version": "1.4.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-courses-1.4.0"
+    }
+  ]
+}

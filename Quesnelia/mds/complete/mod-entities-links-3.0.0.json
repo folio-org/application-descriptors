@@ -1,0 +1,934 @@
+{
+  "id": "mod-entities-links-3.0.0",
+  "name": "Entities Links",
+  "requires": [
+    {
+      "id": "login",
+      "version": "7.0"
+    },
+    {
+      "id": "permissions",
+      "version": "5.3"
+    },
+    {
+      "id": "users",
+      "version": "16.0"
+    },
+    {
+      "id": "source-storage-source-records",
+      "version": "3.1"
+    },
+    {
+      "id": "instance-storage",
+      "version": "10.0"
+    },
+    {
+      "id": "mapping-rules-provider",
+      "version": "2.0"
+    },
+    {
+      "id": "settings",
+      "version": "1.0"
+    }
+  ],
+  "provides": [
+    {
+      "id": "instance-authority-links",
+      "version": "2.1",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/links/instances/{instanceId}",
+          "permissionsRequired": [
+            "instance-authority-links.instances.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/links/instances/{instanceId}",
+          "permissionsRequired": [
+            "instance-authority-links.instances.collection.put"
+          ],
+          "modulePermissions": [
+            "source-storage.records.fetch",
+            "search.authorities.collection.get",
+            "mapping-metadata.get",
+            "inventory-storage.instances.item.get",
+            "inventory-storage.instances.item.put",
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/links/authorities/bulk/count",
+          "permissionsRequired": [
+            "instance-authority-links.authorities.bulk.post"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "instance-authority-linking-rules",
+      "version": "1.1",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/linking-rules/instance-authority",
+          "permissionsRequired": [
+            "instance-authority.linking-rules.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/linking-rules/instance-authority/{linkId}",
+          "permissionsRequired": [
+            "instance-authority.linking-rules.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "PATCH"
+          ],
+          "pathPattern": "/linking-rules/instance-authority/{linkId}",
+          "permissionsRequired": [
+            "instance-authority.linking-rules.item.patch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "instance-authority-links-statistics",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/links/stats/authority",
+          "permissionsRequired": [
+            "instance-authority-links.authority-statistics.collection.get"
+          ],
+          "modulePermissions": [
+            "users.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/links/stats/instance",
+          "permissionsRequired": [
+            "instance-authority-links.instance-statistics.collection.get"
+          ],
+          "modulePermissions": [
+            "inventory-storage.instances.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "instance-authority-links-suggestions",
+      "version": "1.2",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/links-suggestions/marc",
+          "permissionsRequired": [
+            "instance-authority-links.suggestions.post"
+          ],
+          "modulePermissions": [
+            "source-storage.records.fetch",
+            "user-tenants.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "authority-storage",
+      "version": "2.1",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/authority-storage/authorities",
+          "permissionsRequired": [
+            "inventory-storage.authorities.collection.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/authority-storage/authorities/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authorities.item.get"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/authority-storage/authorities",
+          "permissionsRequired": [
+            "inventory-storage.authorities.item.post"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/authority-storage/authorities/bulk",
+          "permissionsRequired": [
+            "inventory-storage.authorities.bulk.post"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/authority-storage/authorities/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authorities.item.put"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/authority-storage/authorities/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authorities.item.delete"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "authority-note-types",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/authority-note-types",
+          "permissionsRequired": [
+            "inventory-storage.authority-note-types.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/authority-note-types/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authority-note-types.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/authority-note-types",
+          "permissionsRequired": [
+            "inventory-storage.authority-note-types.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/authority-note-types/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authority-note-types.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/authority-note-types/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authority-note-types.item.delete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "authority-source-files",
+      "version": "2.2",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/authority-source-files",
+          "permissionsRequired": [
+            "inventory-storage.authority-source-files.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/authority-source-files/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authority-source-files.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/authority-source-files",
+          "permissionsRequired": [
+            "inventory-storage.authority-source-files.item.post"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "PATCH"
+          ],
+          "pathPattern": "/authority-source-files/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authority-source-files.item.patch"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/authority-source-files/{id}",
+          "permissionsRequired": [
+            "inventory-storage.authority-source-files.item.delete"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/authority-source-files/{id}/hrid",
+          "permissionsRequired": [
+            "inventory-storage.authority-source-files.hrid.post"
+          ],
+          "modulePermissions": [
+            "user-tenants.collection.get"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/_/tenant",
+          "permissionsRequired": [],
+          "modulePermissions": [
+            "users.collection.get",
+            "users.item.post",
+            "login.item.post",
+            "login.item.delete",
+            "perms.users.get",
+            "perms.users.item.post",
+            "perms.users.assign.immutable",
+            "perms.users.assign.mutable"
+          ]
+        },
+        {
+          "methods": [
+            "GET",
+            "DELETE"
+          ],
+          "pathPattern": "/_/tenant/{id}",
+          "permissionsRequired": []
+        }
+      ]
+    },
+    {
+      "id": "authority-reindex",
+      "version": "0.1",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/authority-storage/reindex",
+          "permissionsRequired": [
+            "authority-storage.authority.reindex.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/authority-storage/reindex",
+          "permissionsRequired": [
+            "authority-storage.authority.reindex.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/authority-storage/reindex/{id}",
+          "permissionsRequired": [
+            "authority-storage.authority.reindex.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/authority-storage/reindex/{id}",
+          "permissionsRequired": [
+            "authority-storage.authority.reindex.item.delete"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_timer",
+      "version": "1.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/authority-storage/expire/authorities",
+          "unit": "day",
+          "delay": "1",
+          "modulePermissions": [
+            "mod-settings.entries.collection.get",
+            "mod-settings.global.read.authority-storage",
+            "user-tenants.collection.get"
+          ]
+        }
+      ]
+    }
+  ],
+  "optional": [
+    {
+      "id": "user-tenants",
+      "version": "1.0"
+    },
+    {
+      "id": "consortia",
+      "version": "1.0"
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "mod-settings.global.write.authority-storage",
+      "displayName": "Entities links settings - Create configuration",
+      "description": "To create new configuration in mod settings"
+    },
+    {
+      "permissionName": "mod-settings.global.read.authority-storage",
+      "displayName": "Entities links settings - Read configuration",
+      "description": "To read the configuration from mod settings."
+    },
+    {
+      "permissionName": "instance-authority-links.instances.collection.get",
+      "displayName": "Entities Links - get instance-authority links",
+      "description": "Get instance-authority links collection"
+    },
+    {
+      "permissionName": "instance-authority-links.instances.collection.put",
+      "displayName": "Entities Links - update instance-authority links",
+      "description": "Update instance-authority links collection"
+    },
+    {
+      "permissionName": "instance-authority-links.authorities.bulk.post",
+      "displayName": "Entities Links - count instance-authority links for each authority",
+      "description": "Count instance-authority links for each authority"
+    },
+    {
+      "permissionName": "instance-authority.linking-rules.collection.get",
+      "displayName": "Entities Links - get instance-authority linking rules",
+      "description": "Get instance-authority linking rules"
+    },
+    {
+      "permissionName": "instance-authority.linking-rules.item.get",
+      "displayName": "Entities Links - get instance-authority linking rule",
+      "description": "Get instance-authority linking rule"
+    },
+    {
+      "permissionName": "instance-authority.linking-rules.item.patch",
+      "displayName": "Entities Links - patch instance-authority linking rule",
+      "description": "Patch instance-authority linking rule"
+    },
+    {
+      "permissionName": "instance-authority-links.authority-statistics.collection.get",
+      "displayName": "Entities Authority Links Statistics - get instance-authority links statistics",
+      "description": "Get instance-authority links statistics"
+    },
+    {
+      "permissionName": "instance-authority-links.instance-statistics.collection.get",
+      "displayName": "Entities Instance Links Statistics - get instance-authority links statistics",
+      "description": "Get instance-authority links (Instance) statistics"
+    },
+    {
+      "permissionName": "instance-authority-links.suggestions.post",
+      "displayName": "Marc Links Suggestions - retrieve links suggestions for marc record",
+      "description": "Retrieve instance-authority links suggestions"
+    },
+    {
+      "permissionName": "instance-authority-links.instances.all",
+      "displayName": "Entities Links - all instance-authority links permissions",
+      "description": "Entire set of permissions needed to use instance-links operations",
+      "subPermissions": [
+        "instance-authority-links.instances.collection.get",
+        "instance-authority-links.instances.collection.put",
+        "instance-authority-links.authorities.bulk.post",
+        "instance-authority.linking-rules.collection.get",
+        "instance-authority.linking-rules.item.get",
+        "instance-authority.linking-rules.item.patch",
+        "instance-authority-links.authority-statistics.collection.get",
+        "instance-authority-links.instance-statistics.collection.get",
+        "instance-authority-links.suggestions.post"
+      ]
+    },
+    {
+      "permissionName": "inventory-storage.authorities.collection.get",
+      "displayName": "inventory storage - get authority collection",
+      "description": "get authority collection from the storage"
+    },
+    {
+      "permissionName": "inventory-storage.authorities.item.get",
+      "displayName": "inventory storage - get individual authority record",
+      "description": "get individual authority record from the storage"
+    },
+    {
+      "permissionName": "inventory-storage.authorities.item.post",
+      "displayName": "inventory storage - create individual authority record",
+      "description": "create individual authority record in the storage"
+    },
+    {
+      "permissionName": "inventory-storage.authorities.bulk.post",
+      "displayName": "inventory storage - create authority records in bulk",
+      "description": "create authority records in bulk"
+    },
+    {
+      "permissionName": "inventory-storage.authorities.item.put",
+      "displayName": "inventory storage - modify authority record",
+      "description": "modify authority record in the storage"
+    },
+    {
+      "permissionName": "inventory-storage.authorities.item.delete",
+      "displayName": "inventory storage - delete individual authority record",
+      "description": "delete individual authority record from the storage"
+    },
+    {
+      "permissionName": "authority-storage.authority.reindex.item.delete",
+      "displayName": "inventory storage - cancel reindex job",
+      "description": "cancel a running reindexing job"
+    },
+    {
+      "permissionName": "authority-storage.authority.reindex.item.get",
+      "displayName": "inventory storage - get reindex job by id",
+      "description": "get reindex job by id"
+    },
+    {
+      "permissionName": "authority-storage.authority.reindex.post",
+      "displayName": "inventory storage - submit reindex authority job",
+      "description": "submit reindex authority job"
+    },
+    {
+      "permissionName": "authority-storage.authority.reindex.collection.get",
+      "displayName": "inventory storage - get reindex authority jobs",
+      "description": "get reindex authority jobs"
+    },
+    {
+      "permissionName": "inventory-storage.authorities.all",
+      "displayName": "inventory storage module - all authorities permissions",
+      "description": "Entire set of permissions needed to use authorities in the inventory storage module",
+      "subPermissions": [
+        "inventory-storage.authorities.collection.get",
+        "inventory-storage.authorities.item.get",
+        "inventory-storage.authorities.item.post",
+        "inventory-storage.authorities.bulk.post",
+        "inventory-storage.authorities.item.put",
+        "inventory-storage.authorities.item.delete",
+        "authority-storage.authority.reindex.post",
+        "authority-storage.authority.reindex.item.get",
+        "authority-storage.authority.reindex.item.delete",
+        "authority-storage.authority.reindex.collection.get"
+      ]
+    },
+    {
+      "permissionName": "inventory-storage.authority-note-types.collection.get",
+      "displayName": "inventory storage - get authority-note-type collection",
+      "description": "get authority-note-type collection from storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-note-types.item.get",
+      "displayName": "inventory storage - get individual authority-note-type",
+      "description": "get individual authority-note-type from storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-note-types.item.post",
+      "displayName": "inventory storage - create individual authority-note-type",
+      "description": "create individual authority-note-type in storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-note-types.item.put",
+      "displayName": "inventory storage - modify authority-note-type",
+      "description": "modify authority-note-type in storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-note-types.item.delete",
+      "displayName": "inventory storage - delete individual authority-note-type",
+      "description": "delete individual authority-note-type from storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-source-files.collection.get",
+      "displayName": "inventory storage - get authority-source-file collection",
+      "description": "get authority-source-file collection from storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-source-files.item.get",
+      "displayName": "inventory storage - get individual authority-source-file",
+      "description": "get individual authority-source-file from storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-source-files.item.post",
+      "displayName": "inventory storage - create individual authority-source-file",
+      "description": "create individual authority-source-file in storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-source-files.item.patch",
+      "displayName": "inventory storage - patch authority-source-file",
+      "description": "patch authority-source-file in storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-source-files.item.delete",
+      "displayName": "inventory storage - delete individual authority-source-file",
+      "description": "delete individual authority-source-file from storage"
+    },
+    {
+      "permissionName": "inventory-storage.authority-source-files.hrid.post",
+      "displayName": "inventory storage - get next HRID for authority-source-file",
+      "description": "get next HRID for authority-source-file"
+    },
+    {
+      "permissionName": "inventory-storage.authority-source-files.all",
+      "displayName": "all authority source files permissions",
+      "description": "Entire set of permissions needed to use authority source files",
+      "subPermissions": [
+        "inventory-storage.authority-source-files.collection.get",
+        "inventory-storage.authority-source-files.item.get",
+        "inventory-storage.authority-source-files.item.post",
+        "inventory-storage.authority-source-files.item.patch",
+        "inventory-storage.authority-source-files.item.delete",
+        "inventory-storage.authority-source-files.hrid.post"
+      ]
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "folioorg/mod-entities-links:3.0.0",
+    "dockerPull": true,
+    "env": [
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=85.0"
+      },
+      {
+        "name": "ENV",
+        "value": "folio",
+        "description": "The logical name of the deployment, must be unique across all environments using the same shared Kafka/Elasticsearch clusters, `a-z (any case)`, `0-9`, `-`, `_` symbols only allowed"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "localhost",
+        "description": "Postgres hostname"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "5432",
+        "description": "Postgres port"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "folio_admin",
+        "description": "Postgres username"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "folio_admin",
+        "description": "Postgres username password"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "okapi_modules",
+        "description": "Postgres database name"
+      },
+      {
+        "name": "DB_MAXPOOLSIZE",
+        "value": "10",
+        "description": "This property controls the maximum size that the pool is allowed to reach, including both idle and in-use connections"
+      },
+      {
+        "name": "DB_MINIMUM_IDLE",
+        "value": "10",
+        "description": "This property controls the minimum number of idle connections that HikariCP tries to maintain in the pool"
+      },
+      {
+        "name": "DB_CONNECTION_TIMEOUT",
+        "value": "30000",
+        "description": "This property controls the maximum number of milliseconds that a client will wait for a connection from the pool"
+      },
+      {
+        "name": "DB_IDLE_TIMEOUT",
+        "value": "600000",
+        "description": "This property controls the maximum amount of time that a connection is allowed to sit idle in the pool. This setting only applies when `DB_MINIMUM_IDLE` is defined to be less than `DB_MAXPOOLSIZE`"
+      },
+      {
+        "name": "DB_KEEPALIVE_TIME",
+        "value": "0",
+        "description": "This property controls how frequently HikariCP will attempt to keep a connection alive, in order to prevent it from being timed out by the database or network infrastructure (0 - disabled)"
+      },
+      {
+        "name": "DB_MAX_LIFETIME",
+        "value": "1800000",
+        "description": "This property controls the maximum lifetime of a connection in the pool"
+      },
+      {
+        "name": "DB_VALIDATION_TIMEOUT",
+        "value": "5000",
+        "description": "This property controls the maximum amount of time that a connection will be tested for aliveness. This value must be less than the `DB_CONNECTION_TIMEOUT`"
+      },
+      {
+        "name": "DB_INITIALIZATION_FAIL_TIMEOUT",
+        "value": "30000",
+        "description": "This property controls whether the pool will \"fail fast\" if the pool cannot be seeded with an initial connection successfully"
+      },
+      {
+        "name": "DB_LEAK_DETECTION_THRESHOLD",
+        "value": "30000",
+        "description": "This property controls the amount of time that a connection can be out of the pool before a message is logged indicating a possible connection leak (0 - disabled)"
+      },
+      {
+        "name": "OKAPI_URL",
+        "value": "okapi",
+        "description": "Okapi URL"
+      },
+      {
+        "name": "KAFKA_HOST",
+        "value": "kafka",
+        "description": "Kafka broker hostname"
+      },
+      {
+        "name": "KAFKA_PORT",
+        "value": "9092",
+        "description": "Kafka broker port"
+      },
+      {
+        "name": "KAFKA_SECURITY_PROTOCOL",
+        "value": "PLAINTEXT",
+        "description": "Kafka security protocol used to communicate with brokers (SSL or PLAINTEXT)"
+      },
+      {
+        "name": "KAFKA_SSL_KEYSTORE_LOCATION",
+        "value": "",
+        "description": "The location of the Kafka key store file. This is optional for client and can be used for two-way authentication for client."
+      },
+      {
+        "name": "KAFKA_SSL_KEYSTORE_PASSWORD",
+        "value": "",
+        "description": "The store password for the Kafka key store file. This is optional for client and only needed if 'ssl.keystore.location' is configured."
+      },
+      {
+        "name": "KAFKA_SSL_TRUSTSTORE_LOCATION",
+        "value": "",
+        "description": "The location of the Kafka trust store file."
+      },
+      {
+        "name": "KAFKA_SSL_TRUSTSTORE_PASSWORD",
+        "value": "",
+        "description": "The password for the Kafka trust store file. If a password is not set, trust store file configured will still be used, but integrity checking is disabled."
+      },
+      {
+        "name": "KAFKA_CONSUMER_MAX_POLL_RECORDS",
+        "value": "50",
+        "description": "Maximum number of records returned in a single call to poll()."
+      },
+      {
+        "name": "KAFKA_INSTANCE_AUTHORITY_TOPIC_PARTITIONS",
+        "value": "10",
+        "description": "Amount of partitions for `links.instance-authority` topic."
+      },
+      {
+        "name": "KAFKA_INSTANCE_AUTHORITY_TOPIC_REPLICATION_FACTOR",
+        "value": "",
+        "description": "Replication factor for `links.instance-authority` topic."
+      },
+      {
+        "name": "KAFKA_INSTANCE_AUTHORITY_STATS_TOPIC_PARTITIONS",
+        "value": "10",
+        "description": "Amount of partitions for `links.instance-authority-stats` topic."
+      },
+      {
+        "name": "KAFKA_INSTANCE_AUTHORITY_STATS_TOPIC_REPLICATION_FACTOR",
+        "value": "",
+        "description": "Replication factor for `links.instance-authority-stats` topic."
+      },
+      {
+        "name": "KAFKA_AUTHORITIES_CONSUMER_CONCURRENCY",
+        "value": "1",
+        "description": "Number of kafka concurrent threads for `inventory.authority` message consuming."
+      },
+      {
+        "name": "KAFKA_INSTANCE_AUTHORITY_STATS_CONSUMER_CONCURRENCY",
+        "value": "1",
+        "description": "Number of kafka concurrent threads for `links.instance-authority-stats` message consuming."
+      },
+      {
+        "name": "KAFKA_INSTANCE_AUTHORITY_CHANGE_PARTITIONS",
+        "value": "100",
+        "description": "Number of instance-authority links `links.instance-authority` event contains while processing authority link source change."
+      },
+      {
+        "name": "INSTANCE_STORAGE_QUERY_BATCH_SIZE",
+        "value": "50",
+        "description": "Number of instances to retrieve from inventory storage per one request (Max 90 - based on maximum URI length)"
+      },
+      {
+        "name": "AUTHORITY_ARCHIVES_EXPIRATION_PERIOD",
+        "value": "7",
+        "description": "The retention period in days for keeping the deleted authorities in authority_archive DB table"
+      },
+      {
+        "name": "S3_URL",
+        "value": "http://localhost:9000/",
+        "description": "S3 compatible service url"
+      },
+      {
+        "name": "S3_REGION",
+        "value": "",
+        "description": "S3 compatible service region"
+      },
+      {
+        "name": "S3_BUCKET",
+        "value": "marc-migrations",
+        "description": "S3 compatible service bucket"
+      },
+      {
+        "name": "S3_ACCESS_KEY_ID",
+        "value": "",
+        "description": "S3 compatible service access key"
+      },
+      {
+        "name": "S3_SECRET_ACCESS_KEY",
+        "value": "",
+        "description": "S3 compatible service secret key"
+      },
+      {
+        "name": "S3_IS_AWS",
+        "value": "true",
+        "description": "Specify if AWS S3 is used as files storage"
+      }
+    ],
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 536870912,
+        "PortBindings": {
+          "8081/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "user": {
+    "type": "module",
+    "permissions": [
+      "configuration.entries.collection.get",
+      "converter-storage.field-protection-settings.get",
+      "inventory-storage.alternative-title-types.collection.get",
+      "inventory-storage.authority-note-types.collection.get",
+      "inventory-storage.authority-source-files.collection.get",
+      "inventory-storage.call-number-types.collection.get",
+      "inventory-storage.classification-types.collection.get",
+      "inventory-storage.contributor-name-types.collection.get",
+      "inventory-storage.contributor-types.collection.get",
+      "inventory-storage.electronic-access-relationships.collection.get",
+      "inventory-storage.holdings-note-types.collection.get",
+      "inventory-storage.holdings-sources.collection.get",
+      "inventory-storage.holdings-types.collection.get",
+      "inventory-storage.identifier-types.collection.get",
+      "inventory-storage.ill-policies.collection.get",
+      "inventory-storage.instance-formats.collection.get",
+      "inventory-storage.instance-note-types.collection.get",
+      "inventory-storage.instance-relationship-types.collection.get",
+      "inventory-storage.instance-statuses.collection.get",
+      "inventory-storage.instance-types.collection.get",
+      "inventory-storage.instances.item.get",
+      "inventory-storage.instances.item.put",
+      "inventory-storage.item-damaged-statuses.collection.get",
+      "inventory-storage.item-note-types.collection.get",
+      "inventory-storage.loan-types.collection.get",
+      "inventory-storage.loan-types.item.get",
+      "inventory-storage.locations.collection.get",
+      "inventory-storage.locations.item.get",
+      "inventory-storage.material-types.collection.get",
+      "inventory-storage.material-types.item.get",
+      "inventory-storage.modes-of-issuance.collection.get",
+      "inventory-storage.nature-of-content-terms.collection.get",
+      "inventory-storage.statistical-code-types.collection.get",
+      "inventory-storage.statistical-codes.collection.get",
+      "mapping-metadata.get",
+      "mapping-rules.get",
+      "source-storage.sourceRecords.get",
+      "users.collection.get",
+      "user-tenants.collection.get",
+      "source-storage.records.fetch"
+    ]
+  }
+}
