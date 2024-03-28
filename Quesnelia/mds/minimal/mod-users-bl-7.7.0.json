@@ -1,10 +1,10 @@
 {
-  "id": "mod-users-bl-7.6.0",
+  "id": "mod-users-bl-7.7.0",
   "name": "users business logic",
   "requires": [
     {
       "id": "users",
-      "version": "16.0"
+      "version": "16.1"
     },
     {
       "id": "login",
@@ -332,7 +332,7 @@
     },
     {
       "id": "feesfines",
-      "version": "18.0"
+      "version": "18.0 19.0"
     },
     {
       "id": "service-points",
@@ -345,10 +345,6 @@
     {
       "id": "notify",
       "version": "2.2"
-    },
-    {
-      "id": "request-storage",
-      "version": "6.0"
     }
   ],
   "permissionSets": [
@@ -416,7 +412,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-users-bl:7.6.0",
+    "dockerImage": "folioorg/mod-users-bl:7.7.0",
     "dockerPull": true,
     "env": [
       {
