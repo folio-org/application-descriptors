@@ -49,10 +49,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-login-keycloak-1.2.0"
     },
     {
-      "id": "mod-users-keycloak-1.3.0",
+      "id": "mod-users-keycloak-1.3.1",
       "name": "mod-users-keycloak",
-      "version": "1.3.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.3.0"
+      "version": "1.3.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.3.1"
     },
     {
       "id": "mod-roles-keycloak-1.2.0",
