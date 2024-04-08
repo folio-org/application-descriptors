@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-complete-0.0.6",
+  "id": "app-edge-complete-0.0.7",
   "name": "app-edge-complete",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "platform": "complete",
   "dependencies": [
     {
@@ -69,6 +69,12 @@
       "name": "edge-courses",
       "version": "1.4.0",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-courses-1.4.0"
+    },
+    {
+      "id": "edge-ncip-1.9.2",
+      "name": "edge-ncip",
+      "version": "1.9.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-ncip-1.9.2"
     }
   ]
 }
