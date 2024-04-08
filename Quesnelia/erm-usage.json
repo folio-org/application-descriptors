@@ -1,0 +1,27 @@
+{
+  "id": "erm-usage-0.0.2",
+  "name": "erm-usage",
+  "version": "0.0.2",
+  "description": "ERM Usage platform installation for Poppy-SP1",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "name": "app-platform-minimal",
+      "version": "0.0.12"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-erm-usage-4.7.0",
+      "name": "mod-erm-usage",
+      "version": "4.7.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-erm-usage-4.7.0"
+    },
+    {
+      "id": "mod-erm-usage-harvester-4.5.0",
+      "name": "mod-erm-usage-harvester",
+      "version": "4.5.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-erm-usage-harvester-4.5.0"
+    }
+  ]
+}
