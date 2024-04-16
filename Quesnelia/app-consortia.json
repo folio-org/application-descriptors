@@ -1,0 +1,29 @@
+{
+  "id": "app-consortia-0.0.1",
+  "name": "app-consortia",
+  "version": "0.0.1",
+  "description": "Consortia Application for Quesnelia",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "name": "app-platform-complete",
+      "version": "0.0.10"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-consortia-keycloak-1.2.0",
+      "name": "mod-consortia-keycloak",
+      "version": "1.2.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-consortia-keycloak-1.2.0"
+    }
+  ],
+  "uiModules": [
+    {
+      "id": "folio_consortia-settings-1.0.2",
+      "name": "folio_consortia-settings",
+      "version": "1.0.2",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_consortia-settings-1.0.2"
+    }
+  ]
+}

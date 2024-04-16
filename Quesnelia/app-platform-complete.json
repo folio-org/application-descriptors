@@ -1,13 +1,13 @@
 {
-  "id": "app-platform-complete-0.0.9",
+  "id": "app-platform-complete-0.0.10",
   "name": "app-platform-complete",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Complete application with all modules for Quesnelia",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "0.0.12"
+      "version": "0.0.13"
     }
   ],
   "modules": [
@@ -22,12 +22,6 @@
       "name": "mod-graphql",
       "version": "1.12.1",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-graphql-1.12.1"
-    },
-    {
-      "id": "mod-consortia-keycloak-1.1.1",
-      "name": "mod-consortia-keycloak",
-      "version": "1.1.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-consortia-keycloak-1.1.1"
     },
     {
       "id": "mod-organizations-storage-4.7.0",
@@ -328,6 +322,12 @@
       "name": "mod-batch-print",
       "version": "1.1.0",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-batch-print-1.1.0"
+    },
+    {
+      "id": "mod-serials-management-1.0.0",
+      "name": "mod-serials-management",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-serials-management-1.0.0"
     }
   ],
   "uiModules": [
@@ -644,10 +644,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_lists-3.0.0"
     },
     {
-      "id": "folio_consortia-settings-1.0.2",
-      "name": "folio_consortia-settings",
-      "version": "1.0.2",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_consortia-settings-1.0.2"
+      "id": "folio_serials-management-1.0.0",
+      "name": "folio_serials-management",
+      "version": "1.0.0",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_serials-management-1.0.0"
     }
   ]
 }
