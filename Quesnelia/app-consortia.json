@@ -15,7 +15,7 @@
       "id": "mod-consortia-keycloak-1.2.0",
       "name": "mod-consortia-keycloak",
       "version": "1.2.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-consortia-keycloak-1.2.0"
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-consortia-keycloak-1.2.0"
     }
   ],
   "uiModules": [
