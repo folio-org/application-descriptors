@@ -309,7 +309,7 @@
       "id": "mod-fqm-manager-2.0.3",
       "name": "mod-fqm-manager",
       "version": "2.0.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-fqm-manager-2.0.3"
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-fqm-manager-2.0.3"
     },
     {
       "id": "mod-lists-2.0.3",
