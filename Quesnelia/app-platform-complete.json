@@ -12,10 +12,10 @@
   ],
   "modules": [
     {
-      "id": "mod-organizations-1.9.0",
+      "id": "mod-organizations-1.9.1",
       "name": "mod-organizations",
-      "version": "1.9.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-organizations-1.9.0"
+      "version": "1.9.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-organizations-1.9.1"
     },
     {
       "id": "mod-graphql-1.12.1",
