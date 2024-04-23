@@ -1,0 +1,476 @@
+{
+  "id": "mod-data-export-spring-3.2.1",
+  "name": "Data Export Spring Module",
+  "requires": [
+    {
+      "id": "login",
+      "version": "7.0"
+    },
+    {
+      "id": "permissions",
+      "version": "5.3"
+    },
+    {
+      "id": "users",
+      "version": "15.3 16.0"
+    },
+    {
+      "id": "inventory",
+      "version": "13.0"
+    },
+    {
+      "id": "circulation-logs",
+      "version": "1.2"
+    },
+    {
+      "id": "orders",
+      "version": "12.0"
+    },
+    {
+      "id": "configuration",
+      "version": "2.0"
+    },
+    {
+      "id": "finance.expense-classes",
+      "version": "3.0"
+    }
+  ],
+  "optional": [
+    {
+      "id": "authtoken",
+      "version": "2.0"
+    }
+  ],
+  "provides": [
+    {
+      "id": "data-export-spring",
+      "version": "2.0",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/data-export-spring/jobs",
+          "permissionsRequired": [
+            "data-export.job.collection.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/data-export-spring/jobs/{id}",
+          "permissionsRequired": [
+            "data-export.job.item.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/data-export-spring/jobs",
+          "permissionsRequired": [
+            "data-export.job.item.post"
+          ],
+          "modulePermissions": [
+            "accounts.transfer.post",
+            "accounts.collection.get",
+            "circulation-logs.collection.get",
+            "configuration.entries.collection.get",
+            "configuration.entries.item.get",
+            "configuration.entries.item.post",
+            "configuration.entries.item.put",
+            "configuration.entries.item.delete",
+            "data-export.job.collection.get",
+            "data-export.config.collection.get",
+            "feefineactions.collection.get",
+            "finance.expense-classes.item.get",
+            "inventory-storage.holdings.item.get",
+            "inventory-storage.identifier-types.item.get",
+            "inventory-storage.locations.item.get",
+            "inventory-storage.material-types.item.get",
+            "inventory-storage.service-points.collection.get",
+            "organizations-storage.organizations.item.get",
+            "orders-storage.po-lines.collection.get",
+            "orders-storage.purchase-orders.collection.get",
+            "transfers.collection.get",
+            "users.collection.get",
+            "users.item.post",
+            "users.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/data-export-spring/jobs/{id}/download",
+          "permissionsRequired": [
+            "data-export.job.item.download"
+          ],
+          "modulePermissions": [
+            "refresh-presigned-url.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/data-export-spring/jobs/{id}/resend",
+          "permissionsRequired": [
+            "data-export.job.item.resend"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/data-export-spring/configs",
+          "permissionsRequired": [
+            "data-export.config.collection.get"
+          ],
+          "modulePermissions": [
+            "configuration.entries.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/data-export-spring/configs/{id}",
+          "permissionsRequired": [
+            "data-export.config.item.get"
+          ],
+          "modulePermissions": [
+            "configuration.entries.item.get"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/data-export-spring/configs",
+          "permissionsRequired": [
+            "data-export.config.item.post"
+          ],
+          "modulePermissions": [
+            "configuration.entries.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/data-export-spring/configs/{id}",
+          "permissionsRequired": [
+            "data-export.config.item.put"
+          ],
+          "modulePermissions": [
+            "configuration.entries.item.put"
+          ]
+        },
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "pathPattern": "/data-export-spring/configs/{id}",
+          "permissionsRequired": [
+            "data-export.config.item.delete"
+          ],
+          "modulePermissions": [
+            "configuration.entries.item.delete"
+          ]
+        },
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/data-export-spring/jobs/send",
+          "permissionsRequired": [
+            "data-export.job.item.send"
+          ],
+          "modulePermissions": [
+            "accounts.transfer.post",
+            "accounts.collection.get",
+            "circulation-logs.collection.get",
+            "configuration.entries.collection.get",
+            "configuration.entries.item.get",
+            "configuration.entries.item.post",
+            "configuration.entries.item.put",
+            "configuration.entries.item.delete",
+            "data-export.job.collection.get",
+            "data-export.config.collection.get",
+            "feefineactions.collection.get",
+            "finance.expense-classes.item.get",
+            "inventory-storage.holdings.item.get",
+            "inventory-storage.identifier-types.item.get",
+            "inventory-storage.locations.item.get",
+            "inventory-storage.material-types.item.get",
+            "inventory-storage.service-points.collection.get",
+            "organizations-storage.organizations.item.get",
+            "orders-storage.po-lines.collection.get",
+            "orders-storage.purchase-orders.collection.get",
+            "transfers.collection.get",
+            "users.collection.get",
+            "users.item.post",
+            "users.item.put"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/_/tenant",
+          "modulePermissions": [
+            "users.collection.get",
+            "users.item.post",
+            "users.item.put",
+            "login.item.post",
+            "login.item.delete",
+            "perms.users.item.post",
+            "perms.users.get",
+            "configuration.entries.collection.get",
+            "configuration.entries.item.post",
+            "configuration.entries.item.put",
+            "perms.users.assign.immutable",
+            "data-export.job.collection.get",
+            "data-export.config.collection.get"
+          ]
+        },
+        {
+          "methods": [
+            "GET",
+            "DELETE"
+          ],
+          "pathPattern": "/_/tenant/{id}",
+          "modulePermissions": []
+        }
+      ]
+    },
+    {
+      "id": "_jsonSchemas",
+      "version": "1.0",
+      "interfaceType": "multiple",
+      "handlers": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/_/jsonSchemas",
+          "modulePermissions": []
+        }
+      ]
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "data-export.config.collection.get",
+      "displayName": "Get data export configurations",
+      "description": "Get data export configurations"
+    },
+    {
+      "permissionName": "data-export.job.item.resend",
+      "displayName": "Resend EDIFACT export",
+      "description": "Resend EDIFACT export"
+    },
+    {
+      "permissionName": "data-export.config.item.get",
+      "displayName": "Get data export configuration by id",
+      "description": "Get data export configuration by id"
+    },
+    {
+      "permissionName": "data-export.job.item.download",
+      "displayName": "Download exported file by job id",
+      "description": "Download exported file by job id"
+    },
+    {
+      "permissionName": "data-export.config.item.post",
+      "displayName": "Create a data export configuration",
+      "description": "Create a data export configuration"
+    },
+    {
+      "permissionName": "data-export.config.item.put",
+      "displayName": "Change a data export configuration",
+      "description": "Change a data export configuration"
+    },
+    {
+      "permissionName": "data-export.config.item.delete",
+      "displayName": "Delete data export configuration by id",
+      "description": "Delete data export configuration by id"
+    },
+    {
+      "permissionName": "data-export.job.item.post",
+      "displayName": "Create/update a data export job",
+      "description": "Create/update a data export job"
+    },
+    {
+      "permissionName": "data-export.job.item.get",
+      "displayName": "get a data export job",
+      "description": "Get a data export job"
+    },
+    {
+      "permissionName": "data-export.job.collection.get",
+      "displayName": "get data export jobs",
+      "description": "Get data export jobs"
+    },
+    {
+      "permissionName": "data-export.job.item.send",
+      "displayName": "send job to kafka",
+      "description": "Send job to Kafka"
+    },
+    {
+      "permissionName": "data-export.config.all",
+      "displayName": "data export configurations - all permissions",
+      "description": "All permissions for data export configurations",
+      "subPermissions": [
+        "data-export.config.collection.get",
+        "data-export.config.item.get",
+        "data-export.config.item.post",
+        "data-export.config.item.put",
+        "data-export.config.item.delete"
+      ]
+    },
+    {
+      "permissionName": "data-export.job.all",
+      "displayName": "data export jobs - all permissions",
+      "description": "All permissions for data export jobs",
+      "subPermissions": [
+        "data-export.job.item.post",
+        "data-export.job.item.get",
+        "data-export.job.collection.get",
+        "data-export.job.item.download",
+        "data-export.job.item.resend",
+        "data-export.job.item.send"
+      ]
+    },
+    {
+      "permissionName": "data-export.edifact.orders.create",
+      "displayName": "Edifact export create permission",
+      "description": "Edifact export create permission",
+      "subPermissions": [
+        "configuration.entries.collection.get",
+        "configuration.entries.item.get",
+        "data-export.job.item.post",
+        "finance.expense-classes.item.get",
+        "inventory-storage.holdings.item.get",
+        "inventory-storage.identifier-types.item.get",
+        "inventory-storage.locations.item.get",
+        "inventory-storage.material-types.item.get",
+        "inventory-storage.service-points.collection.get",
+        "organizations-storage.organizations.item.get",
+        "orders-storage.po-lines.collection.get",
+        "orders-storage.purchase-orders.collection.get"
+      ]
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "folioorg/mod-data-export-spring:3.2.1",
+    "dockerPull": true,
+    "env": [
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=66.0"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "postgres"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "5432"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "okapi_modules"
+      },
+      {
+        "name": "DB_QUERYTIMEOUT",
+        "value": "60000"
+      },
+      {
+        "name": "DB_CHARSET",
+        "value": "UTF-8"
+      },
+      {
+        "name": "DB_MAXPOOLSIZE",
+        "value": "5"
+      },
+      {
+        "name": "KAFKA_HOST",
+        "value": "10.0.2.15"
+      },
+      {
+        "name": "KAFKA_PORT",
+        "value": "9092"
+      },
+      {
+        "name": "OKAPI_URL",
+        "value": "http://okapi:9130"
+      },
+      {
+        "name": "ENV",
+        "value": "folio"
+      }
+    ],
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 542293850,
+        "PortBindings": {
+          "8081/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "user": {
+    "type": "module",
+    "permissions": [
+      "data-export.job.item.post",
+      "data-export.job.item.send",
+      "accounts.transfer.post",
+      "accounts.collection.get",
+      "circulation-logs.collection.get",
+      "configuration.entries.collection.get",
+      "configuration.entries.item.get",
+      "configuration.entries.item.post",
+      "configuration.entries.item.put",
+      "configuration.entries.item.delete",
+      "data-export.job.collection.get",
+      "data-export.config.collection.get",
+      "feefineactions.collection.get",
+      "finance.expense-classes.item.get",
+      "inventory-storage.holdings.item.get",
+      "inventory-storage.identifier-types.item.get",
+      "inventory-storage.locations.item.get",
+      "inventory-storage.material-types.item.get",
+      "inventory-storage.service-points.collection.get",
+      "organizations-storage.organizations.item.get",
+      "orders-storage.po-lines.collection.get",
+      "orders-storage.purchase-orders.collection.get",
+      "transfers.collection.get",
+      "users.collection.get",
+      "users.item.post",
+      "users.item.put"
+    ]
+  }
+}
