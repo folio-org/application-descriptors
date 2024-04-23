@@ -1,5 +1,5 @@
 {
-  "id": "mod-data-export-spring-3.2.0",
+  "id": "mod-data-export-spring-3.2.1",
   "name": "Data Export Spring Module",
   "requires": [
     {
@@ -373,7 +373,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-data-export-spring:3.2.0",
+    "dockerImage": "folioorg/mod-data-export-spring:3.2.1",
     "dockerPull": true,
     "env": [
       {

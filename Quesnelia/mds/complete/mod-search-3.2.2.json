@@ -1,5 +1,5 @@
 {
-  "id": "mod-search-3.2.0",
+  "id": "mod-search-3.2.2",
   "name": "Search Module",
   "requires": [
     {
@@ -45,6 +45,12 @@
     {
       "id": "classification-types",
       "version": "1.2"
+    }
+  ],
+  "optional": [
+    {
+      "id": "user-tenants",
+      "version": "1.0"
     }
   ],
   "provides": [
@@ -470,12 +476,6 @@
       ]
     }
   ],
-  "optional": [
-    {
-      "id": "user-tenants",
-      "version": "1.0"
-    }
-  ],
   "permissionSets": [
     {
       "permissionName": "search.index.indices.item.post",
@@ -632,7 +632,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-search:3.2.0",
+    "dockerImage": "folioorg/mod-search:3.2.2",
     "dockerPull": true,
     "env": [
       {

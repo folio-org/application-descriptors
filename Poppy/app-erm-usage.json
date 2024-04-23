@@ -1,6 +1,6 @@
 {
-  "id": "erm-usage-0.0.1",
-  "name": "erm-usage",
+  "id": "app-erm-usage-0.0.1",
+  "name": "app-erm-usage",
   "version": "0.0.1",
   "description": "ERM Usage platform installation for Poppy-SP1",
   "platform": "complete",
