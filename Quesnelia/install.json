@@ -96,7 +96,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-orders-storage-13.7.1",
+    "id": "mod-orders-storage-13.7.2",
     "action": "enable"
   },
   {
@@ -124,7 +124,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-organizations-1.9.1",
+    "id": "mod-organizations-1.9.2",
     "action": "enable"
   },
   {
@@ -296,7 +296,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-data-import-3.1.0",
+    "id": "mod-data-import-3.1.1",
     "action": "enable"
   },
   {
@@ -484,7 +484,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-orders-12.8.3",
+    "id": "mod-orders-12.8.6",
     "action": "enable"
   },
   {
@@ -500,7 +500,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-data-export-spring-3.2.1",
+    "id": "mod-data-export-spring-3.2.2",
     "action": "enable"
   },
   {
