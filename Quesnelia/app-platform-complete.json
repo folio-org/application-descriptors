@@ -1,13 +1,13 @@
 {
-  "id": "app-platform-complete-0.0.12",
+  "id": "app-platform-complete-0.0.13",
   "name": "app-platform-complete",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Complete application with all modules for Quesnelia",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "0.0.13"
+      "version": "0.0.x"
     }
   ],
   "modules": [
@@ -120,10 +120,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-entities-links-3.0.1"
     },
     {
-      "id": "mod-source-record-manager-3.8.2",
+      "id": "mod-source-record-manager-3.8.4",
       "name": "mod-source-record-manager",
-      "version": "3.8.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-source-record-manager-3.8.2"
+      "version": "3.8.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-source-record-manager-3.8.4"
     },
     {
       "id": "mod-di-converter-storage-2.2.0",
@@ -210,10 +210,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-data-import-3.1.1"
     },
     {
-      "id": "mod-agreements-7.0.1",
+      "id": "mod-agreements-7.0.3",
       "name": "mod-agreements",
-      "version": "7.0.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-agreements-7.0.1"
+      "version": "7.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-agreements-7.0.3"
     },
     {
       "id": "mod-licenses-6.0.1",
@@ -324,10 +324,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-batch-print-1.1.0"
     },
     {
-      "id": "mod-serials-management-1.0.1",
+      "id": "mod-serials-management-1.0.3",
       "name": "mod-serials-management",
-      "version": "1.0.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-serials-management-1.0.1"
+      "version": "1.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-serials-management-1.0.3"
     }
   ],
   "uiModules": [

@@ -1,12 +1,12 @@
 {
-  "id": "app-edge-complete-0.0.9",
+  "id": "app-edge-complete-0.0.10",
   "name": "app-edge-complete",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "0.0.12"
+      "version": "0.0.x"
     }
   ],
   "modules": [

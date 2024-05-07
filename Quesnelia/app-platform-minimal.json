@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-minimal-0.0.13",
+  "id": "app-platform-minimal-0.0.14",
   "name": "app-platform-minimal",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Minimal FOLIO platform installation for Quesnelia",
   "platform": "base",
   "dependencies": [],
@@ -55,10 +55,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.4.0"
     },
     {
-      "id": "mod-roles-keycloak-1.3.0",
+      "id": "mod-roles-keycloak-1.3.1",
       "name": "mod-roles-keycloak",
-      "version": "1.3.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.3.0"
+      "version": "1.3.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.3.1"
     },
     {
       "id": "mod-notes-5.2.0",
