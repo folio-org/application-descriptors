@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-complete-0.0.10",
+  "id": "app-edge-complete-0.0.11",
   "name": "app-edge-complete",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "platform": "complete",
   "dependencies": [
     {
@@ -47,10 +47,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-rtac-2.7.1"
     },
     {
-      "id": "edge-sip2-3.2.0",
+      "id": "edge-sip2-3.2.1",
       "name": "edge-sip2",
-      "version": "3.2.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-sip2-3.2.0"
+      "version": "3.2.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-sip2-3.2.1"
     },
     {
       "id": "edge-fqm-2.0.0",

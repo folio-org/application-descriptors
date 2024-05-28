@@ -1,5 +1,5 @@
 {
-  "id": "mod-users-bl-7.7.0",
+  "id": "mod-users-bl-7.7.1",
   "name": "users business logic",
   "requires": [
     {
@@ -17,6 +17,10 @@
     {
       "id": "password-validator",
       "version": "1.0"
+    },
+    {
+      "id": "request-storage",
+      "version": "6.0"
     }
   ],
   "provides": [
@@ -319,6 +323,10 @@
   ],
   "optional": [
     {
+      "id": "request-storage",
+      "version": "6.0"
+    },
+    {
       "id": "permissions",
       "version": "5.6"
     },
@@ -412,7 +420,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-users-bl:7.7.0",
+    "dockerImage": "folioorg/mod-users-bl:7.7.1",
     "dockerPull": true,
     "env": [
       {

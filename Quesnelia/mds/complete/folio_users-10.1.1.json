@@ -1,5 +1,5 @@
 {
-  "id": "folio_users-10.1.0",
+  "id": "folio_users-10.1.1",
   "name": "User management",
   "permissionSets": [
     {
@@ -1015,86 +1015,6 @@
         "batch-print.entries.item.delete"
       ],
       "visible": true
-    }
-  ],
-  "requires": [
-    {
-      "id": "add-info",
-      "version": "0.1"
-    },
-    {
-      "id": "users",
-      "version": "16.0 16.1"
-    },
-    {
-      "id": "configuration",
-      "version": "2.0"
-    },
-    {
-      "id": "permissions",
-      "version": "5.6"
-    },
-    {
-      "id": "login",
-      "version": "7.3"
-    },
-    {
-      "id": "users-bl",
-      "version": "6.1"
-    },
-    {
-      "id": "tags",
-      "version": "1.0"
-    }
-  ],
-  "optional": [
-    {
-      "id": "actual-cost-record-storage",
-      "version": "0.4"
-    },
-    {
-      "id": "automated-patron-blocks",
-      "version": "0.1"
-    },
-    {
-      "id": "batch-print",
-      "version": "1.0"
-    },
-    {
-      "id": "circulation",
-      "version": "9.0 10.0 11.0 12.0 13.0 14.0"
-    },
-    {
-      "id": "consortia",
-      "version": "1.0"
-    },
-    {
-      "id": "feesfines",
-      "version": "16.1 17.0 18.0 19.0"
-    },
-    {
-      "id": "loan-policy-storage",
-      "version": "1.0 2.0"
-    },
-    {
-      "id": "loan-storage",
-      "version": "4.0 5.0 6.0 7.0"
-    },
-    {
-      "id": "notes",
-      "version": "2.0 3.0"
-    },
-    {
-      "id": "request-storage",
-      "version": "2.5 3.0 4.0 5.0 6.0"
-    },
-    {
-      "id": "roles",
-      "version": "1.0"
-    },
-    {
-      "id": "users-keycloak",
-      "version": "1.0"
     }
   ]
 }
