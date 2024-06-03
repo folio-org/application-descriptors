@@ -17,10 +17,6 @@
     {
       "id": "password-validator",
       "version": "1.0"
-    },
-    {
-      "id": "request-storage",
-      "version": "6.0"
     }
   ],
   "provides": [
