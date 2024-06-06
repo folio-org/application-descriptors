@@ -1,5 +1,5 @@
 {
-  "id": "mod-agreements-6.0.2",
+  "id": "mod-agreements-6.0.3",
   "name": "mod-agreements",
   "provides": [
     {
@@ -1803,7 +1803,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-agreements:6.0.2",
+    "dockerImage": "folioorg/mod-agreements:6.0.3",
     "dockerPull": true,
     "env": [
       {

@@ -73,18 +73,18 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-scheduler-1.0.0"
     },
     {
-      "id": "mod-settings-1.0.2",
+      "id": "mod-settings-1.0.3",
       "name": "mod-settings",
-      "version": "1.0.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-settings-1.0.2"
+      "version": "1.0.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-settings-1.0.3"
     }
   ],
   "uiModules": [
     {
-      "id": "folio_developer-8.0.0",
+      "id": "folio_developer-8.0.1",
       "name": "folio_developer",
-      "version": "8.0.0",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_developer-8.0.0"
+      "version": "8.0.1",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_developer-8.0.1"
     },
     {
       "id": "folio_tags-8.0.2",
@@ -105,10 +105,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_notes-9.0.0"
     },
     {
-      "id": "folio_stripes-smart-components-9.0.2",
+      "id": "folio_stripes-smart-components-9.0.3",
       "name": "folio_stripes-smart-components",
-      "version": "9.0.2",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_stripes-smart-components-9.0.2"
+      "version": "9.0.3",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_stripes-smart-components-9.0.3"
     },
     {
       "id": "folio_authorization-policies-1.2.1",

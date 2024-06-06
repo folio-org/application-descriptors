@@ -1,5 +1,5 @@
 {
-  "id": "mod-finance-4.8.0",
+  "id": "mod-finance-4.8.1",
   "name": "Finance business logic module",
   "requires": [
     {
@@ -1808,7 +1808,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-finance:4.8.0",
+    "dockerImage": "folioorg/mod-finance:4.8.1",
     "dockerPull": true,
     "env": [
       {
