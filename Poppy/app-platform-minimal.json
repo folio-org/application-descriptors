@@ -1,8 +1,8 @@
 {
-  "id": "app-platform-minimal-0.0.11",
+  "id": "app-platform-minimal-0.0.12-Poppy-SP5",
   "name": "app-platform-minimal",
-  "version": "0.0.11",
-  "description": "Minimal FOLIO platform installation for Poppy-SP1",
+  "version": "0.0.12-Poppy-SP5",
+  "description": "Minimal FOLIO platform installation for Poppy-SP5",
   "platform": "base",
   "dependencies": [],
   "modules": [
