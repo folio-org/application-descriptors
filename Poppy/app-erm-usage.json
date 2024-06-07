@@ -1,13 +1,13 @@
 {
-  "id": "app-erm-usage-0.0.2",
+  "id": "app-erm-usage-0.0.2-Poppy-SP5",
   "name": "app-erm-usage",
-  "version": "0.0.2",
+  "version": "0.0.2-Poppy-SP5",
   "description": "ERM Usage platform installation for Poppy-SP5",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "0.0.12"
+      "version": "0.0.12-Poppy-SP5"
     }
   ],
   "modules": [

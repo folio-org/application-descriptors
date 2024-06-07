@@ -1,12 +1,12 @@
 {
-  "id": "app-edge-locate-0.0.5",
+  "id": "app-edge-locate-0.0.5-Poppy-SP5",
   "name": "app-edge-locate",
-  "version": "0.0.5",
+  "version": "0.0.5-Poppy-SP5",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "0.0.9"
+      "version": "0.0.9-Poppy-SP5"
     }
   ],
   "modules": [

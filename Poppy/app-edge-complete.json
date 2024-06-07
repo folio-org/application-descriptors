@@ -1,12 +1,12 @@
 {
-  "id": "app-edge-complete-0.0.6",
+  "id": "app-edge-complete-0.0.6-Poppy-SP5",
   "name": "app-edge-complete",
-  "version": "0.0.6",
+  "version": "0.0.6-Poppy-SP5",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "0.0.9"
+      "version": "0.0.9-Poppy-SP5"
     }
   ],
   "modules": [

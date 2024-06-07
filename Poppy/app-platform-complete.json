@@ -1,13 +1,13 @@
 {
-  "id": "app-platform-complete-0.0.9",
+  "id": "app-platform-complete-0.0.9-Poppy-SP5",
   "name": "app-platform-complete",
-  "version": "0.0.9",
+  "version": "0.0.9-Poppy-SP5",
   "description": "Complete application with all modules for Poppy-SP5",
   "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "0.0.12"
+      "version": "0.0.12-Poppy-SP5"
     }
   ],
   "modules": [
