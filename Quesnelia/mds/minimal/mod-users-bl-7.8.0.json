@@ -1,5 +1,5 @@
 {
-  "id": "mod-users-bl-7.7.1",
+  "id": "mod-users-bl-7.8.0",
   "name": "users business logic",
   "requires": [
     {
@@ -416,7 +416,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-users-bl:7.7.1",
+    "dockerImage": "folioorg/mod-users-bl:7.8.0",
     "dockerPull": true,
     "env": [
       {

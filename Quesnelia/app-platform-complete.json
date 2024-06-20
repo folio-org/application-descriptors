@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-complete-0.0.14",
+  "id": "app-platform-complete-0.0.15",
   "name": "app-platform-complete",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Complete application with all modules for Quesnelia",
   "platform": "complete",
   "dependencies": [
@@ -144,10 +144,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-data-export-5.0.4"
     },
     {
-      "id": "mod-data-export-spring-3.2.2",
+      "id": "mod-data-export-spring-3.3.0",
       "name": "mod-data-export-spring",
-      "version": "3.2.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-spring-3.2.2"
+      "version": "3.3.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-spring-3.3.0"
     },
     {
       "id": "mod-data-export-worker-3.2.4",
@@ -252,10 +252,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-template-engine-1.20.0"
     },
     {
-      "id": "mod-pubsub-2.13.1",
+      "id": "mod-pubsub-2.14.0",
       "name": "mod-pubsub",
-      "version": "2.13.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-pubsub-2.13.1"
+      "version": "2.14.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-pubsub-2.14.0"
     },
     {
       "id": "mod-gobi-2.8.1",

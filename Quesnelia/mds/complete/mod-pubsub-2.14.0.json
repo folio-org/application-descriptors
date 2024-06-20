@@ -1,5 +1,5 @@
 {
-  "id": "mod-pubsub-2.13.1",
+  "id": "mod-pubsub-2.14.0",
   "name": "Pubsub",
   "requires": [
     {
@@ -304,7 +304,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-pubsub:2.13.1",
+    "dockerImage": "folioorg/mod-pubsub:2.14.0",
     "dockerPull": true,
     "env": [
       {

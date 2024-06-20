@@ -112,7 +112,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-pubsub-2.13.0",
+    "id": "mod-pubsub-2.14.0",
     "action": "enable"
   },
   {
@@ -220,7 +220,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-users-bl-7.7.0",
+    "id": "mod-users-bl-7.8.0",
     "action": "enable"
   },
   {
@@ -500,7 +500,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-data-export-spring-3.2.2",
+    "id": "mod-data-export-spring-3.3.0",
     "action": "enable"
   },
   {
