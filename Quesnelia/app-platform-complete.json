@@ -648,6 +648,12 @@
       "name": "folio_serials-management",
       "version": "1.0.4",
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_serials-management-1.0.4"
+    },
+    {
+      "id": "folio_stripes-marc-components-1.0.1",
+      "name": "folio_stripes-marc-components",
+      "version": "1.0.1",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_stripes-marc-components-1.0.1"
     }
   ]
 }
