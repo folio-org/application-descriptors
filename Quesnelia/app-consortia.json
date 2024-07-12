@@ -1,5 +1,5 @@
 {
-  "id": "app-consortia-0.0.3",
+  "id": "app-consortia-0.0.4",
   "name": "app-consortia",
   "version": "0.0.4",
   "description": "Consortia Application for Quesnelia",
@@ -23,7 +23,7 @@
       "id": "folio_consortia-settings-1.1.0",
       "name": "folio_consortia-settings",
       "version": "1.1.0",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_consortia-settings-1.0.2"
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_consortia-settings-1.1.0"
     }
   ]
 }

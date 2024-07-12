@@ -534,5 +534,33 @@
   {
     "id": "folio_bulk-edit-4.1.4",
     "action": "enable"
+  },
+  {
+    "id": "mod-dcb-1.1.0",
+    "action": "enable"
+  },
+  {
+    "id": "edge-dcb-1.1.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-eusage-reports-2.1.1",
+    "action": "enable"
+  },
+  {
+    "id": "folio_plugin-eusage-reports-3.1.0",
+    "action": "enable"
+  },
+  {
+    "id": "edge-inventory-1.4.0",
+    "action": "enable"
+  },
+  {
+    "id": "edge-users-1.2.0",
+    "action": "enable"
+  },
+  {
+    "id": "edge-erm-1.0.0",
+    "action": "enable"
   }
 ]

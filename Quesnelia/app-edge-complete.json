@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-complete-0.0.12",
+  "id": "app-edge-complete-0.0.13",
   "name": "app-edge-complete",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "platform": "complete",
   "dependencies": [
     {
@@ -75,6 +75,12 @@
       "name": "edge-ncip",
       "version": "1.10.1",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-ncip-1.10.1"
+    },
+    {
+      "id": "edge-dcb-1.1.0",
+      "name": "edge-dcb",
+      "version": "1.1.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-dcb-1.1.0"
     }
   ]
 }
