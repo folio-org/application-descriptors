@@ -6,7 +6,7 @@
   "platform": "complete",
   "dependencies": [
     {
-      "name": "app-platform-minimal",
+      "name": "app-platform-complete",
       "version": "0.0.x"
     }
   ],
