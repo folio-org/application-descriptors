@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-minimal-0.0.16",
+  "id": "app-platform-minimal-0.0.17",
   "name": "app-platform-minimal",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Minimal FOLIO platform installation for Quesnelia",
   "platform": "base",
   "dependencies": [],
@@ -37,28 +37,28 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-users-bl-7.8.0"
     },
     {
-      "id": "mod-password-validator-3.2.0",
+      "id": "mod-password-validator-3.2.1",
       "name": "mod-password-validator",
-      "version": "3.2.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-password-validator-3.2.0"
+      "version": "3.2.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-password-validator-3.2.1"
     },
     {
-      "id": "mod-login-keycloak-1.4.1",
+      "id": "mod-login-keycloak-1.4.2",
       "name": "mod-login-keycloak",
-      "version": "1.4.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-login-keycloak-1.4.1"
+      "version": "1.4.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-login-keycloak-1.4.2"
     },
     {
-      "id": "mod-users-keycloak-1.5.1",
+      "id": "mod-users-keycloak-1.5.2",
       "name": "mod-users-keycloak",
-      "version": "1.5.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.5.1"
+      "version": "1.5.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.5.2"
     },
     {
-      "id": "mod-roles-keycloak-1.4.1",
+      "id": "mod-roles-keycloak-1.4.2",
       "name": "mod-roles-keycloak",
-      "version": "1.4.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.4.1"
+      "version": "1.4.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.4.2"
     },
     {
       "id": "mod-notes-5.2.0",
@@ -67,10 +67,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-notes-5.2.0"
     },
     {
-      "id": "mod-scheduler-1.2.1",
+      "id": "mod-scheduler-1.2.2",
       "name": "mod-scheduler",
-      "version": "1.2.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-scheduler-1.2.1"
+      "version": "1.2.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-scheduler-1.2.2"
     },
     {
       "id": "mod-settings-1.0.3",

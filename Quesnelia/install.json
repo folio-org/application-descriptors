@@ -24,11 +24,11 @@
     "action": "enable"
   },
   {
-    "id": "folio_plugin-find-user-7.1.0",
+    "id": "folio_plugin-find-user-7.1.1",
     "action": "enable"
   },
   {
-    "id": "folio_plugin-query-builder-1.1.4",
+    "id": "folio_plugin-query-builder-1.1.5",
     "action": "enable"
   },
   {
@@ -44,11 +44,11 @@
     "action": "enable"
   },
   {
-    "id": "mod-licenses-6.0.1",
+    "id": "mod-licenses-6.0.3",
     "action": "enable"
   },
   {
-    "id": "folio_licenses-11.0.0",
+    "id": "folio_licenses-11.0.2",
     "action": "enable"
   },
   {
@@ -56,7 +56,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-event-config-2.7.0",
+    "id": "mod-event-config-2.7.1",
     "action": "enable"
   },
   {
@@ -64,11 +64,11 @@
     "action": "enable"
   },
   {
-    "id": "mod-source-record-storage-5.8.1",
+    "id": "mod-source-record-storage-5.8.6",
     "action": "enable"
   },
   {
-    "id": "mod-password-validator-3.2.0",
+    "id": "mod-password-validator-3.2.1",
     "action": "enable"
   },
   {
@@ -96,7 +96,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-orders-storage-13.7.2",
+    "id": "mod-orders-storage-13.7.3",
     "action": "enable"
   },
   {
@@ -108,7 +108,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-login-7.11.0",
+    "id": "mod-login-7.11.1",
     "action": "enable"
   },
   {
@@ -128,7 +128,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-di-converter-storage-2.2.0",
+    "id": "mod-di-converter-storage-2.2.2",
     "action": "enable"
   },
   {
@@ -144,7 +144,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-inventory-storage-27.1.2",
+    "id": "mod-inventory-storage-27.1.4",
     "action": "enable"
   },
   {
@@ -164,7 +164,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-agreements-7.0.1",
+    "id": "mod-agreements-7.0.6",
     "action": "enable"
   },
   {
@@ -172,7 +172,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_local-kb-admin-8.0.0",
+    "id": "folio_local-kb-admin-8.0.1",
     "action": "enable"
   },
   {
@@ -192,7 +192,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_calendar-11.0.0",
+    "id": "folio_calendar-11.0.1",
     "action": "enable"
   },
   {
@@ -200,7 +200,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_agreements-11.0.0",
+    "id": "folio_agreements-11.0.3",
     "action": "enable"
   },
   {
@@ -236,11 +236,11 @@
     "action": "enable"
   },
   {
-    "id": "folio_stripes-smart-components-9.1.1",
+    "id": "folio_stripes-smart-components-9.1.3",
     "action": "enable"
   },
   {
-    "id": "mod-login-saml-2.8.0",
+    "id": "mod-login-saml-2.8.1",
     "action": "enable"
   },
   {
@@ -248,7 +248,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-oai-pmh-3.13.1",
+    "id": "mod-oai-pmh-3.13.2",
     "action": "enable"
   },
   {
@@ -256,7 +256,7 @@
     "action": "enable"
   },
   {
-    "id": "edge-oai-pmh-2.9.0",
+    "id": "edge-oai-pmh-2.9.2",
     "action": "enable"
   },
   {
@@ -264,7 +264,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-source-record-manager-3.8.2",
+    "id": "mod-source-record-manager-3.8.6",
     "action": "enable"
   },
   {
@@ -276,7 +276,7 @@
     "action": "enable"
   },
   {
-    "id": "edge-connexion-1.2.0",
+    "id": "edge-connexion-1.3.1",
     "action": "enable"
   },
   {
@@ -300,7 +300,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_data-import-7.1.1",
+    "id": "folio_data-import-7.1.8",
     "action": "enable"
   },
   {
@@ -320,7 +320,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-inventory-20.2.1",
+    "id": "mod-inventory-20.2.7",
     "action": "enable"
   },
   {
@@ -336,7 +336,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-search-3.2.2",
+    "id": "mod-search-3.2.6",
     "action": "enable"
   },
   {
@@ -364,31 +364,23 @@
     "action": "enable"
   },
   {
-    "id": "mod-fqm-manager-2.0.3",
+    "id": "mod-fqm-manager-2.0.4",
     "action": "enable"
   },
   {
-    "id": "edge-fqm-2.0.0",
+    "id": "edge-fqm-2.0.2",
     "action": "enable"
   },
   {
-    "id": "mod-lists-2.0.3",
+    "id": "edge-courses-1.4.2",
     "action": "enable"
   },
   {
-    "id": "folio_lists-3.0.1",
+    "id": "mod-serials-management-1.0.3",
     "action": "enable"
   },
   {
-    "id": "edge-courses-1.4.0",
-    "action": "enable"
-  },
-  {
-    "id": "mod-serials-management-1.0.1",
-    "action": "enable"
-  },
-  {
-    "id": "folio_serials-management-1.0.0",
+    "id": "folio_serials-management-1.0.4",
     "action": "enable"
   },
   {
@@ -408,7 +400,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-circulation-24.2.1",
+    "id": "mod-circulation-24.2.5",
     "action": "enable"
   },
   {
@@ -424,7 +416,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_inventory-11.0.1",
+    "id": "folio_inventory-11.0.4",
     "action": "enable"
   },
   {
@@ -436,11 +428,11 @@
     "action": "enable"
   },
   {
-    "id": "folio_users-10.1.0",
+    "id": "folio_users-10.1.1",
     "action": "enable"
   },
   {
-    "id": "edge-sip2-3.2.0",
+    "id": "edge-sip2-3.2.5",
     "action": "enable"
   },
   {
@@ -456,7 +448,7 @@
     "action": "enable"
   },
   {
-    "id": "edge-patron-5.1.0",
+    "id": "edge-patron-5.1.2",
     "action": "enable"
   },
   {
@@ -464,7 +456,7 @@
     "action": "enable"
   },
   {
-    "id": "edge-ncip-1.9.2",
+    "id": "edge-ncip-1.10.1",
     "action": "enable"
   },
   {
@@ -476,15 +468,15 @@
     "action": "enable"
   },
   {
-    "id": "edge-dematic-2.2.0",
+    "id": "edge-dematic-2.2.3",
     "action": "enable"
   },
   {
-    "id": "edge-caiasoft-2.2.0",
+    "id": "edge-caiasoft-2.2.4",
     "action": "enable"
   },
   {
-    "id": "mod-orders-12.8.6",
+    "id": "mod-orders-12.8.8",
     "action": "enable"
   },
   {
@@ -496,7 +488,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_receiving-5.0.3",
+    "id": "folio_receiving-5.0.4",
     "action": "enable"
   },
   {
@@ -512,7 +504,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_plugin-bursar-export-4.0.0",
+    "id": "folio_plugin-bursar-export-4.0.2",
     "action": "enable"
   },
   {
@@ -532,11 +524,11 @@
     "action": "enable"
   },
   {
-    "id": "folio_invoice-6.0.2",
+    "id": "folio_invoice-6.0.3",
     "action": "enable"
   },
   {
-    "id": "folio_orders-6.0.3",
+    "id": "folio_orders-6.0.4",
     "action": "enable"
   },
   {
@@ -548,11 +540,19 @@
     "action": "enable"
   },
   {
+    "id": "mod-lists-2.0.6",
+    "action": "enable"
+  },
+  {
+    "id": "folio_lists-3.0.1",
+    "action": "enable"
+  },
+  {
     "id": "mod-ebsconet-2.2.0",
     "action": "enable"
   },
   {
-    "id": "edge-orders-3.0.0",
+    "id": "edge-orders-3.0.3",
     "action": "enable"
   },
   {
@@ -564,7 +564,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_bulk-edit-4.1.2",
+    "id": "folio_bulk-edit-4.1.4",
     "action": "enable"
   },
   {
