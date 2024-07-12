@@ -315,7 +315,7 @@
       "id": "mod-lists-2.0.6",
       "name": "mod-lists",
       "version": "2.0.6",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-lists-2.0.6"
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-lists-2.0.6"
     },
     {
       "id": "mod-batch-print-1.1.0",
@@ -339,7 +339,7 @@
       "id": "mod-dcb-1.1.0",
       "name": "mod-dcb",
       "version": "1.1.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-dcb-1.1.0"
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-dcb-1.1.0"
     }
   ],
   "uiModules": [
