@@ -1,0 +1,258 @@
+{
+  "id": "mod-dcb-1.1.0",
+  "name": "Manage DCB related transactions in folio.",
+  "requires": [
+    {
+      "id": "circulation",
+      "version": "14.2"
+    },
+    {
+      "id": "users",
+      "version": "16.1"
+    },
+    {
+      "id": "inventory",
+      "version": "13.1"
+    },
+    {
+      "id": "login",
+      "version": "7.3"
+    },
+    {
+      "id": "permissions",
+      "version": "5.6"
+    },
+    {
+      "id": "item-storage",
+      "version": "10.1"
+    },
+    {
+      "id": "holdings-storage",
+      "version": "6.0"
+    },
+    {
+      "id": "service-points",
+      "version": "3.3"
+    },
+    {
+      "id": "circulation-item",
+      "version": "1.0"
+    },
+    {
+      "id": "inventory",
+      "version": "13.1"
+    },
+    {
+      "id": "material-types",
+      "version": "2.2"
+    },
+    {
+      "id": "loan-types",
+      "version": "2.3"
+    },
+    {
+      "id": "locations",
+      "version": "3.0"
+    },
+    {
+      "id": "location-units",
+      "version": "2.0"
+    },
+    {
+      "id": "holdings-sources",
+      "version": "1.0"
+    },
+    {
+      "id": "instance-types",
+      "version": "2.0"
+    }
+  ],
+  "provides": [
+    {
+      "id": "transactions",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "pathPattern": "/transactions/{dcbTransactionId}",
+          "permissionsRequired": [
+            "dcb.transactions.post"
+          ],
+          "modulePermissions": [
+            "inventory-storage.service-points.item.post",
+            "users.collection.get",
+            "users.item.post",
+            "usergroups.collection.get",
+            "inventory-storage.items.item.get",
+            "inventory-storage.items.collection.get",
+            "inventory-storage.holdings.item.get",
+            "circulation.requests.item.post",
+            "circulation.requests.item.put",
+            "circulation-item.item.post",
+            "circulation-item.collection.get",
+            "circulation-item.item.get",
+            "inventory-storage.material-types.collection.get",
+            "inventory-storage.loan-types.collection.get",
+            "circulation-storage.requests.item.get",
+            "circulation-storage.cancellation-reasons.item.get",
+            "circulation-storage.cancellation-reasons.item.post"
+          ]
+        },
+        {
+          "methods": [
+            "GET"
+          ],
+          "pathPattern": "/transactions/{dcbTransactionId}/status",
+          "permissionsRequired": [
+            "dcb.transactions.get"
+          ],
+          "modulePermissions": []
+        },
+        {
+          "methods": [
+            "PUT"
+          ],
+          "pathPattern": "/transactions/{dcbTransactionId}/status",
+          "permissionsRequired": [
+            "dcb.transactions.put"
+          ],
+          "modulePermissions": [
+            "circulation.check-out-by-barcode.post",
+            "circulation.check-in-by-barcode.post"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": ["POST"],
+          "pathPattern": "/_/tenant",
+          "modulePermissions": [
+            "users.collection.get",
+            "users.item.post",
+            "login.item.post",
+            "login.item.delete",
+            "perms.users.item.post",
+            "perms.users.get",
+            "perms.users.assign.immutable",
+            "inventory.instances.item.get",
+            "inventory.instances.item.post",
+            "inventory-storage.instance-types.collection.get",
+            "inventory-storage.instance-types.item.post",
+            "inventory-storage.location-units.institutions.item.get",
+            "inventory-storage.location-units.institutions.item.post",
+            "inventory-storage.location-units.campuses.item.post",
+            "inventory-storage.location-units.libraries.item.get",
+            "inventory-storage.location-units.libraries.item.post",
+            "inventory-storage.location-units.campuses.collection.get",
+            "inventory-storage.service-points.collection.get",
+            "inventory-storage.locations.collection.get",
+            "inventory-storage.holdings.item.get",
+            "inventory-storage.holdings-sources.collection.get",
+            "inventory-storage.holdings.item.post",
+            "inventory-storage.locations.item.post",
+            "inventory-storage.service-points.item.post",
+            "inventory-storage.location-units.libraries.collection.get",
+            "inventory-storage.loan-types.collection.get",
+            "inventory-storage.loan-types.collection.post",
+            "inventory-storage.loan-types.item.post",
+            "circulation-storage.cancellation-reasons.item.get",
+            "circulation-storage.cancellation-reasons.item.post"
+          ]
+        },
+        {
+          "methods": ["GET", "DELETE"],
+          "pathPattern": "/_/tenant/{id}"
+        }
+      ]
+    }
+  ],
+  "permissionSets" : [
+    {
+      "permissionName": "dcb.all",
+      "displayName": "DCB module - all permissions",
+      "description": "All permissions for dcb module",
+      "subPermissions": [
+        "dcb.transactions.post",
+        "dcb.transactions.put",
+        "dcb.transactions.get"
+      ]
+    },
+    {
+      "permissionName": "dcb.transactions.post",
+      "displayName": "creates new transaction",
+      "description": "creates new transaction"
+    },
+    {
+      "permissionName": "dcb.transactions.get",
+      "displayName": "get transaction details",
+      "description": "get transaction details"
+    },
+    {
+      "permissionName": "dcb.transactions.put",
+      "displayName": "update transaction details",
+      "description": "update transaction details"
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "@artifactId@:@version@",
+    "dockerPull": false,
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 357913941,
+        "PortBindings": { "8081/tcp": [ { "HostPort": "%p" } ] }
+      }
+    },
+    "env": [
+      { "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=66.0"
+      },
+      { "name": "DB_HOST", "value": "postgres" },
+      { "name": "DB_PORT", "value": "5432" },
+      { "name": "DB_USERNAME", "value": "folio_admin" },
+      { "name": "DB_PASSWORD", "value": "folio_admin" },
+      { "name": "DB_DATABASE", "value": "okapi_modules" },
+      { "name": "DB_QUERYTIMEOUT", "value": "60000" },
+      { "name": "DB_CHARSET", "value": "UTF-8" },
+      { "name": "DB_MAXPOOLSIZE", "value": "5" },
+      { "name": "SYSTEM_USER_PASSWORD", "value": "dcb-system-user" },
+      { "name": "KAFKA_HOST", "value": "10.0.2.15" },
+      { "name": "KAFKA_PORT", "value": "9092" },
+      { "name": "OKAPI_URL",  "value": "http://okapi:9130" },
+      { "name": "ENV", "value": "folio" }
+    ]
+  },
+  "user": {
+    "type": "module",
+    "permissions": [
+      "inventory-storage.inventory-view.instances.collection.get",
+      "inventory-storage.instances.collection.get",
+      "inventory-storage.instances.item.get",
+      "inventory-storage.items.collection.get",
+      "inventory-storage.items.item.get",
+      "inventory-storage.holdings.item.get",
+      "inventory-storage.locations.collection.get",
+      "inventory-storage.material-types.collection.get",
+      "inventory.items.item.get",
+      "inventory.instances.item.get",
+      "users.collection.get",
+      "users.item.get",
+      "source-storage.records.get",
+      "circulation.requests.item.get",
+      "circulation.requests.item.post",
+      "circulation.requests.collection.get",
+      "circulation.loans.collection.get",
+      "circulation.check-in-by-barcode.post",
+      "circulation.check-out-by-barcode.post",
+      "inventory.items.item.put",
+      "inventory-storage.holdings.item.put",
+      "circulation-item.item.get"
+    ]
+  }
+}

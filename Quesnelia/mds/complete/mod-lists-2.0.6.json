@@ -1,0 +1,345 @@
+{
+  "id": "mod-lists-2.0.6",
+  "name": "Lists",
+  "provides": [
+    {
+      "id": "_tenant",
+      "version": "2.0",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [ "POST" ],
+          "pathPattern": "/_/tenant",
+          "permissionsRequired": [ ],
+          "modulePermissions": [
+            "users.collection.get",
+            "users.item.post",
+            "login.item.post",
+            "login.item.delete",
+            "perms.users.get",
+            "perms.users.item.post",
+            "perms.users.assign.immutable",
+            "perms.users.assign.mutable"
+          ]
+        },
+        {
+          "methods": [ "GET", "DELETE" ],
+          "pathPattern": "/_/tenant/{id}",
+          "permissionsRequired": [ ]
+        }
+      ]
+    },
+    {
+      "id": "lists",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": [ "GET" ],
+          "pathPattern": "/lists",
+          "permissionsRequired": [ "lists.collection.get" ]
+        }, {
+          "methods": [ "GET" ],
+          "pathPattern": "/lists/{id}",
+          "permissionsRequired": [ "lists.item.get" ]
+        }, {
+          "methods": [ "POST" ],
+          "pathPattern": "/lists/{id}/refresh",
+          "permissionsRequired": [ "lists.item.refresh" ],
+          "modulePermissions": [ "users.item.get" ]
+        }, {
+          "methods": [ "DELETE" ],
+          "pathPattern": "/lists/{id}/refresh",
+          "permissionsRequired": [ "lists.item.refresh.cancel" ]
+        }, {
+          "methods": [ "GET" ],
+          "pathPattern": "/lists/{id}/contents",
+          "permissionsRequired": [ "lists.item.contents.get" ]
+        }, {
+          "methods": [ "GET" ],
+          "pathPattern": "/lists/{id}/versions",
+          "permissionsRequired": [ "lists.item.versions.collection.get" ]
+        }, {
+          "methods": [ "GET" ],
+          "pathPattern": "/lists/{id}/versions/{versionNumber}",
+          "permissionsRequired": [ "lists.item.versions.item.get" ]
+        }, {
+          "methods": [ "GET" ],
+          "pathPattern": "/lists/{id}/exports/{exportId}/download",
+          "permissionsRequired": [ "lists.item.export.download.get" ]
+        }, {
+          "methods": [ "POST" ],
+          "pathPattern": "/lists/{id}/exports/{exportId}/cancel",
+          "permissionsRequired": [ "lists.item.export.cancel" ]
+        }, {
+          "methods": [ "POST" ],
+          "pathPattern": "/lists",
+          "permissionsRequired": [ "lists.collection.post" ],
+          "modulePermissions": [ "users.item.get" ]
+        }, {
+          "methods": [ "PUT" ],
+          "pathPattern": "/lists/{id}",
+          "permissionsRequired": [ "lists.item.update" ],
+          "modulePermissions": [ "users.item.get" ]
+        }, {
+          "methods": [ "DELETE" ],
+          "pathPattern": "/lists/{id}",
+          "permissionsRequired": [ "lists.item.delete" ]
+        }, {
+          "methods": [ "POST" ],
+          "pathPattern": "/lists/{id}/exports",
+          "permissionsRequired": [ "lists.item.export.post" ]
+        }, {
+          "methods": [ "GET" ],
+          "pathPattern": "/lists/{id}/exports/{exportId}",
+          "permissionsRequired": [ "lists.item.export.get" ]
+        },
+        {
+          "methods": [ "GET" ],
+          "pathPattern": "/lists/configuration",
+          "permissionsRequired": [ "lists.configuration.get" ]
+        }
+      ]
+    }
+  ],
+  "permissionSets": [
+    {
+      "permissionName": "lists.collection.get",
+      "displayName": "Lists: Get collection of all lists",
+      "description": "Get the collection of all lists"
+    },
+    {
+      "permissionName": "lists.collection.post",
+      "displayName": "Lists: Create a new list",
+      "description": "Create a new list"
+    },
+    {
+      "permissionName": "lists.item.get",
+      "displayName": "Lists: Get details of a list",
+      "description": "Get details of a list"
+    },
+    {
+      "permissionName": "lists.item.contents.get",
+      "displayName": "Lists: Get contents of a list",
+      "description": "Get the contents of a list"
+    },
+    {
+      "permissionName": "lists.item.refresh",
+      "displayName": "Lists: Refresh a list",
+      "description": "Refresh a list"
+    },
+    {
+      "permissionName": "lists.item.refresh.cancel",
+      "displayName": "Lists: Cancel a list refresh",
+      "description": "Cancel a list refresh"
+    },
+    {
+      "permissionName": "lists.item.export.post",
+      "displayName": "Lists: Export a list as CSV",
+      "description": "Export a list as CSV"
+    },
+    {
+      "permissionName": "lists.item.export.get",
+      "displayName": "Lists: Get status of an export request",
+      "description": "Get status of an export request"
+    },
+    {
+      "permissionName": "lists.item.export.download.get",
+      "displayName": "Lists: Download an exported CSV file",
+      "description": "Download an exported CSV file"
+    },
+    {
+      "permissionName": "lists.item.export.cancel",
+      "displayName": "Lists: Cancel a list export",
+      "description": "Cancel a list export"
+    },
+    {
+      "permissionName": "lists.item.delete",
+      "displayName": "Lists: Delete a list",
+      "description": "Delete a list"
+    },
+    {
+      "permissionName": "lists.item.update",
+      "displayName": "Lists: Update a list",
+      "description": "Update a list"
+    },
+    {
+      "permissionName": "lists.configuration.get",
+      "displayName": "Lists: Get configuration of list application",
+      "description": "Get configuration of lists application"
+    },
+    {
+      "permissionName": "lists.item.versions.collection.get",
+      "displayName": "Lists: Get previous versions of a list",
+      "description": "Get the previous versions of a list"
+    },
+    {
+      "permissionName": "lists.item.versions.item.get",
+      "displayName": "Lists: Get a previous version of a list",
+      "description": "Get a previous version of a list"
+    }
+  ],
+  "requires": [
+    {
+      "id": "fqm-query",
+      "version": "1.0 2.0"
+    },
+    {
+      "id": "entity-types",
+      "version": "1.0 2.0"
+    },
+    {
+      "id": "users",
+      "version": "16.0"
+    },
+    {
+      "id": "login",
+      "version": "7.0"
+    },
+    {
+      "id": "permissions",
+      "version": "5.3"
+    }
+  ],
+  "launchDescriptor": {
+    "dockerImage": "mod-lists-2.0.6",
+    "dockerPull": false,
+    "dockerArgs": {
+      "HostConfig": {
+        "Memory": 3221225472,
+        "PortBindings": {
+          "8081/tcp": [
+            {
+              "HostPort": "%p"
+            }
+          ]
+        }
+      }
+    },
+    "env": [
+      {
+        "name": "JAVA_OPTIONS",
+        "value": "-XX:MaxRAMPercentage=66.0 -XX:MetaspaceSize=384m -XX:MaxMetaspaceSize=512m -Xmx2048m"
+      },
+      {
+        "name": "server.port",
+        "value": "8081"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "postgres"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "5432"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "folio_admin"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "okapi_modules"
+      },
+      {
+        "name": "DB_QUERYTIMEOUT",
+        "value": "60000"
+      },
+      {
+        "name": "DB_CHARSET",
+        "value": "UTF-8"
+      },
+      {
+        "name": "DB_MAXPOOLSIZE",
+        "value": "5"
+      },
+      {
+        "name": "MAX_LIST_SIZE",
+        "value": "1250000"
+      },
+      {
+        "name": "LIST_EXPORT_BATCH_SIZE",
+        "value": "1000"
+      },
+      {
+        "name": "LIST_APP_S3_BUCKET",
+        "value": "list-exports-us-west-2"
+      },
+      {
+        "name": "AWS_REGION",
+        "value": "us-west-2"
+      },
+      {
+        "name": "AWS_URL",
+        "value": "https://s3.amazonaws.com"
+      },
+      {
+        "name": "USE_AWS_SDK",
+        "value": "false"
+      },
+      {
+        "name": "S3_ACCESS_KEY_ID",
+        "value": ""
+      },
+      {
+        "name": "S3_SECRET_ACCESS_KEY",
+        "value": ""
+      },
+      {
+        "name": "mod-lists.list-export.s3-startup-check.enabled",
+        "value": "true"
+      },
+      {
+        "name": "spring.task.execution.pool.max-size",
+        "value": "10"
+      },
+      {
+        "name": "OKAPI_URL",
+        "value": "http://okapi:9130"
+      },
+      {
+        "name": "SYSTEM_USER_PASSWORD",
+        "value": ""
+      }
+    ]
+  },
+  "user": {
+    "type": "module",
+    "permissions": [
+      "acquisitions-units.units.collection.get",
+      "addresstypes.collection.get",
+      "circulation-storage.loan-policies.collection.get",
+      "circulation.loans.collection.get",
+      "configuration.entries.collection.get",
+      "departments.collection.get",
+      "finance.exchange-rate.item.get",
+      "fqm.entityTypes.item.get",
+      "fqm.query.async.results.get",
+      "inventory-storage.call-number-types.collection.get",
+      "inventory-storage.contributor-name-types.collection.get",
+      "inventory-storage.contributor-types.collection.get",
+      "inventory-storage.holdings.item.get",
+      "inventory-storage.instance-statuses.collection.get",
+      "inventory-storage.instances.item.get",
+      "inventory-storage.items.item.get",
+      "inventory-storage.location-units.libraries.collection.get",
+      "inventory-storage.locations.collection.get",
+      "inventory-storage.material-types.collection.get",
+      "inventory-storage.modes-of-issuance.collection.get",
+      "inventory-storage.service-points.collection.get",
+      "inventory-storage.statistical-code-types.collection.get",
+      "inventory-storage.statistical-codes.collection.get",
+      "orders.item.get",
+      "orders.po-lines.item.get",
+      "organizations-storage.categories.collection.get",
+      "organizations-storage.organization-types.collection.get",
+      "organizations.organizations.collection.get",
+      "usergroups.collection.get",
+      "users.collection.get",
+      "users.item.get"
+    ]
+  }
+}
