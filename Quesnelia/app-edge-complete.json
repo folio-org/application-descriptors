@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-complete-0.0.12",
+  "id": "app-edge-complete-0.0.13",
   "name": "app-edge-complete",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "platform": "complete",
   "dependencies": [
     {

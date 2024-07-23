@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-complete-0.0.16",
+  "id": "app-platform-complete-0.0.17",
   "name": "app-platform-complete",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Complete application with all modules for Quesnelia",
   "platform": "complete",
   "dependencies": [
