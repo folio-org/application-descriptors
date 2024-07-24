@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-complete-0.0.16",
+  "id": "app-platform-complete-0.0.17",
   "name": "app-platform-complete",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Complete application with all modules for Quesnelia",
   "platform": "complete",
   "dependencies": [
@@ -336,10 +336,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-circulation-item-1.0.0"
     },
     {
-      "id": "mod-dcb-1.1.0",
+      "id": "mod-dcb-1.1.1",
       "name": "mod-dcb",
-      "version": "1.1.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-dcb-1.1.0"
+      "version": "1.1.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-dcb-1.1.1"
     }
   ],
   "uiModules": [

@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-complete-0.0.12",
+  "id": "app-edge-complete-0.0.13",
   "name": "app-edge-complete",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "platform": "complete",
   "dependencies": [
     {
@@ -41,10 +41,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-caiasoft-2.2.4"
     },
     {
-      "id": "edge-rtac-2.7.1",
+      "id": "edge-rtac-2.7.3",
       "name": "edge-rtac",
-      "version": "2.7.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-rtac-2.7.1"
+      "version": "2.7.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-rtac-2.7.3"
     },
     {
       "id": "edge-sip2-3.2.5",

@@ -1,5 +1,5 @@
 {
-  "id": "mod-dcb-1.1.0",
+  "id": "mod-dcb-1.1.1",
   "name": "Manage DCB related transactions in folio.",
   "requires": [
     {
@@ -224,6 +224,11 @@
       { "name": "SYSTEM_USER_PASSWORD", "value": "dcb-system-user" },
       { "name": "KAFKA_HOST", "value": "10.0.2.15" },
       { "name": "KAFKA_PORT", "value": "9092" },
+      { "name": "KAFKA_SECURITY_PROTOCOL", "value": "PLAINTEXT" },
+      { "name": "KAFKA_SSL_KEYSTORE_LOCATION", "value": "" },
+      { "name": "KAFKA_SSL_KEYSTORE_PASSWORD", "value": "" },
+      { "name": "KAFKA_SSL_TRUSTSTORE_LOCATION", "value": "" },
+      { "name": "KAFKA_SSL_TRUSTSTORE_PASSWORD", "value": "" },
       { "name": "OKAPI_URL",  "value": "http://okapi:9130" },
       { "name": "ENV", "value": "folio" }
     ]
