@@ -1,0 +1,26 @@
+{
+  "id": "app-dcb-0.0.1",
+  "name": "app-dcb",
+  "version": "0.0.1",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "name": "app-platform-complete",
+      "version": "0.0.x"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-dcb-1.1.1",
+      "name": "mod-dcb",
+      "version": "1.1.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-dcb-1.1.1"
+    },
+    {
+      "id": "mod-circulation-item-1.0.0",
+      "name": "mod-circulation-item",
+      "version": "1.0.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-circulation-item-1.0.0"
+    }
+  ]
+}
