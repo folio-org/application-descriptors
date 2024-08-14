@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-locate-0.0.8",
+  "id": "app-edge-locate-0.0.9",
   "name": "app-edge-locate",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "platform": "complete",
   "dependencies": [
     {
@@ -21,12 +21,6 @@
       "name": "edge-users",
       "version": "1.2.0",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-users-1.2.0"
-    },
-    {
-      "id": "edge-erm-1.0.0",
-      "name": "edge-erm",
-      "version": "1.0.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-erm-1.0.0"
     }
   ]
 }

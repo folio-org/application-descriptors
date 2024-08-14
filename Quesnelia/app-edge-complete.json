@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-complete-0.0.13",
+  "id": "app-edge-complete-0.0.14",
   "name": "app-edge-complete",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "platform": "complete",
   "dependencies": [
     {
@@ -81,6 +81,12 @@
       "name": "edge-dcb",
       "version": "1.1.0",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-dcb-1.1.0"
+    },
+    {
+      "id": "edge-erm-1.2.0",
+      "name": "edge-erm",
+      "version": "1.2.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-erm-1.2.0"
     }
   ]
 }
