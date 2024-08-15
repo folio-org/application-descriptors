@@ -1,7 +1,7 @@
 {
-  "id": "app-erm-usage-0.0.6",
+  "id": "app-erm-usage-0.0.7",
   "name": "app-erm-usage",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "ERM Usage platform installation for Quesnelia",
   "platform": "complete",
   "dependencies": [
@@ -28,6 +28,12 @@
       "name": "mod-eusage-reports",
       "version": "2.1.1",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-eusage-reports-2.1.1"
+    },
+    {
+      "id": "edge-erm-1.2.0",
+      "name": "edge-erm",
+      "version": "1.2.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-erm-1.2.0"
     }
   ],
   "uiModules": [
