@@ -55,10 +55,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.5.3"
     },
     {
-      "id": "mod-roles-keycloak-1.4.3",
+      "id": "mod-roles-keycloak-1.4.4",
       "name": "mod-roles-keycloak",
-      "version": "1.4.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.4.3"
+      "version": "1.4.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.4.4"
     },
     {
       "id": "mod-notes-5.2.0",
