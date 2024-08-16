@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-minimal-0.0.18",
+  "id": "app-platform-minimal-0.0.19",
   "name": "app-platform-minimal",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Minimal FOLIO platform installation for Quesnelia",
   "platform": "base",
   "dependencies": [],
