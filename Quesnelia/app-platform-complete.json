@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-complete-0.0.18",
+  "id": "app-platform-complete-0.0.19",
   "name": "app-platform-complete",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Complete application with all modules for Quesnelia",
   "platform": "complete",
   "dependencies": [
@@ -48,10 +48,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-invoice-5.8.2"
     },
     {
-      "id": "mod-invoice-storage-5.8.1",
+      "id": "mod-invoice-storage-5.8.2",
       "name": "mod-invoice-storage",
-      "version": "5.8.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-invoice-storage-5.8.1"
+      "version": "5.8.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-invoice-storage-5.8.2"
     },
     {
       "id": "mod-finance-storage-8.6.1",
@@ -144,10 +144,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-data-export-5.0.4"
     },
     {
-      "id": "mod-data-export-spring-3.3.0",
+      "id": "mod-data-export-spring-3.2.2",
       "name": "mod-data-export-spring",
-      "version": "3.3.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-spring-3.3.0"
+      "version": "3.2.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-data-export-spring-3.2.2"
     },
     {
       "id": "mod-data-export-worker-3.2.4",
@@ -332,6 +332,12 @@
   ],
   "uiModules": [
     {
+      "id": "folio_data-export-6.1.4",
+      "name": "folio_data-export",
+      "version": "6.1.4",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_data-export-6.1.4"
+    },
+    {
       "id": "folio_organizations-5.1.1",
       "name": "folio_organizations",
       "version": "5.1.1",
@@ -356,10 +362,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-interface-5.1.0"
     },
     {
-      "id": "folio_invoice-6.0.3",
+      "id": "folio_invoice-6.0.4",
       "name": "folio_invoice",
-      "version": "6.0.3",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_invoice-6.0.3"
+      "version": "6.0.4",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_invoice-6.0.4"
     },
     {
       "id": "folio_finance-6.0.0",

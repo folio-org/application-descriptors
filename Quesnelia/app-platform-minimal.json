@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-minimal-0.0.19",
+  "id": "app-platform-minimal-0.0.20",
   "name": "app-platform-minimal",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Minimal FOLIO platform installation for Quesnelia",
   "platform": "base",
   "dependencies": [],
@@ -43,10 +43,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-password-validator-3.2.1"
     },
     {
-      "id": "mod-login-keycloak-1.4.3",
+      "id": "mod-login-keycloak-1.4.4",
       "name": "mod-login-keycloak",
-      "version": "1.4.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-login-keycloak-1.4.3"
+      "version": "1.4.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-login-keycloak-1.4.4"
     },
     {
       "id": "mod-users-keycloak-1.5.3",
@@ -55,10 +55,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.5.3"
     },
     {
-      "id": "mod-roles-keycloak-1.4.4",
+      "id": "mod-roles-keycloak-1.4.5",
       "name": "mod-roles-keycloak",
-      "version": "1.4.4",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.4.4"
+      "version": "1.4.5",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.4.5"
     },
     {
       "id": "mod-notes-5.2.0",
