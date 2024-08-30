@@ -332,12 +332,6 @@
   ],
   "uiModules": [
     {
-      "id": "folio_data-export-6.1.4",
-      "name": "folio_data-export",
-      "version": "6.1.4",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_data-export-6.1.4"
-    },
-    {
       "id": "folio_organizations-5.1.1",
       "name": "folio_organizations",
       "version": "5.1.1",
