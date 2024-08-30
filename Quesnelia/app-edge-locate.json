@@ -13,14 +13,14 @@
     {
       "id": "edge-inventory-1.5.2",
       "name": "edge-inventory",
-      "version": "1.4.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-inventory-1.4.0"
+      "version": "1.5.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-inventory-1.5.2"
     },
     {
       "id": "edge-users-1.4.0",
       "name": "edge-users",
-      "version": "1.2.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-users-1.2.0"
+      "version": "1.4.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-users-1.4.0"
     }
   ]
 }
