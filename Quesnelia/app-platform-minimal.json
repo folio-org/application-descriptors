@@ -1,8 +1,8 @@
 {
-  "id": "app-platform-minimal-0.0.20",
+  "id": "app-platform-minimal-0.0.21",
   "name": "app-platform-minimal",
-  "version": "0.0.20",
-  "description": "Minimal FOLIO platform installation for Quesnelia",
+  "version": "0.0.21",
+  "description": "Minimal FOLIO platform installation for Quesnelia SP4",
   "platform": "base",
   "dependencies": [],
   "modules": [
@@ -25,10 +25,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-tags-2.2.0"
     },
     {
-      "id": "mod-users-19.3.1",
+      "id": "mod-users-19.3.2",
       "name": "mod-users",
-      "version": "19.3.1",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-19.3.1"
+      "version": "19.3.2",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-19.3.2"
     },
     {
       "id": "mod-users-bl-7.8.0",
@@ -43,22 +43,22 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-password-validator-3.2.1"
     },
     {
-      "id": "mod-login-keycloak-1.4.4",
+      "id": "mod-login-keycloak-1.5.0",
       "name": "mod-login-keycloak",
-      "version": "1.4.4",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-login-keycloak-1.4.4"
+      "version": "1.5.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-login-keycloak-1.5.0"
     },
     {
-      "id": "mod-users-keycloak-1.5.3",
+      "id": "mod-users-keycloak-1.6.0",
       "name": "mod-users-keycloak",
-      "version": "1.5.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.5.3"
+      "version": "1.6.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-users-keycloak-1.6.0"
     },
     {
-      "id": "mod-roles-keycloak-1.4.5",
+      "id": "mod-roles-keycloak-1.4.6",
       "name": "mod-roles-keycloak",
-      "version": "1.4.5",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.4.5"
+      "version": "1.4.6",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-roles-keycloak-1.4.6"
     },
     {
       "id": "mod-notes-5.2.0",
@@ -67,10 +67,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-notes-5.2.0"
     },
     {
-      "id": "mod-scheduler-1.2.3",
+      "id": "mod-scheduler-1.3.0",
       "name": "mod-scheduler",
-      "version": "1.2.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-scheduler-1.2.3"
+      "version": "1.3.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-scheduler-1.3.0"
     },
     {
       "id": "mod-settings-1.0.3",

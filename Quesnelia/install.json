@@ -24,7 +24,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_plugin-find-user-7.1.1",
+    "id": "folio_plugin-find-user-7.1.2",
     "action": "enable"
   },
   {
@@ -60,11 +60,11 @@
     "action": "enable"
   },
   {
-    "id": "mod-users-19.3.1",
+    "id": "mod-users-19.3.2",
     "action": "enable"
   },
   {
-    "id": "mod-source-record-storage-5.8.6",
+    "id": "mod-source-record-storage-5.8.7",
     "action": "enable"
   },
   {
@@ -104,11 +104,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-login-7.11.1",
-    "action": "enable"
-  },
-  {
-    "id": "mod-pubsub-2.13.1",
+    "id": "mod-pubsub-2.14.0",
     "action": "enable"
   },
   {
@@ -116,7 +112,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-di-converter-storage-2.2.2",
+    "id": "mod-di-converter-storage-2.2.3",
     "action": "enable"
   },
   {
@@ -136,7 +132,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-circulation-storage-17.2.3",
+    "id": "mod-circulation-storage-17.2.4",
     "action": "enable"
   },
   {
@@ -152,11 +148,11 @@
     "action": "enable"
   },
   {
-    "id": "mod-user-import-3.8.0",
+    "id": "mod-user-import-3.8.1",
     "action": "enable"
   },
   {
-    "id": "mod-agreements-7.0.6",
+    "id": "mod-agreements-7.0.8",
     "action": "enable"
   },
   {
@@ -169,10 +165,6 @@
   },
   {
     "id": "folio_plugin-find-eresource-7.0.1",
-    "action": "enable"
-  },
-  {
-    "id": "mod-authtoken-2.15.2",
     "action": "enable"
   },
   {
@@ -204,7 +196,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-users-bl-7.7.4",
+    "id": "mod-users-bl-7.8.0",
     "action": "enable"
   },
   {
@@ -236,10 +228,6 @@
     "action": "enable"
   },
   {
-    "id": "mod-login-saml-2.8.1",
-    "action": "enable"
-  },
-  {
     "id": "folio_tenant-settings-8.1.0",
     "action": "enable"
   },
@@ -260,7 +248,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-source-record-manager-3.8.6",
+    "id": "mod-source-record-manager-3.8.7",
     "action": "enable"
   },
   {
@@ -296,7 +284,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_data-import-7.1.8",
+    "id": "folio_data-import-7.1.9",
     "action": "enable"
   },
   {
@@ -384,7 +372,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_inventory-11.0.4",
+    "id": "folio_inventory-11.0.5",
     "action": "enable"
   },
   {
@@ -392,7 +380,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_serials-management-1.0.4",
+    "id": "folio_serials-management-1.0.5",
     "action": "enable"
   },
   {
@@ -408,15 +396,15 @@
     "action": "enable"
   },
   {
-    "id": "folio_requests-9.1.1",
+    "id": "folio_requests-9.1.2",
     "action": "enable"
   },
   {
-    "id": "folio_users-10.1.1",
+    "id": "folio_users-10.1.2",
     "action": "enable"
   },
   {
-    "id": "edge-sip2-3.2.5",
+    "id": "edge-sip2-3.2.6",
     "action": "enable"
   },
   {
@@ -444,7 +432,7 @@
     "action": "enable"
   },
   {
-    "id": "edge-dematic-2.2.3",
+    "id": "edge-dematic-2.2.4",
     "action": "enable"
   },
   {
@@ -452,7 +440,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-orders-12.8.8",
+    "id": "mod-orders-12.8.10",
     "action": "enable"
   },
   {
@@ -552,15 +540,35 @@
     "action" : "enable"
   },
   {
-    "id" : "edge-inventory-1.4.0",
+    "id" : "edge-inventory-1.5.2",
     "action" : "enable"
   },
   {
-    "id" : "edge-users-1.3.0",
+    "id" : "edge-users-1.4.0",
     "action" : "enable"
   },
   {
-    "id": "edge-erm-1.0.0",
+    "id": "edge-erm-1.2.1",
+    "action": "enable"
+  },
+  {
+    "id": "mod-roles-keycloak-1.4.6",
+    "action": "enable"
+  },
+  {
+    "id": "mod-users-keycloak-1.6.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-login-keycloak-1.5.0",
+    "action": "enable"
+  },
+  {
+    "id": "mod-consortia-keycloak-1.4.5",
+    "action": "enable"
+  },
+  {
+    "id": "mod-scheduler-1.3.0",
     "action": "enable"
   }
 ]

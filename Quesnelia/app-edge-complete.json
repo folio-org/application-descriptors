@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-complete-0.0.18",
+  "id": "app-edge-complete-0.0.19",
   "name": "app-edge-complete",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "platform": "complete",
   "dependencies": [
     {
@@ -29,10 +29,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-oai-pmh-2.9.2"
     },
     {
-      "id": "edge-dematic-2.2.3",
+      "id": "edge-dematic-2.2.4",
       "name": "edge-dematic",
-      "version": "2.2.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-dematic-2.2.3"
+      "version": "2.2.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-dematic-2.2.4"
     },
     {
       "id": "edge-caiasoft-2.2.4",
@@ -47,10 +47,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-rtac-2.7.3"
     },
     {
-      "id": "edge-sip2-3.2.5",
+      "id": "edge-sip2-3.2.6",
       "name": "edge-sip2",
-      "version": "3.2.5",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-sip2-3.2.5"
+      "version": "3.2.6",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-sip2-3.2.6"
     },
     {
       "id": "edge-fqm-2.0.2",

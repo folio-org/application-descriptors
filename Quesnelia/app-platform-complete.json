@@ -1,8 +1,8 @@
 {
-  "id": "app-platform-complete-0.0.19",
+  "id": "app-platform-complete-0.0.20",
   "name": "app-platform-complete",
-  "version": "0.0.19",
-  "description": "Complete application with all modules for Quesnelia",
+  "version": "0.0.20",
+  "description": "Complete application with all modules for Quesnelia SP4",
   "platform": "complete",
   "dependencies": [
     {
@@ -30,10 +30,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-organizations-storage-4.7.0"
     },
     {
-      "id": "mod-orders-12.8.8",
+      "id": "mod-orders-12.8.10",
       "name": "mod-orders",
-      "version": "12.8.8",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-orders-12.8.8"
+      "version": "12.8.10",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-orders-12.8.10"
     },
     {
       "id": "mod-orders-storage-13.7.4",
@@ -78,10 +78,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-inventory-storage-27.1.4"
     },
     {
-      "id": "mod-circulation-storage-17.2.3",
+      "id": "mod-circulation-storage-17.2.4",
       "name": "mod-circulation-storage",
-      "version": "17.2.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-circulation-storage-17.2.3"
+      "version": "17.2.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-circulation-storage-17.2.4"
     },
     {
       "id": "mod-search-3.2.6",
@@ -120,16 +120,16 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-entities-links-3.0.2"
     },
     {
-      "id": "mod-source-record-manager-3.8.6",
+      "id": "mod-source-record-manager-3.8.7",
       "name": "mod-source-record-manager",
-      "version": "3.8.6",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-source-record-manager-3.8.6"
+      "version": "3.8.7",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-source-record-manager-3.8.7"
     },
     {
-      "id": "mod-di-converter-storage-2.2.2",
+      "id": "mod-di-converter-storage-2.2.3",
       "name": "mod-di-converter-storage",
-      "version": "2.2.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-di-converter-storage-2.2.2"
+      "version": "2.2.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-di-converter-storage-2.2.3"
     },
     {
       "id": "mod-patron-6.1.0",
@@ -198,10 +198,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-courses-1.4.10"
     },
     {
-      "id": "mod-source-record-storage-5.8.6",
+      "id": "mod-source-record-storage-5.8.7",
       "name": "mod-source-record-storage",
-      "version": "5.8.6",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-source-record-storage-5.8.6"
+      "version": "5.8.7",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-source-record-storage-5.8.7"
     },
     {
       "id": "mod-data-import-3.1.1",
@@ -210,10 +210,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-data-import-3.1.1"
     },
     {
-      "id": "mod-agreements-7.0.6",
+      "id": "mod-agreements-7.0.8",
       "name": "mod-agreements",
-      "version": "7.0.6",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-agreements-7.0.6"
+      "version": "7.0.8",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-agreements-7.0.8"
     },
     {
       "id": "mod-licenses-6.0.3",
@@ -288,10 +288,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-inventory-update-3.3.1"
     },
     {
-      "id": "mod-user-import-3.8.0",
+      "id": "mod-user-import-3.8.1",
       "name": "mod-user-import",
-      "version": "3.8.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-user-import-3.8.0"
+      "version": "3.8.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-user-import-3.8.1"
     },
     {
       "id": "mod-service-interaction-4.0.2",
@@ -416,10 +416,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_quick-marc-8.0.1"
     },
     {
-      "id": "folio_inventory-11.0.4",
+      "id": "folio_inventory-11.0.5",
       "name": "folio_inventory",
-      "version": "11.0.4",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_inventory-11.0.4"
+      "version": "11.0.5",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_inventory-11.0.5"
     },
     {
       "id": "folio_servicepoints-7.1.0",
@@ -464,10 +464,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_circulation-9.1.0"
     },
     {
-      "id": "folio_plugin-find-user-7.1.1",
+      "id": "folio_plugin-find-user-7.1.2",
       "name": "folio_plugin-find-user",
-      "version": "7.1.1",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-user-7.1.1"
+      "version": "7.1.2",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_plugin-find-user-7.1.2"
     },
     {
       "id": "folio_data-export-6.1.4",
@@ -524,16 +524,16 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_courses-6.0.3"
     },
     {
-      "id": "folio_requests-9.1.1",
+      "id": "folio_requests-9.1.2",
       "name": "folio_requests",
-      "version": "9.1.1",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_requests-9.1.1"
+      "version": "9.1.2",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_requests-9.1.2"
     },
     {
-      "id": "folio_data-import-7.1.8",
+      "id": "folio_data-import-7.1.9",
       "name": "folio_data-import",
-      "version": "7.1.8",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_data-import-7.1.8"
+      "version": "7.1.9",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_data-import-7.1.9"
     },
     {
       "id": "folio_plugin-find-import-profile-7.1.0",
@@ -632,9 +632,9 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_service-interaction-3.0.1"
     },
     {
-      "id": "folio_users-10.1.1",
+      "id": "folio_users-10.1.2",
       "name": "folio_users",
-      "version": "10.1.1",
+      "version": "10.1.2",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_users-10.1.1"
     },
     {
@@ -644,10 +644,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_lists-3.0.2"
     },
     {
-      "id": "folio_serials-management-1.0.4",
+      "id": "folio_serials-management-1.0.5",
       "name": "folio_serials-management",
-      "version": "1.0.4",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_serials-management-1.0.4"
+      "version": "1.0.5",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_serials-management-1.0.5"
     },
     {
       "id": "folio_stripes-marc-components-1.0.1",
