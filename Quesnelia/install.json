@@ -570,9 +570,5 @@
   {
     "id": "mod-scheduler-1.3.0",
     "action": "enable"
-  },
-  {
-    "id" : "mod-okapi-facade-1.0.0",
-    "action" : "enable"
   }
 ]

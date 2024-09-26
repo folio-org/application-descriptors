@@ -77,12 +77,6 @@
       "name": "mod-settings",
       "version": "1.0.3",
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-settings-1.0.3"
-    },
-    {
-      "id": "mod-okapi-facade-1.0.0",
-      "name": "mod-okapi-facade",
-      "version": "1.0.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-okapi-facade-1.0.0"
     }
   ],
   "uiModules": [
