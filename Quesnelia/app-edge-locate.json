@@ -1,7 +1,7 @@
 {
-  "id": "app-edge-locate-0.0.10",
+  "id": "app-edge-locate-0.0.11",
   "name": "app-edge-locate",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "platform": "complete",
   "dependencies": [
     {
@@ -11,16 +11,16 @@
   ],
   "modules": [
     {
-      "id": "edge-inventory-1.5.2",
+      "id": "edge-inventory-1.6.1",
       "name": "edge-inventory",
-      "version": "1.5.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-inventory-1.5.2"
+      "version": "1.6.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-inventory-1.6.1"
     },
     {
-      "id": "edge-users-1.4.0",
+      "id": "edge-users-1.5.0",
       "name": "edge-users",
-      "version": "1.4.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-users-1.4.0"
+      "version": "1.5.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/edge-users-1.5.0"
     }
   ]
 }
