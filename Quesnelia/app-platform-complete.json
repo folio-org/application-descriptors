@@ -635,7 +635,7 @@
       "id": "folio_users-10.1.2",
       "name": "folio_users",
       "version": "10.1.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_users-10.1.1"
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_users-10.1.2"
     },
     {
       "id": "folio_lists-3.0.2",
