@@ -1,8 +1,8 @@
 {
-  "id": "app-platform-complete-0.0.20",
+  "id": "app-platform-complete-0.0.21",
   "name": "app-platform-complete",
-  "version": "0.0.20",
-  "description": "Complete application with all modules for Quesnelia SP4",
+  "version": "0.0.21",
+  "description": "Complete application with all modules for Quesnelia SP5",
   "platform": "complete",
   "dependencies": [
     {
@@ -42,10 +42,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-orders-storage-13.7.4"
     },
     {
-      "id": "mod-invoice-5.8.2",
+      "id": "mod-invoice-5.8.3",
       "name": "mod-invoice",
-      "version": "5.8.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-invoice-5.8.2"
+      "version": "5.8.3",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-invoice-5.8.3"
     },
     {
       "id": "mod-invoice-storage-5.8.2",
@@ -84,10 +84,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-circulation-storage-17.2.4"
     },
     {
-      "id": "mod-search-3.2.6",
+      "id": "mod-search-3.2.7",
       "name": "mod-search",
-      "version": "3.2.6",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-search-3.2.6"
+      "version": "3.2.7",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-search-3.2.7"
     },
     {
       "id": "mod-inventory-20.2.7",
@@ -168,10 +168,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-oai-pmh-3.13.2"
     },
     {
-      "id": "mod-rtac-3.6.0",
+      "id": "mod-rtac-3.6.1",
       "name": "mod-rtac",
-      "version": "3.6.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-rtac-3.6.0"
+      "version": "3.6.1",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-rtac-3.6.1"
     },
     {
       "id": "mod-remote-storage-3.2.0",
@@ -512,10 +512,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_circulation-log-4.1.0"
     },
     {
-      "id": "folio_calendar-11.0.1",
+      "id": "folio_calendar-11.0.2",
       "name": "folio_calendar",
-      "version": "11.0.1",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_calendar-11.0.1"
+      "version": "11.0.2",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_calendar-11.0.2"
     },
     {
       "id": "folio_courses-6.0.3",

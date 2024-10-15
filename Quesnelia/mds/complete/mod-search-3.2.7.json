@@ -1,5 +1,5 @@
 {
-  "id": "mod-search-3.2.6",
+  "id": "mod-search-3.2.7",
   "name": "Search Module",
   "requires": [
     {
@@ -632,7 +632,7 @@
     }
   ],
   "launchDescriptor": {
-    "dockerImage": "folioorg/mod-search:3.2.6",
+    "dockerImage": "folioorg/mod-search:3.2.7",
     "dockerPull": true,
     "env": [
       {

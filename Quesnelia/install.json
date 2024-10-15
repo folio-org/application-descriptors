@@ -140,7 +140,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-rtac-3.6.0",
+    "id": "mod-rtac-3.6.1",
     "action": "enable"
   },
   {
@@ -172,7 +172,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_calendar-11.0.1",
+    "id": "folio_calendar-11.0.2",
     "action": "enable"
   },
   {
@@ -328,7 +328,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-search-3.2.6",
+    "id": "mod-search-3.2.7",
     "action": "enable"
   },
   {
@@ -404,7 +404,7 @@
     "action": "enable"
   },
   {
-    "id": "edge-sip2-3.2.6",
+    "id": "edge-sip2-3.2.7",
     "action": "enable"
   },
   {
@@ -472,7 +472,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-invoice-5.8.2",
+    "id": "mod-invoice-5.8.3",
     "action": "enable"
   },
   {
