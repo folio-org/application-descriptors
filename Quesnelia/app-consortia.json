@@ -1,7 +1,7 @@
 {
   "id": "app-consortia-0.0.10",
   "name": "app-consortia",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Consortia Application for Quesnelia SP5",
   "platform": "complete",
   "dependencies": [
