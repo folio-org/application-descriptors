@@ -1,8 +1,8 @@
 {
-  "id": "app-platform-complete-0.0.21",
+  "id": "app-platform-complete-0.0.22",
   "name": "app-platform-complete",
-  "version": "0.0.21",
-  "description": "Complete application with all modules for Quesnelia SP5",
+  "version": "0.0.22",
+  "description": "Complete application with all modules for Quesnelia SP6",
   "platform": "complete",
   "dependencies": [
     {
@@ -90,10 +90,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-search-3.2.7"
     },
     {
-      "id": "mod-inventory-20.2.7",
+      "id": "mod-inventory-20.2.8",
       "name": "mod-inventory",
-      "version": "20.2.7",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-inventory-20.2.7"
+      "version": "20.2.8",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-inventory-20.2.8"
     },
     {
       "id": "mod-circulation-24.2.5",
@@ -210,16 +210,16 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-data-import-3.1.1"
     },
     {
-      "id": "mod-agreements-7.0.8",
+      "id": "mod-agreements-7.0.9",
       "name": "mod-agreements",
-      "version": "7.0.8",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-agreements-7.0.8"
+      "version": "7.0.9",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-agreements-7.0.9"
     },
     {
-      "id": "mod-licenses-6.0.3",
+      "id": "mod-licenses-6.0.4",
       "name": "mod-licenses",
-      "version": "6.0.3",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-licenses-6.0.3"
+      "version": "6.0.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-licenses-6.0.4"
     },
     {
       "id": "mod-email-1.17.0",
@@ -318,10 +318,10 @@
       "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/mod-lists-2.0.6"
     },
     {
-      "id": "mod-batch-print-1.1.0",
+      "id": "mod-batch-print-1.2.0",
       "name": "mod-batch-print",
-      "version": "1.1.0",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-batch-print-1.1.0"
+      "version": "1.2.0",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/mod-batch-print-1.2.0"
     },
     {
       "id": "mod-serials-management-1.0.3",

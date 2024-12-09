@@ -44,7 +44,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-licenses-6.0.3",
+    "id": "mod-licenses-6.0.4",
     "action": "enable"
   },
   {
@@ -152,7 +152,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-agreements-7.0.8",
+    "id": "mod-agreements-7.0.9",
     "action": "enable"
   },
   {
@@ -200,7 +200,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_stripes-core-10.1.1",
+    "id": "folio_stripes-core-10.1.2",
     "action": "enable"
   },
   {
@@ -308,7 +308,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-inventory-20.2.7",
+    "id": "mod-inventory-20.2.8",
     "action": "enable"
   },
   {
@@ -384,7 +384,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-batch-print-1.1.0",
+    "id": "mod-batch-print-1.2.0",
     "action": "enable"
   },
   {
@@ -540,11 +540,11 @@
     "action" : "enable"
   },
   {
-    "id" : "edge-inventory-1.5.2",
+    "id" : "edge-inventory-1.6.1",
     "action" : "enable"
   },
   {
-    "id" : "edge-users-1.4.0",
+    "id" : "edge-users-1.5.0",
     "action" : "enable"
   },
   {
