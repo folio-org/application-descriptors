@@ -2,7 +2,7 @@
   "id": "app-platform-complete-0.0.23",
   "name": "app-platform-complete",
   "version": "0.0.23",
-  "description": "Complete application with all modules for Quesnelia SP6",
+  "description": "Complete application with all modules for Quesnelia SP7",
   "platform": "complete",
   "dependencies": [
     {
