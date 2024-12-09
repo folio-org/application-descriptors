@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-complete-0.0.22",
+  "id": "app-platform-complete-0.0.23",
   "name": "app-platform-complete",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "Complete application with all modules for Quesnelia SP6",
   "platform": "complete",
   "dependencies": [
@@ -530,10 +530,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_requests-9.1.2"
     },
     {
-      "id": "folio_data-import-7.1.9",
+      "id": "folio_data-import-7.1.10",
       "name": "folio_data-import",
-      "version": "7.1.9",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_data-import-7.1.9"
+      "version": "7.1.10",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_data-import-7.1.10"
     },
     {
       "id": "folio_plugin-find-import-profile-7.1.0",
