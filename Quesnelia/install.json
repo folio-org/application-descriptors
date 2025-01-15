@@ -40,7 +40,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-graphql-1.12.1",
+    "id": "mod-graphql-1.12.2",
     "action": "enable"
   },
   {
@@ -172,7 +172,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_calendar-11.0.2",
+    "id": "folio_calendar-11.0.3",
     "action": "enable"
   },
   {
@@ -200,7 +200,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_stripes-core-10.1.2",
+    "id": "folio_stripes-core-10.1.4",
     "action": "enable"
   },
   {
@@ -244,7 +244,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-finance-4.9.0",
+    "id": "mod-finance-4.9.1",
     "action": "enable"
   },
   {
@@ -264,7 +264,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-courses-1.4.10",
+    "id": "mod-courses-1.4.11",
     "action": "enable"
   },
   {
@@ -284,7 +284,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_data-import-7.1.10",
+    "id": "folio_data-import-7.1.11",
     "action": "enable"
   },
   {
@@ -324,7 +324,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_quick-marc-8.0.1",
+    "id": "folio_quick-marc-8.0.2",
     "action": "enable"
   },
   {
@@ -468,7 +468,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_plugin-bursar-export-4.0.2",
+    "id": "folio_plugin-bursar-export-4.0.3",
     "action": "enable"
   },
   {

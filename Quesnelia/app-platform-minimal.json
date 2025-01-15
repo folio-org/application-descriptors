@@ -1,8 +1,8 @@
 {
-  "id": "app-platform-minimal-0.0.22",
+  "id": "app-platform-minimal-0.0.23",
   "name": "app-platform-minimal",
-  "version": "0.0.22",
-  "description": "Minimal FOLIO platform installation for Quesnelia SP6",
+  "version": "0.0.23",
+  "description": "Minimal FOLIO platform installation for Quesnelia SP8",
   "platform": "base",
   "dependencies": [],
   "modules": [
@@ -93,10 +93,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_tags-8.1.0"
     },
     {
-      "id": "folio_stripes-core-10.1.2",
+      "id": "folio_stripes-core-10.1.4",
       "name": "folio_stripes-core",
-      "version": "10.1.2",
-      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_stripes-core-10.1.2"
+      "version": "10.1.4",
+      "url": "https://mdr-folio-eis-us-east-1-dev.s3.amazonaws.com/eureka/folio_stripes-core-10.1.4"
     },
     {
       "id": "folio_notes-9.1.0",
