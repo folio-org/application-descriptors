@@ -44,7 +44,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-licenses-6.0.4",
+    "id": "mod-licenses-6.0.5",
     "action": "enable"
   },
   {
@@ -64,7 +64,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-source-record-storage-5.8.7",
+    "id": "mod-source-record-storage-5.8.10",
     "action": "enable"
   },
   {
@@ -124,7 +124,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-inventory-storage-27.1.4",
+    "id": "mod-inventory-storage-27.1.5",
     "action": "enable"
   },
   {
@@ -132,7 +132,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-circulation-storage-17.2.4",
+    "id": "mod-circulation-storage-17.2.6",
     "action": "enable"
   },
   {
@@ -152,7 +152,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-agreements-7.0.9",
+    "id": "mod-agreements-7.0.10",
     "action": "enable"
   },
   {
@@ -196,7 +196,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-users-bl-7.8.0",
+    "id": "mod-users-bl-7.7.5",
     "action": "enable"
   },
   {
@@ -308,7 +308,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-inventory-20.2.8",
+    "id": "mod-inventory-20.2.11",
     "action": "enable"
   },
   {
@@ -340,7 +340,7 @@
     "action": "enable"
   },
   {
-    "id": "folio_stripes-authority-components-4.0.1",
+    "id": "folio_stripes-authority-components-4.0.2",
     "action": "enable"
   },
   {
@@ -356,7 +356,7 @@
     "action": "enable"
   },
   {
-    "id": "mod-circulation-24.2.5",
+    "id": "mod-circulation-24.2.6",
     "action": "enable"
   },
   {
@@ -376,11 +376,11 @@
     "action": "enable"
   },
   {
-    "id": "mod-serials-management-1.0.3",
+    "id": "mod-serials-management-1.0.4",
     "action": "enable"
   },
   {
-    "id": "folio_serials-management-1.0.5",
+    "id": "folio_serials-management-1.0.6",
     "action": "enable"
   },
   {
@@ -432,11 +432,11 @@
     "action": "enable"
   },
   {
-    "id": "edge-dematic-2.2.4",
+    "id": "edge-dematic-2.2.5",
     "action": "enable"
   },
   {
-    "id": "edge-caiasoft-2.2.4",
+    "id": "edge-caiasoft-2.2.5",
     "action": "enable"
   },
   {
@@ -520,7 +520,7 @@
     "action" : "enable"
   },
   {
-    "id" : "edge-fqm-2.0.2",
+    "id" : "edge-fqm-2.0.3",
     "action" : "enable"
   },
   {
@@ -532,7 +532,7 @@
     "action" : "enable"
   },
   {
-    "id" : "edge-courses-1.4.3",
+    "id" : "edge-courses-1.4.5",
     "action" : "enable"
   },
   {
