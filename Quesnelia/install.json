@@ -520,7 +520,7 @@
     "action" : "enable"
   },
   {
-    "id" : "edge-fqm-2.0.3",
+    "id" : "edge-fqm-2.0.4",
     "action" : "enable"
   },
   {
@@ -569,6 +569,10 @@
   },
   {
     "id": "mod-scheduler-1.3.1",
+    "action": "enable"
+  },
+  {
+    "id": "folio_authorization-roles-1.5.1",
     "action": "enable"
   }
 ]
