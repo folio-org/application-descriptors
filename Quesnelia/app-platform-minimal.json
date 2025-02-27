@@ -1,7 +1,7 @@
 {
-  "id": "app-platform-minimal-0.0.91",
+  "id": "app-platform-minimal-0.0.92",
   "name": "app-platform-minimal",
-  "version": "0.0.91",
+  "version": "0.0.92",
   "description": "Minimal FOLIO platform installation for Quesnelia SP9",
   "platform": "base",
   "dependencies": [],
@@ -117,10 +117,10 @@
       "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_authorization-policies-1.2.1"
     },
     {
-      "id": "folio_authorization-roles-1.5.1",
+      "id": "folio_authorization-roles-1.5.2",
       "name": "folio_authorization-roles",
-      "version": "1.5.1",
-      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_authorization-roles-1.5.1"
+      "version": "1.5.2",
+      "url": "https://folio-registry.dev.folio.org/_/proxy/modules/folio_authorization-roles-1.5.2"
     }
   ]
 }
